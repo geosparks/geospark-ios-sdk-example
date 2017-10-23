@@ -14,7 +14,7 @@ Download this project and open it in Xcode.
 
 3. Open the `GeoSparkExample.xcodeproj` file. In the  `AppDelegate.m`, update this line `GeoSpark.sharedInstance.initialize(”YOUR-SDK-KEY”,apiSecret:”YOUR-SECRET”,application: application);` to contain your GeoSpark SDK key and Secret.
 
-4. Reqplace with your bundle identifier.
+4. Replace with your bundle identifier.
 
 Ready to deploy! 
 
@@ -33,13 +33,13 @@ Installing the GeoSpark SDK is done in 3 steps.
 
 After downloading the SDK from [here](https://s3.amazonaws.com/geospark-framework/iOS/GeoSpark.zip), unzip and drag the GeoSpark.framework file into your project. Make sure it is included in your "Link Binary With Libraries" section of your target's Build Phases.
 
-In your application delegate import the sdk:
+In your application delegate import the sdk. To initialize the SDK, you must call the GeoSpark.initialize method when your app is started.
 
-```Import GeoSpark```
-
-To initialize the SDK, you must call the GeoSpark.initialize method when your app is started.
-
-```GeoSpark.sharedInstance.initialize(”YOUR-SDK-KEY”,apiSecret:”YOUR-SECRET”,application: application);```
+```
+Import GeoSpark
+...
+GeoSpark.sharedInstance.initialize(”YOUR-SDK-KEY”,apiSecret:”YOUR-SECRET”,application: application);
+```
 
 [Request](https://geospark.co) for SDK keys if you don't have already.
 
