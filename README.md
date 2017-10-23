@@ -18,7 +18,7 @@ Download this project and open it in Xcode.
 
 Ready to deploy! 
 
-Your iOS app is all set. As your users update and log in, their live location will be visualized on this dashboard.
+Your iOS app is all set. As your users update and log in, their live location will be visualized on GeoSpark dashboard.
 
 
 # Installation into your Application
