@@ -31,7 +31,7 @@ Installing the GeoSpark SDK is done in 3 steps.
 
 ### Import and Initialize SDK into your project
 
-After downloading the SDK from [here](https://s3.amazonaws.com/geospark-framework/iOS/GeoSpark.zip), unzip and drag the GeoSpark.framework file into your project. Make sure it is included in your "Link Binary With Libraries" section of your target's Build Phases.
+After downloading the SDK, unzip and drag the GeoSpark.framework file into your project. Make sure it is included in your "Link Binary With Libraries" section of your target's Build Phases.
 
 In your application delegate import the sdk. To initialize the SDK, you must call the GeoSpark.initialize method when your app is started.
 

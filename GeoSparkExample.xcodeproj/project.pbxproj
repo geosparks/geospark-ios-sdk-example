@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F285D8F1F9DD59300901C8A /* GeoSpark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F285D8E1F9DD57600901C8A /* GeoSpark.framework */; };
+		2F285D901F9DD59300901C8A /* GeoSpark.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F285D8E1F9DD57600901C8A /* GeoSpark.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F3BB8061F9DE53800980F2F /* MapDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BB8051F9DE53800980F2F /* MapDisplayViewController.swift */; };
+		2F3BB8161F9DFE9900980F2F /* LogsDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BB8151F9DFE9900980F2F /* LogsDisplayViewController.swift */; };
+		2F8260F21F9DCBCE00CAC90A /* UIViewController+Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8260F01F9DCBCE00CAC90A /* UIViewController+Hud.swift */; };
+		2F8260F31F9DCBCE00CAC90A /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8260F11F9DCBCE00CAC90A /* HudView.swift */; };
+		2FEF43791F9DC7CB002D4ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF43781F9DC7CB002D4ABE /* AppDelegate.swift */; };
+		2FEF437B1F9DC7CB002D4ABE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF437A1F9DC7CB002D4ABE /* ViewController.swift */; };
+		2FEF437E1F9DC7CB002D4ABE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FEF437C1F9DC7CB002D4ABE /* Main.storyboard */; };
+		2FEF43801F9DC7CB002D4ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FEF437F1F9DC7CB002D4ABE /* Assets.xcassets */; };
+		2FEF43831F9DC7CB002D4ABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FEF43811F9DC7CB002D4ABE /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2FEF438E1F9DC944002D4ABE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2F285D901F9DD59300901C8A /* GeoSpark.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2F285D8E1F9DD57600901C8A /* GeoSpark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoSpark.framework; sourceTree = "<group>"; };
+		2F3BB8051F9DE53800980F2F /* MapDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDisplayViewController.swift; sourceTree = "<group>"; };
+		2F3BB8151F9DFE9900980F2F /* LogsDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsDisplayViewController.swift; sourceTree = "<group>"; };
+		2F8260F01F9DCBCE00CAC90A /* UIViewController+Hud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Hud.swift"; sourceTree = "<group>"; };
+		2F8260F11F9DCBCE00CAC90A /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		2FEF43751F9DC7CB002D4ABE /* GeoSparkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoSparkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FEF43781F9DC7CB002D4ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FEF437A1F9DC7CB002D4ABE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2FEF437D1F9DC7CB002D4ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FEF437F1F9DC7CB002D4ABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FEF43821F9DC7CB002D4ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FEF43841F9DC7CB002D4ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FEF438A1F9DC84E002D4ABE /* GeoSpark iOS Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "GeoSpark iOS Example.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FEF43721F9DC7CB002D4ABE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F285D8F1F9DD59300901C8A /* GeoSpark.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F8260EF1F9DCBCE00CAC90A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2F8260F01F9DCBCE00CAC90A /* UIViewController+Hud.swift */,
+				2F8260F11F9DCBCE00CAC90A /* HudView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2FEF436C1F9DC7CB002D4ABE = {
+			isa = PBXGroup;
+			children = (
+				2FEF43771F9DC7CB002D4ABE /* GeoSpark iOS Example */,
+				2FEF43761F9DC7CB002D4ABE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FEF43761F9DC7CB002D4ABE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FEF43751F9DC7CB002D4ABE /* GeoSparkExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FEF43771F9DC7CB002D4ABE /* GeoSpark iOS Example */ = {
+			isa = PBXGroup;
+			children = (
+				2F285D8E1F9DD57600901C8A /* GeoSpark.framework */,
+				2F8260EF1F9DCBCE00CAC90A /* Utils */,
+				2FEF438A1F9DC84E002D4ABE /* GeoSpark iOS Example.entitlements */,
+				2FEF43781F9DC7CB002D4ABE /* AppDelegate.swift */,
+				2FEF437A1F9DC7CB002D4ABE /* ViewController.swift */,
+				2F3BB8051F9DE53800980F2F /* MapDisplayViewController.swift */,
+				2F3BB8151F9DFE9900980F2F /* LogsDisplayViewController.swift */,
+				2FEF437C1F9DC7CB002D4ABE /* Main.storyboard */,
+				2FEF437F1F9DC7CB002D4ABE /* Assets.xcassets */,
+				2FEF43811F9DC7CB002D4ABE /* LaunchScreen.storyboard */,
+				2FEF43841F9DC7CB002D4ABE /* Info.plist */,
+			);
+			path = "GeoSpark iOS Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FEF43741F9DC7CB002D4ABE /* GeoSparkExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FEF43871F9DC7CB002D4ABE /* Build configuration list for PBXNativeTarget "GeoSparkExample" */;
+			buildPhases = (
+				2FEF43711F9DC7CB002D4ABE /* Sources */,
+				2FEF43721F9DC7CB002D4ABE /* Frameworks */,
+				2FEF43731F9DC7CB002D4ABE /* Resources */,
+				2FEF438E1F9DC944002D4ABE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoSparkExample;
+			productName = "GeoSpark iOS Example";
+			productReference = 2FEF43751F9DC7CB002D4ABE /* GeoSparkExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FEF436D1F9DC7CB002D4ABE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Vignesh Shiva";
+				TargetAttributes = {
+					2FEF43741F9DC7CB002D4ABE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2FEF43701F9DC7CB002D4ABE /* Build configuration list for PBXProject "GeoSparkExample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FEF436C1F9DC7CB002D4ABE;
+			productRefGroup = 2FEF43761F9DC7CB002D4ABE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FEF43741F9DC7CB002D4ABE /* GeoSparkExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FEF43731F9DC7CB002D4ABE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FEF43831F9DC7CB002D4ABE /* LaunchScreen.storyboard in Resources */,
+				2FEF43801F9DC7CB002D4ABE /* Assets.xcassets in Resources */,
+				2FEF437E1F9DC7CB002D4ABE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FEF43711F9DC7CB002D4ABE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F8260F31F9DCBCE00CAC90A /* HudView.swift in Sources */,
+				2FEF437B1F9DC7CB002D4ABE /* ViewController.swift in Sources */,
+				2FEF43791F9DC7CB002D4ABE /* AppDelegate.swift in Sources */,
+				2F3BB8061F9DE53800980F2F /* MapDisplayViewController.swift in Sources */,
+				2F3BB8161F9DFE9900980F2F /* LogsDisplayViewController.swift in Sources */,
+				2F8260F21F9DCBCE00CAC90A /* UIViewController+Hud.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2FEF437C1F9DC7CB002D4ABE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FEF437D1F9DC7CB002D4ABE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2FEF43811F9DC7CB002D4ABE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FEF43821F9DC7CB002D4ABE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FEF43851F9DC7CB002D4ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FEF43861F9DC7CB002D4ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FEF43881F9DC7CB002D4ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "GeoSpark iOS Example/GeoSpark iOS Example.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH6UW9Q7Y4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
+					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
+					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
+					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
+				);
+				INFOPLIST_FILE = "GeoSpark iOS Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.storyboard.geoSparkExample-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FEF43891F9DC7CB002D4ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "GeoSpark iOS Example/GeoSpark iOS Example.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH6UW9Q7Y4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
+					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
+					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
+					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
+				);
+				INFOPLIST_FILE = "GeoSpark iOS Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.storyboard.geoSparkExample-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FEF43701F9DC7CB002D4ABE /* Build configuration list for PBXProject "GeoSparkExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FEF43851F9DC7CB002D4ABE /* Debug */,
+				2FEF43861F9DC7CB002D4ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FEF43871F9DC7CB002D4ABE /* Build configuration list for PBXNativeTarget "GeoSparkExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FEF43881F9DC7CB002D4ABE /* Debug */,
+				2FEF43891F9DC7CB002D4ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FEF436D1F9DC7CB002D4ABE /* Project object */;
+}
