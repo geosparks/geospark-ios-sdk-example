@@ -57,12 +57,6 @@ Privacy - Location When In Use Usage Description
 ```
 
 
-The SDK is only compatible with the `Location - Always permissions`. You can use the included utility methods to request permission, in case you feel the need to.
-
-```
-GeoSpark.requestAlwaysAuthorization()
-```
-
 
 ### APNS Configurations
 
@@ -75,8 +69,27 @@ Inside `didFinishLaunchingWithOptions`, use the SDK method to register for notif
 ```
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
     ...
-    GeoSpark.registerForNotifications()
+    registerForNotifications()
 }
+
+func getNotificationSettings() {
+    UNUserNotificationCenter.current().getNotificationSettings { (settings) in
+        guard settings.authorizationStatus == .authorized else { return }
+        DispatchQueue.main.async {
+            UIApplication.shared.registerForRemoteNotifications()
+        }
+    }
+}
+
+func registerForPushNotifications() {
+    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {
+    (granted, error) in
+        guard granted else { return }
+        self.getNotificationSettings()
+        UNUserNotificationCenter.current().delegate = self
+    }
+}
+
 ```
 
 Inside and `didRegisterForRemoteNotificationsWithDeviceToken` and `didFailToRegisterForRemoteNotificationsWithError` methods, add the relevant lines so that GeoSpark can register the device token.
@@ -84,12 +97,12 @@ Inside and `didRegisterForRemoteNotificationsWithDeviceToken` and `didFailToRegi
 ```
 func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
     ...
-    GeoSpark.didRegisterForRemoteNotificationsWithDeviceToken(deviceToken: deviceToken)
+    GeoSpark.didRegisterForRemoteNotificationsWithDeviceToken(deviceToken)
 }
 
 func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
     ...
-    GeoSpark.didFailToRegisterForRemoteNotificationsWithError(error: error)
+    GeoSpark.didFailToRegisterForRemoteNotificationsWithError(error)
 }
 ```
 
@@ -97,10 +110,8 @@ Inside the `didReceiveRemoteNotification` method, add the GeoSpark receiver. Thi
 
 ```
 func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
-    if (GeoSpark.isGeoSparkNotification(userInfo: userInfo)){
-        GeoSpark.didReceiveRemoteNotification(userInfo: userInfo)
-    }
 
+    GeoSpark.didReceiveRemoteNotification(userInfo)
     // Do any additional handling for your app's notifications.
 }
 ```
@@ -112,18 +123,18 @@ The SDK needs an User ID object to identify the device. The SDK has a convenienc
 
 ```
 //Create a User for given deviceToken on GeoSpark Server. 
-GeoSpark.sharedInstance.createUser() { (userId, error) in
-  if (error != nil) {
-    // Handle createUser API error here
-    ...
-    return
-  }
+GeoSpark.sharedInstance.createUser{(success, error, userID) in
+    if (error != nil) {
+        // Handle createUser API error here
+        ...
+        return
+    }
 
-  if (userId != nil) {
-    // Handle createUser API success here
-    ...
-  }
-}        
+    if (userId != nil) {
+        // Handle createUser API success here
+        ...
+    }
+}
 ```
 
 ## Get User
@@ -143,18 +154,20 @@ Method parameters
 *along with deviceToken.
 */
 
-GeoSpark.sharedInstance.getUser(userId) { (userId, error) in
-  if (error != nil) {
-    // Handle getUser API error here
-    ...
-    return
-  }
+GeoSpark.sharedInstance.startSessionForUser(userID, completion : {(success, error, userID) in
+    if (error != nil) {
+        // Handle getUser API error here
+        ...
+        return
+    }
 
-  if (userId != nil) {
-    // Handle getUser API success here
-    ...
-  }
-}         
+    if (userId != nil) {
+        // Handle getUser API success here
+        ...
+    }
+
+})
+
 ```
 
 ## Start Location Tracking
