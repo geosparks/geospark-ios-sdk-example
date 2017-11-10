@@ -34,9 +34,16 @@ class ViewController: UIViewController, GeoFencingProtocol, UITextFieldDelegate 
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        super.viewWillAppear(animated);
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -53,6 +60,7 @@ class ViewController: UIViewController, GeoFencingProtocol, UITextFieldDelegate 
     }
     
     @IBAction func clearSession() {
+        textField.text = ""
         GeoSpark.sharedInstance.clearSession()
         setupIntialStateForButtons()
         

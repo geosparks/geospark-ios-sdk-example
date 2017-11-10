@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8mL-Sw-e0g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8mL-Sw-e0g">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,11 +23,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fAx-6y-lRg">
-                                <rect key="frame" x="146" y="72" width="84" height="136"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fAx-6y-lRg">
+                                <rect key="frame" x="20" y="104" width="335" height="139"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKO-PX-kWE">
-                                        <rect key="frame" x="0.0" y="0.0" width="84" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title="Create User">
@@ -42,17 +42,17 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="createUser" destination="BYZ-38-t0r" eventType="touchDragInside" id="CXv-90-XbG"/>
+                                            <action selector="createUser" destination="BYZ-38-t0r" eventType="touchUpInside" id="1mP-ct-gym"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYy-J3-hi3">
-                                        <rect key="frame" x="0.0" y="53" width="84" height="30"/>
+                                        <rect key="frame" x="0.0" y="53" width="335" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xcp-TR-MlL">
-                                        <rect key="frame" x="0.0" y="103" width="84" height="33"/>
+                                        <rect key="frame" x="0.0" y="106" width="335" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title="Log In">
@@ -71,12 +71,15 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="sZI-bP-Iqm"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="P18-x0-awm">
-                                <rect key="frame" x="52" y="227.5" width="271" height="33"/>
+                                <rect key="frame" x="20" y="253" width="335" height="33"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxm-ft-SoT">
-                                        <rect key="frame" x="0.0" y="0.0" width="126" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="157.5" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title=" Start Monitoring ">
@@ -95,7 +98,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="za6-6o-Vqw">
-                                        <rect key="frame" x="146" y="0.0" width="125" height="33"/>
+                                        <rect key="frame" x="177.5" y="0.0" width="157.5" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title=" Stop Monitoring ">
@@ -114,9 +117,14 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="za6-6o-Vqw" firstAttribute="width" secondItem="Qxm-ft-SoT" secondAttribute="width" id="1Cy-di-EYg"/>
+                                    <constraint firstAttribute="height" constant="33" id="Qde-N9-Aie"/>
+                                    <constraint firstItem="za6-6o-Vqw" firstAttribute="height" secondItem="Qxm-ft-SoT" secondAttribute="height" id="hJn-De-Uqj"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bvQ-gs-cnu">
-                                <rect key="frame" x="127.5" y="280.5" width="120" height="192"/>
+                                <rect key="frame" x="127.5" y="306" width="120" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="70" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug2-Ww-eAD">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="33"/>
@@ -203,12 +211,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bvQ-gs-cnu" firstAttribute="top" secondItem="P18-x0-awm" secondAttribute="bottom" constant="20" id="122-tm-dpG"/>
-                            <constraint firstItem="bvQ-gs-cnu" firstAttribute="centerX" secondItem="4gN-KQ-QhT" secondAttribute="centerX" id="298-R1-zoM"/>
-                            <constraint firstItem="P18-x0-awm" firstAttribute="top" secondItem="fAx-6y-lRg" secondAttribute="bottom" constant="20" id="31B-sF-aD1"/>
-                            <constraint firstItem="fAx-6y-lRg" firstAttribute="top" secondItem="G3f-O1-9aL" secondAttribute="top" constant="8" id="HBr-FL-hYN"/>
-                            <constraint firstItem="fAx-6y-lRg" firstAttribute="centerX" secondItem="4gN-KQ-QhT" secondAttribute="centerX" id="Pv0-h4-TL7"/>
-                            <constraint firstItem="P18-x0-awm" firstAttribute="centerX" secondItem="4gN-KQ-QhT" secondAttribute="centerX" id="dPc-Fp-awh"/>
+                            <constraint firstItem="G3f-O1-9aL" firstAttribute="trailing" secondItem="fAx-6y-lRg" secondAttribute="trailing" constant="20" id="3Gs-ww-48L"/>
+                            <constraint firstItem="bvQ-gs-cnu" firstAttribute="top" secondItem="P18-x0-awm" secondAttribute="bottom" constant="20" id="B3V-ip-tjK"/>
+                            <constraint firstItem="fAx-6y-lRg" firstAttribute="leading" secondItem="G3f-O1-9aL" secondAttribute="leading" constant="20" id="OeQ-LS-V10"/>
+                            <constraint firstItem="G3f-O1-9aL" firstAttribute="trailing" secondItem="P18-x0-awm" secondAttribute="trailing" constant="20" id="PcH-a2-y9W"/>
+                            <constraint firstItem="fAx-6y-lRg" firstAttribute="top" secondItem="G3f-O1-9aL" secondAttribute="top" constant="40" id="tVF-L7-1OY"/>
+                            <constraint firstItem="P18-x0-awm" firstAttribute="leading" secondItem="G3f-O1-9aL" secondAttribute="leading" constant="20" id="uQD-ET-gn5"/>
+                            <constraint firstItem="P18-x0-awm" firstAttribute="top" secondItem="fAx-6y-lRg" secondAttribute="bottom" constant="10" id="vMI-Qk-s67"/>
+                            <constraint firstItem="bvQ-gs-cnu" firstAttribute="centerX" secondItem="4gN-KQ-QhT" secondAttribute="centerX" id="zca-aa-vHN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G3f-O1-9aL"/>
                     </view>
@@ -224,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1008.8" y="90.404797601199405"/>
+            <point key="canvasLocation" x="1031" y="-118"/>
         </scene>
         <!--Map Display View Controller-->
         <scene sceneID="ftb-qE-CGb">
@@ -253,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oti-lD-4WE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="466" y="630"/>
+            <point key="canvasLocation" x="1030" y="620"/>
         </scene>
         <!--Logs Display View Controller-->
         <scene sceneID="tmT-We-6rg">
@@ -308,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xB8-Gt-tY6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1665" y="536"/>
+            <point key="canvasLocation" x="1686" y="-118"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LIh-Ko-GYe">
