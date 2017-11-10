@@ -44,10 +44,11 @@ class ViewController: UIViewController, GeoFencingProtocol, UITextFieldDelegate 
     
     @IBAction func createUser() {
         showHud()
-        GeoSpark.sharedInstance.createUser{(success, error, userID) in
+        GeoSpark.sharedInstance.createUser { (success, error, errorCode, userID) in
             self.dismissHud()
             self.textField.text = userID
             self.enableLocationTracking()
+
         }
     }
     
@@ -59,7 +60,7 @@ class ViewController: UIViewController, GeoFencingProtocol, UITextFieldDelegate 
     
     func logInIfNeeded() {
         showHud()
-        GeoSpark.sharedInstance.startSessionIfNeeded{(success, error, userID) in
+        GeoSpark.sharedInstance.startSessionIfNeeded{(success, error, errorCode, userID) in
             self.dismissHud()
             if success {
                 self.textField.text = userID
@@ -74,7 +75,7 @@ class ViewController: UIViewController, GeoFencingProtocol, UITextFieldDelegate 
         if textField.text != "" {
             let userID = textField.text!
             showHud()
-            GeoSpark.sharedInstance.startSessionForUser(userID, completion : {(success, error, userID) in
+            GeoSpark.sharedInstance.startSessionForUser(userID, completion : {(success, error, errorCode, userID) in
                 self.dismissHud()
                 self.enableLocationTracking()
 

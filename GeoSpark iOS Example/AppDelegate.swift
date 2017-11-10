@@ -59,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
         
         let token = tokenParts.joined()
-        GeoSpark.sharedInstance.registerDevice(token)
+        GeoSpark.sharedInstance.didRegisterForRemoteNotificationsWithDeviceToken(token)
     }
     
     
