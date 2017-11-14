@@ -12,6 +12,7 @@ import CoreLocation
 
 class ViewController: UIViewController, GeoFencingProtocol, UITextFieldDelegate {
     
+    
     @IBOutlet weak var clearSessionButton: UIButton!
     @IBOutlet weak var startSessionButton: UIButton!
     @IBOutlet weak var createUserButton: UIButton!
@@ -61,8 +62,17 @@ class ViewController: UIViewController, GeoFencingProtocol, UITextFieldDelegate 
     
     @IBAction func clearSession() {
         textField.text = ""
-        GeoSpark.sharedInstance.clearSession()
+        enableLocationTracking()
         setupIntialStateForButtons()
+        
+        UserDefaults.standard.set(false, forKey: GeoSparkKeyForLocationTrackingInfo)
+        UserDefaults.standard.synchronize()
+        UserDefaults.standard.removeObject(forKey: "userIDOfGeoSpark")
+        UserDefaults.standard.removeObject(forKey: GeoSparkKeyForLatLongInfo)
+        UserDefaults.standard.removeObject(forKey: GeoSparkKeyForLogsInfo)
+        UserDefaults.standard.synchronize()
+        
+        GeoSpark.sharedInstance.stopLocationTracking()
         
     }
     
@@ -128,13 +138,17 @@ class ViewController: UIViewController, GeoFencingProtocol, UITextFieldDelegate 
         stopMonitoringButton.isEnabled = false
     }
     
+    func didUpdateLocation(_ location : CLLocation, speed : Double) {
+        print("location",location)
+        print("Speed",speed)
+        NotificationCenter.default.post(name: .locationUpdated, object: location)
+    }
+    
     func locationAccessDenied() {
         
     }
 
-    func didUpdateLocation(_ location : CLLocation, speed : Double) {
-        NotificationCenter.default.post(name: .locationUpdated, object: location)
-    }
+    
     
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -147,11 +161,6 @@ class ViewController: UIViewController, GeoFencingProtocol, UITextFieldDelegate 
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    @IBAction func viewLatLong() {
-        let vc = LogsDisplayViewController.viewController()
-        vc.dataArray = locationDetails()
-        navigationController?.pushViewController(vc, animated: true)
-    }
     
     func logDetails() -> [[String : String]] {
         if let dataArray = UserDefaults.standard.array(forKey: GeoSparkKeyForLogsInfo){
@@ -160,19 +169,6 @@ class ViewController: UIViewController, GeoFencingProtocol, UITextFieldDelegate 
         return []
     }
     
-    func locationDetails() -> [[String : String]] {
-        var arrayToReturn : [[String : String]] = []
-        if let dataArray = UserDefaults.standard.array(forKey: GeoSparkKeyForLatLongInfo){
-            for anyObject in dataArray {
-                if let locationInfo = anyObject as? [String : AnyObject], let latitude = locationInfo["latitude"] as? Double, let longitude = locationInfo["longitude"] as? Double, let timeStamp = locationInfo["timeStamp"] as? String {
-                    let detailDict = ["log" : "lat : \(latitude) , long : \(longitude)", "timeStamp" : timeStamp]
-                    arrayToReturn.append(detailDict)
-                }
-            }
-        }
-        arrayToReturn.reverse()
-        return arrayToReturn
-    }
 }
 
 extension Notification.Name {

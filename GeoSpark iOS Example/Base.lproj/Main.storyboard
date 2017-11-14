@@ -124,10 +124,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bvQ-gs-cnu">
-                                <rect key="frame" x="127.5" y="306" width="120" height="192"/>
+                                <rect key="frame" x="147.5" y="306" width="80" height="86"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="70" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug2-Ww-eAD">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title="Log Out">
@@ -146,7 +146,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IQ-vf-6Eo">
-                                        <rect key="frame" x="0.0" y="53" width="120" height="33"/>
+                                        <rect key="frame" x="0.0" y="53" width="80" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title="View Logs">
@@ -162,48 +162,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="viewLogs" destination="BYZ-38-t0r" eventType="touchUpInside" id="CTV-0r-9GX"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="70" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fap-d0-0hl">
-                                        <rect key="frame" x="0.0" y="106" width="120" height="33"/>
-                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
-                                        <state key="normal" title="View Map">
-                                            <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <state key="disabled">
-                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="Dsl-MF-CZn" kind="show" id="3rv-e2-FV3"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="110" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dT-sp-kw1">
-                                        <rect key="frame" x="0.0" y="159" width="120" height="33"/>
-                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="UKd-iq-hCz"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
-                                        <state key="normal" title="View Lat Long">
-                                            <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <state key="disabled">
-                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="clearSession" destination="BYZ-38-t0r" eventType="touchUpInside" id="bWy-rc-Vdg"/>
-                                            <action selector="viewLatLong" destination="BYZ-38-t0r" eventType="touchUpInside" id="wzi-lE-g2Q"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -236,35 +194,6 @@
             </objects>
             <point key="canvasLocation" x="1031" y="-118"/>
         </scene>
-        <!--Map Display View Controller-->
-        <scene sceneID="ftb-qE-CGb">
-            <objects>
-                <viewController storyboardIdentifier="mapDisplayVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dsl-MF-CZn" customClass="MapDisplayViewController" customModule="GeoSparkExample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TpO-ou-khs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xy8-Au-h8V">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="xy8-Au-h8V" firstAttribute="bottom" secondItem="cYt-xE-NSn" secondAttribute="bottom" id="Ncf-BO-cJ5"/>
-                            <constraint firstItem="xy8-Au-h8V" firstAttribute="trailing" secondItem="cYt-xE-NSn" secondAttribute="trailing" id="Wkk-JM-apn"/>
-                            <constraint firstItem="xy8-Au-h8V" firstAttribute="top" secondItem="TpO-ou-khs" secondAttribute="top" id="thM-QV-yzg"/>
-                            <constraint firstItem="xy8-Au-h8V" firstAttribute="leading" secondItem="cYt-xE-NSn" secondAttribute="leading" id="xGe-0Y-G7Y"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="cYt-xE-NSn"/>
-                    </view>
-                    <connections>
-                        <outlet property="mapKitView" destination="xy8-Au-h8V" id="rie-YS-519"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Oti-lD-4WE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1030" y="620"/>
-        </scene>
         <!--Logs Display View Controller-->
         <scene sceneID="tmT-We-6rg">
             <objects>
@@ -285,7 +214,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Uk-mo-06d">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Uk-mo-06d">
                                                     <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
