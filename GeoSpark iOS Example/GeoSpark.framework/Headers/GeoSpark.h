@@ -2,9 +2,7 @@
 //  GeoSpark.h
 //  GeoSpark
 //
-//  Created by Vignesh Shiva on 09/09/17.
-//  Copyright © 2017 Vignesh Shiva. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 

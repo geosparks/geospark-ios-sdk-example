@@ -2,9 +2,7 @@
 //  ViewController.swift
 //  GeoSpark iOS Example
 //
-//  Created by Vignesh Shiva on 23/10/17.
-//  Copyright © 2017 Vignesh Shiva. All rights reserved.
-//
+
 
 import UIKit
 import GeoSpark
