@@ -124,10 +124,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bvQ-gs-cnu">
-                                <rect key="frame" x="147.5" y="306" width="80" height="86"/>
+                                <rect key="frame" x="20" y="306" width="335" height="86"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="70" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug2-Ww-eAD">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title="Log Out">
@@ -146,7 +146,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IQ-vf-6Eo">
-                                        <rect key="frame" x="0.0" y="53" width="80" height="33"/>
+                                        <rect key="frame" x="0.0" y="53" width="335" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title="View Logs">
@@ -173,8 +173,10 @@
                             <constraint firstItem="bvQ-gs-cnu" firstAttribute="top" secondItem="P18-x0-awm" secondAttribute="bottom" constant="20" id="B3V-ip-tjK"/>
                             <constraint firstItem="fAx-6y-lRg" firstAttribute="leading" secondItem="G3f-O1-9aL" secondAttribute="leading" constant="20" id="OeQ-LS-V10"/>
                             <constraint firstItem="G3f-O1-9aL" firstAttribute="trailing" secondItem="P18-x0-awm" secondAttribute="trailing" constant="20" id="PcH-a2-y9W"/>
+                            <constraint firstItem="bvQ-gs-cnu" firstAttribute="trailing" secondItem="P18-x0-awm" secondAttribute="trailing" id="rRa-W2-EfH"/>
                             <constraint firstItem="fAx-6y-lRg" firstAttribute="top" secondItem="G3f-O1-9aL" secondAttribute="top" constant="40" id="tVF-L7-1OY"/>
                             <constraint firstItem="P18-x0-awm" firstAttribute="leading" secondItem="G3f-O1-9aL" secondAttribute="leading" constant="20" id="uQD-ET-gn5"/>
+                            <constraint firstItem="bvQ-gs-cnu" firstAttribute="leading" secondItem="P18-x0-awm" secondAttribute="leading" id="uTZ-UX-qbx"/>
                             <constraint firstItem="P18-x0-awm" firstAttribute="top" secondItem="fAx-6y-lRg" secondAttribute="bottom" constant="10" id="vMI-Qk-s67"/>
                             <constraint firstItem="bvQ-gs-cnu" firstAttribute="centerX" secondItem="4gN-KQ-QhT" secondAttribute="centerX" id="zca-aa-vHN"/>
                         </constraints>
