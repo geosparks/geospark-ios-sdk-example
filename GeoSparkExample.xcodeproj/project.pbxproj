@@ -15,8 +15,9 @@
 		2FEF437E1F9DC7CB002D4ABE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FEF437C1F9DC7CB002D4ABE /* Main.storyboard */; };
 		2FEF43801F9DC7CB002D4ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FEF437F1F9DC7CB002D4ABE /* Assets.xcassets */; };
 		2FEF43831F9DC7CB002D4ABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FEF43811F9DC7CB002D4ABE /* LaunchScreen.storyboard */; };
-		3D00AB741FC45435000B0F9B /* GeoSpark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D00AB721FC4542F000B0F9B /* GeoSpark.framework */; };
-		3D00AB751FC45435000B0F9B /* GeoSpark.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D00AB721FC4542F000B0F9B /* GeoSpark.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D83792D81FD978F5009D798E /* GeoSpark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83792D71FD978F5009D798E /* GeoSpark.framework */; };
+		D83792D91FD9792A009D798E /* GeoSpark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83792D71FD978F5009D798E /* GeoSpark.framework */; };
+		D83792DA1FD9792A009D798E /* GeoSpark.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D83792D71FD978F5009D798E /* GeoSpark.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3D00AB751FC45435000B0F9B /* GeoSpark.framework in Embed Frameworks */,
+				D83792DA1FD9792A009D798E /* GeoSpark.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +46,7 @@
 		2FEF43821F9DC7CB002D4ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FEF43841F9DC7CB002D4ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FEF438A1F9DC84E002D4ABE /* GeoSpark iOS Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "GeoSpark iOS Example.entitlements"; sourceTree = "<group>"; };
-		3D00AB721FC4542F000B0F9B /* GeoSpark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoSpark.framework; sourceTree = "<group>"; };
+		D83792D71FD978F5009D798E /* GeoSpark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoSpark.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D00AB741FC45435000B0F9B /* GeoSpark.framework in Frameworks */,
+				D83792D91FD9792A009D798E /* GeoSpark.framework in Frameworks */,
+				D83792D81FD978F5009D798E /* GeoSpark.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +90,7 @@
 		2FEF43771F9DC7CB002D4ABE /* GeoSpark iOS Example */ = {
 			isa = PBXGroup;
 			children = (
-				3D00AB721FC4542F000B0F9B /* GeoSpark.framework */,
+				D83792D71FD978F5009D798E /* GeoSpark.framework */,
 				2F8260EF1F9DCBCE00CAC90A /* Utils */,
 				2FEF438A1F9DC84E002D4ABE /* GeoSpark iOS Example.entitlements */,
 				2FEF43781F9DC7CB002D4ABE /* AppDelegate.swift */,
@@ -131,7 +133,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0910;
-				ORGANIZATIONNAME = "Vignesh Shiva";
+				ORGANIZATIONNAME = "Geospark Inc.";
 				TargetAttributes = {
 					2FEF43741F9DC7CB002D4ABE = {
 						CreatedOnToolsVersion = 9.0;
@@ -338,6 +340,9 @@
 					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
 					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
 					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
+					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
+					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
+					"$(SRC_ROOT)/**",
 				);
 				INFOPLIST_FILE = "GeoSpark iOS Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
@@ -346,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.storyboard.geoSparkExample-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -368,6 +373,9 @@
 					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
 					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
 					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
+					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
+					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
+					"$(SRC_ROOT)/**",
 				);
 				INFOPLIST_FILE = "GeoSpark iOS Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
@@ -375,7 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.storyboard.geoSparkExample-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

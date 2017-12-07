@@ -8,7 +8,7 @@ import UIKit
 import GeoSpark
 import CoreLocation
 
-class ViewController: UIViewController, GeoFencingProtocol, UITextFieldDelegate {
+class ViewController: UIViewController, LocationProtocol, UITextFieldDelegate {
     
     
     @IBOutlet weak var clearSessionButton: UIButton!
