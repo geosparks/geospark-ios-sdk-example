@@ -194,6 +194,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFLogger * _
 - (NSString * _Nonnull)currentDate SWIFT_WARN_UNUSED_RESULT;
 - (void)updateLoggerWithKeyString:(NSString * _Nonnull)keyString valueString:(NSString * _Nonnull)valueString;
 - (void)convertTxt;
+- (void)exportToserver;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
