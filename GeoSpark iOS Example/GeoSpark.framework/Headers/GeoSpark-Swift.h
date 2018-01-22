@@ -174,7 +174,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import ObjectiveC;
 @import Foundation;
-@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -186,18 +185,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wnullability"
 
 SWIFT_MODULE_NAMESPACE_PUSH("GeoSpark")
-
-SWIFT_CLASS("_TtC8GeoSpark8GFLogger")
-@interface GFLogger : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFLogger * _Nonnull shared;)
-+ (GFLogger * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (NSString * _Nonnull)currentDate SWIFT_WARN_UNUSED_RESULT;
-- (void)updateLoggerWithKeyString:(NSString * _Nonnull)keyString valueString:(NSString * _Nonnull)valueString;
-- (void)convertTxt;
-- (void)exportToserver;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class UIApplication;
 
 SWIFT_CLASS("_TtC8GeoSpark8GeoSpark")
@@ -214,8 +201,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GeoSpark * _
 - (void)clearSession;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
-
 
 
 
