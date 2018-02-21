@@ -7,27 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F3BB8161F9DFE9900980F2F /* LogsDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BB8151F9DFE9900980F2F /* LogsDisplayViewController.swift */; };
-		2F8260F21F9DCBCE00CAC90A /* UIViewController+Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8260F01F9DCBCE00CAC90A /* UIViewController+Hud.swift */; };
-		2F8260F31F9DCBCE00CAC90A /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8260F11F9DCBCE00CAC90A /* HudView.swift */; };
-		2FEF43791F9DC7CB002D4ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF43781F9DC7CB002D4ABE /* AppDelegate.swift */; };
-		2FEF437B1F9DC7CB002D4ABE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF437A1F9DC7CB002D4ABE /* ViewController.swift */; };
-		2FEF437E1F9DC7CB002D4ABE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FEF437C1F9DC7CB002D4ABE /* Main.storyboard */; };
-		2FEF43801F9DC7CB002D4ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FEF437F1F9DC7CB002D4ABE /* Assets.xcassets */; };
-		2FEF43831F9DC7CB002D4ABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FEF43811F9DC7CB002D4ABE /* LaunchScreen.storyboard */; };
-		D83792D81FD978F5009D798E /* GeoSpark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83792D71FD978F5009D798E /* GeoSpark.framework */; };
-		D83792D91FD9792A009D798E /* GeoSpark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83792D71FD978F5009D798E /* GeoSpark.framework */; };
-		D83792DA1FD9792A009D798E /* GeoSpark.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D83792D71FD978F5009D798E /* GeoSpark.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3D3034A220170D620043753D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3034A120170D620043753D /* AppDelegate.swift */; };
+		3D3034A420170D620043753D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3034A320170D620043753D /* ViewController.swift */; };
+		3D3034A720170D620043753D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3034A520170D620043753D /* Main.storyboard */; };
+		3D3034A920170D620043753D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3034A820170D620043753D /* Assets.xcassets */; };
+		3D3034AC20170D620043753D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3034AA20170D620043753D /* LaunchScreen.storyboard */; };
+		3D3034B720170DD60043753D /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3034B520170DD60043753D /* HudView.swift */; };
+		3D3034B820170DD60043753D /* UIViewController+Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3034B620170DD60043753D /* UIViewController+Hud.swift */; };
+		3D3034BA20170DF20043753D /* LogsDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3034B920170DF10043753D /* LogsDisplayViewController.swift */; };
+		D8129BF52020A258008B6A4B /* GeoSpark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3034C0201714630043753D /* GeoSpark.framework */; };
+		D8129BF62020A258008B6A4B /* GeoSpark.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3034C0201714630043753D /* GeoSpark.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2FEF438E1F9DC944002D4ABE /* Embed Frameworks */ = {
+		D8129BF72020A258008B6A4B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D83792DA1FD9792A009D798E /* GeoSpark.framework in Embed Frameworks */,
+				D8129BF62020A258008B6A4B /* GeoSpark.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,108 +34,108 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2F3BB8151F9DFE9900980F2F /* LogsDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsDisplayViewController.swift; sourceTree = "<group>"; };
-		2F8260F01F9DCBCE00CAC90A /* UIViewController+Hud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Hud.swift"; sourceTree = "<group>"; };
-		2F8260F11F9DCBCE00CAC90A /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
-		2FEF43751F9DC7CB002D4ABE /* GeoSparkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoSparkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FEF43781F9DC7CB002D4ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2FEF437A1F9DC7CB002D4ABE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2FEF437D1F9DC7CB002D4ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2FEF437F1F9DC7CB002D4ABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2FEF43821F9DC7CB002D4ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2FEF43841F9DC7CB002D4ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FEF438A1F9DC84E002D4ABE /* GeoSpark iOS Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "GeoSpark iOS Example.entitlements"; sourceTree = "<group>"; };
-		D83792D71FD978F5009D798E /* GeoSpark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoSpark.framework; sourceTree = "<group>"; };
+		3D30349E20170D620043753D /* GeoSparkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoSparkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3034A120170D620043753D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D3034A320170D620043753D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D3034A620170D620043753D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D3034A820170D620043753D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D3034AB20170D620043753D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D3034AD20170D620043753D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D3034B320170D8C0043753D /* GeoSparkExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GeoSparkExample.entitlements; sourceTree = "<group>"; };
+		3D3034B520170DD60043753D /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		3D3034B620170DD60043753D /* UIViewController+Hud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Hud.swift"; sourceTree = "<group>"; };
+		3D3034B920170DF10043753D /* LogsDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogsDisplayViewController.swift; sourceTree = "<group>"; };
+		3D3034C0201714630043753D /* GeoSpark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoSpark.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2FEF43721F9DC7CB002D4ABE /* Frameworks */ = {
+		3D30349B20170D620043753D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D83792D91FD9792A009D798E /* GeoSpark.framework in Frameworks */,
-				D83792D81FD978F5009D798E /* GeoSpark.framework in Frameworks */,
+				D8129BF52020A258008B6A4B /* GeoSpark.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F8260EF1F9DCBCE00CAC90A /* Utils */ = {
+		3D30349520170D620043753D = {
 			isa = PBXGroup;
 			children = (
-				2F8260F01F9DCBCE00CAC90A /* UIViewController+Hud.swift */,
-				2F8260F11F9DCBCE00CAC90A /* HudView.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		2FEF436C1F9DC7CB002D4ABE = {
-			isa = PBXGroup;
-			children = (
-				2FEF43771F9DC7CB002D4ABE /* GeoSpark iOS Example */,
-				2FEF43761F9DC7CB002D4ABE /* Products */,
+				3D3034A020170D620043753D /* GeoSparkExample */,
+				3D30349F20170D620043753D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2FEF43761F9DC7CB002D4ABE /* Products */ = {
+		3D30349F20170D620043753D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2FEF43751F9DC7CB002D4ABE /* GeoSparkExample.app */,
+				3D30349E20170D620043753D /* GeoSparkExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2FEF43771F9DC7CB002D4ABE /* GeoSpark iOS Example */ = {
+		3D3034A020170D620043753D /* GeoSparkExample */ = {
 			isa = PBXGroup;
 			children = (
-				D83792D71FD978F5009D798E /* GeoSpark.framework */,
-				2F8260EF1F9DCBCE00CAC90A /* Utils */,
-				2FEF438A1F9DC84E002D4ABE /* GeoSpark iOS Example.entitlements */,
-				2FEF43781F9DC7CB002D4ABE /* AppDelegate.swift */,
-				2FEF437A1F9DC7CB002D4ABE /* ViewController.swift */,
-				2F3BB8151F9DFE9900980F2F /* LogsDisplayViewController.swift */,
-				2FEF437C1F9DC7CB002D4ABE /* Main.storyboard */,
-				2FEF437F1F9DC7CB002D4ABE /* Assets.xcassets */,
-				2FEF43811F9DC7CB002D4ABE /* LaunchScreen.storyboard */,
-				2FEF43841F9DC7CB002D4ABE /* Info.plist */,
+				3D3034C0201714630043753D /* GeoSpark.framework */,
+				3D3034B420170DD60043753D /* Utils */,
+				3D3034B320170D8C0043753D /* GeoSparkExample.entitlements */,
+				3D3034A120170D620043753D /* AppDelegate.swift */,
+				3D3034B920170DF10043753D /* LogsDisplayViewController.swift */,
+				3D3034A320170D620043753D /* ViewController.swift */,
+				3D3034A520170D620043753D /* Main.storyboard */,
+				3D3034A820170D620043753D /* Assets.xcassets */,
+				3D3034AA20170D620043753D /* LaunchScreen.storyboard */,
+				3D3034AD20170D620043753D /* Info.plist */,
 			);
-			path = "GeoSpark iOS Example";
+			path = GeoSparkExample;
+			sourceTree = "<group>";
+		};
+		3D3034B420170DD60043753D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3D3034B520170DD60043753D /* HudView.swift */,
+				3D3034B620170DD60043753D /* UIViewController+Hud.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2FEF43741F9DC7CB002D4ABE /* GeoSparkExample */ = {
+		3D30349D20170D620043753D /* GeoSparkExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2FEF43871F9DC7CB002D4ABE /* Build configuration list for PBXNativeTarget "GeoSparkExample" */;
+			buildConfigurationList = 3D3034B020170D620043753D /* Build configuration list for PBXNativeTarget "GeoSparkExample" */;
 			buildPhases = (
-				2FEF43711F9DC7CB002D4ABE /* Sources */,
-				2FEF43721F9DC7CB002D4ABE /* Frameworks */,
-				2FEF43731F9DC7CB002D4ABE /* Resources */,
-				2FEF438E1F9DC944002D4ABE /* Embed Frameworks */,
+				3D30349A20170D620043753D /* Sources */,
+				3D30349B20170D620043753D /* Frameworks */,
+				3D30349C20170D620043753D /* Resources */,
+				3D3034C4201715EE0043753D /* ShellScript */,
+				D8129BF72020A258008B6A4B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GeoSparkExample;
-			productName = "GeoSpark iOS Example";
-			productReference = 2FEF43751F9DC7CB002D4ABE /* GeoSparkExample.app */;
+			productName = GeoSparkExample;
+			productReference = 3D30349E20170D620043753D /* GeoSparkExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2FEF436D1F9DC7CB002D4ABE /* Project object */ = {
+		3D30349620170D620043753D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0910;
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Geospark Inc.";
 				TargetAttributes = {
-					2FEF43741F9DC7CB002D4ABE = {
-						CreatedOnToolsVersion = 9.0;
+					3D30349D20170D620043753D = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -149,7 +148,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2FEF43701F9DC7CB002D4ABE /* Build configuration list for PBXProject "GeoSparkExample" */;
+			buildConfigurationList = 3D30349920170D620043753D /* Build configuration list for PBXProject "GeoSparkExample" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -157,57 +156,73 @@
 				en,
 				Base,
 			);
-			mainGroup = 2FEF436C1F9DC7CB002D4ABE;
-			productRefGroup = 2FEF43761F9DC7CB002D4ABE /* Products */;
+			mainGroup = 3D30349520170D620043753D;
+			productRefGroup = 3D30349F20170D620043753D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2FEF43741F9DC7CB002D4ABE /* GeoSparkExample */,
+				3D30349D20170D620043753D /* GeoSparkExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2FEF43731F9DC7CB002D4ABE /* Resources */ = {
+		3D30349C20170D620043753D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FEF43831F9DC7CB002D4ABE /* LaunchScreen.storyboard in Resources */,
-				2FEF43801F9DC7CB002D4ABE /* Assets.xcassets in Resources */,
-				2FEF437E1F9DC7CB002D4ABE /* Main.storyboard in Resources */,
+				3D3034AC20170D620043753D /* LaunchScreen.storyboard in Resources */,
+				3D3034A920170D620043753D /* Assets.xcassets in Resources */,
+				3D3034A720170D620043753D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D3034C4201715EE0043753D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		2FEF43711F9DC7CB002D4ABE /* Sources */ = {
+		3D30349A20170D620043753D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F8260F31F9DCBCE00CAC90A /* HudView.swift in Sources */,
-				2FEF437B1F9DC7CB002D4ABE /* ViewController.swift in Sources */,
-				2FEF43791F9DC7CB002D4ABE /* AppDelegate.swift in Sources */,
-				2F3BB8161F9DFE9900980F2F /* LogsDisplayViewController.swift in Sources */,
-				2F8260F21F9DCBCE00CAC90A /* UIViewController+Hud.swift in Sources */,
+				3D3034BA20170DF20043753D /* LogsDisplayViewController.swift in Sources */,
+				3D3034A420170D620043753D /* ViewController.swift in Sources */,
+				3D3034A220170D620043753D /* AppDelegate.swift in Sources */,
+				3D3034B820170DD60043753D /* UIViewController+Hud.swift in Sources */,
+				3D3034B720170DD60043753D /* HudView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2FEF437C1F9DC7CB002D4ABE /* Main.storyboard */ = {
+		3D3034A520170D620043753D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2FEF437D1F9DC7CB002D4ABE /* Base */,
+				3D3034A620170D620043753D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2FEF43811F9DC7CB002D4ABE /* LaunchScreen.storyboard */ = {
+		3D3034AA20170D620043753D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2FEF43821F9DC7CB002D4ABE /* Base */,
+				3D3034AB20170D620043753D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -215,7 +230,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2FEF43851F9DC7CB002D4ABE /* Debug */ = {
+		3D3034AE20170D620043753D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -272,7 +287,7 @@
 			};
 			name = Debug;
 		};
-		2FEF43861F9DC7CB002D4ABE /* Release */ = {
+		3D3034AF20170D620043753D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -314,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -322,67 +337,46 @@
 			};
 			name = Release;
 		};
-		2FEF43881F9DC7CB002D4ABE /* Debug */ = {
+		3D3034B120170D620043753D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "GeoSpark iOS Example/GeoSpark iOS Example.entitlements";
+				CODE_SIGN_ENTITLEMENTS = GeoSparkExample/GeoSparkExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QH6UW9Q7Y4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(SRC_ROOT)/**",
+					"$(PROJECT_DIR)/GeoSparkExample",
+					"$(SRC_ROOT)",
 				);
-				INFOPLIST_FILE = "GeoSpark iOS Example/Info.plist";
+				INFOPLIST_FILE = GeoSparkExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.storyboard.geoSparkExample-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		2FEF43891F9DC7CB002D4ABE /* Release */ = {
+		3D3034B220170D620043753D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "GeoSpark iOS Example/GeoSpark iOS Example.entitlements";
+				CODE_SIGN_ENTITLEMENTS = GeoSparkExample/GeoSparkExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QH6UW9Q7Y4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(PROJECT_DIR)/GeoSpark\\ iOS\\ Example",
-					"$(SRC_ROOT)/**",
+					"$(PROJECT_DIR)/GeoSparkExample",
+					"$(SRC_ROOT)",
 				);
-				INFOPLIST_FILE = "GeoSpark iOS Example/Info.plist";
+				INFOPLIST_FILE = GeoSparkExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.storyboard.geoSparkExample-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -390,25 +384,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2FEF43701F9DC7CB002D4ABE /* Build configuration list for PBXProject "GeoSparkExample" */ = {
+		3D30349920170D620043753D /* Build configuration list for PBXProject "GeoSparkExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FEF43851F9DC7CB002D4ABE /* Debug */,
-				2FEF43861F9DC7CB002D4ABE /* Release */,
+				3D3034AE20170D620043753D /* Debug */,
+				3D3034AF20170D620043753D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2FEF43871F9DC7CB002D4ABE /* Build configuration list for PBXNativeTarget "GeoSparkExample" */ = {
+		3D3034B020170D620043753D /* Build configuration list for PBXNativeTarget "GeoSparkExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FEF43881F9DC7CB002D4ABE /* Debug */,
-				2FEF43891F9DC7CB002D4ABE /* Release */,
+				3D3034B120170D620043753D /* Debug */,
+				3D3034B220170D620043753D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2FEF436D1F9DC7CB002D4ABE /* Project object */;
+	rootObject = 3D30349620170D620043753D /* Project object */;
 }

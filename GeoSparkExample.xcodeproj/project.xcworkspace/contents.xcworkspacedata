@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/Vignesh/PersonalTechStuffs/HoloRelated/GeoSpark iOS Example/GeoSparkExample.xcodeproj">
+      location = "self:GeoSparkExample.xcodeproj">
    </FileRef>
 </Workspace>
