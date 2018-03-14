@@ -51,9 +51,10 @@ class ViewController: UIViewController, LocationProtocol, UITextFieldDelegate {
         showHud()
         GeoSpark.sharedInstance.createUser { (success, error, errorCode, userID) in
             self.dismissHud()
-            self.textField.text = userID
-            self.enableLocationTracking()
-
+            if success{
+                self.textField.text = userID
+                self.enableLocationTracking()
+            }
         }
     }
     
@@ -75,11 +76,11 @@ class ViewController: UIViewController, LocationProtocol, UITextFieldDelegate {
     func logInIfNeeded() {
         showHud()
         GeoSpark.sharedInstance.startSessionIfNeeded{(success, error, errorCode, userID) in
-            self.dismissHud()
             if success {
                 self.textField.text = userID
                 self.enableLocationTracking()
             }
+            self.dismissHud()
         }
     }
     
@@ -91,8 +92,10 @@ class ViewController: UIViewController, LocationProtocol, UITextFieldDelegate {
             showHud()
             GeoSpark.sharedInstance.startSessionForUser(userID, completion : {(success, error, errorCode, userID) in
                 self.dismissHud()
-                self.enableLocationTracking()
-
+                if success{
+                    self.enableLocationTracking()
+                    self.textField.text = userID
+                }
             })
         }else{
             let alertController = UIAlertController(title: "Error", message: "Please enter User Id", preferredStyle: .alert)

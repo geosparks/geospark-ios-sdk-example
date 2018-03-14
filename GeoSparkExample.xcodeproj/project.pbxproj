@@ -15,18 +15,18 @@
 		3D3034B720170DD60043753D /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3034B520170DD60043753D /* HudView.swift */; };
 		3D3034B820170DD60043753D /* UIViewController+Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3034B620170DD60043753D /* UIViewController+Hud.swift */; };
 		3D3034BA20170DF20043753D /* LogsDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3034B920170DF10043753D /* LogsDisplayViewController.swift */; };
-		D8129BF52020A258008B6A4B /* GeoSpark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3034C0201714630043753D /* GeoSpark.framework */; };
-		D8129BF62020A258008B6A4B /* GeoSpark.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3034C0201714630043753D /* GeoSpark.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3DCA30B4205542BE00AFCF0F /* GeoSpark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3034C0201714630043753D /* GeoSpark.framework */; };
+		3DCA30B5205542BE00AFCF0F /* GeoSpark.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3034C0201714630043753D /* GeoSpark.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D8129BF72020A258008B6A4B /* Embed Frameworks */ = {
+		3DCA30B6205542BE00AFCF0F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D8129BF62020A258008B6A4B /* GeoSpark.framework in Embed Frameworks */,
+				3DCA30B5205542BE00AFCF0F /* GeoSpark.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8129BF52020A258008B6A4B /* GeoSpark.framework in Frameworks */,
+				3DCA30B4205542BE00AFCF0F /* GeoSpark.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +113,7 @@
 				3D30349B20170D620043753D /* Frameworks */,
 				3D30349C20170D620043753D /* Resources */,
 				3D3034C4201715EE0043753D /* ShellScript */,
-				D8129BF72020A258008B6A4B /* Embed Frameworks */,
+				3DCA30B6205542BE00AFCF0F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
