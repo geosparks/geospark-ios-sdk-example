@@ -191,9 +191,34 @@ SWIFT_CLASS("_TtC8GeoSpark8GeoSpark")
 @interface GeoSpark : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GeoSpark * _Nonnull sharedInstance;)
 + (GeoSpark * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+/// Call this method to initialize Geospark SDKs with your Account’s PublishableKey
+/// in the application didFinishLaunchingWithOptions delegate method
+/// <ul>
+///   <li>
+///     Registering for local notification
+///   </li>
+///   <li>
+///     Checking for internet connection
+///   </li>
+///   <li>
+///     Initialization of Location Manager
+///   </li>
+/// </ul>
+/// \param APIKey Your account’s API key
+///
+/// \param SecretKey Your account’s Secret key
+///
 - (void)intialize:(NSString * _Nonnull)apiKey apiSecret:(NSString * _Nonnull)apiSecret application:(UIApplication * _Nonnull)application;
+/// Call this method to handle successful remote notification registration
+/// inside application(_:didRegisterForRemoteNotificationsWithDeviceToken:)
+/// \param deviceToken The device token passed to the didRegisterForRemoteNotificationsWithDeviceToken application method
+///
 - (void)didRegisterForRemoteNotificationsWithDeviceToken:(NSString * _Nonnull)deviceToken;
+/// Call this method to handle unsuccessful remote notification registration
+/// inside application(_:didFailToRegisterForRemoteNotificationsWithError:)
 - (void)didFailToRegisterForRemoteNotificationsWithError:(NSError * _Nonnull)error;
+/// Call this method to handle receiving a silent (remote) notification
+/// inside application(_:didReceiveRemoteNotification:)
 - (void)didReceiveRemoteNotification:(NSDictionary * _Nonnull)userInfo;
 - (void)startLocationTracking;
 - (void)startLocationTrackingInBackground;
