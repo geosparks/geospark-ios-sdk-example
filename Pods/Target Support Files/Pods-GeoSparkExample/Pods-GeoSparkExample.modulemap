@@ -1,0 +1,6 @@
+framework module Pods_GeoSparkExample {
+  umbrella header "Pods-GeoSparkExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

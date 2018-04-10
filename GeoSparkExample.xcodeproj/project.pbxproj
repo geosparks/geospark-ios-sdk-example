@@ -15,8 +15,7 @@
 		3D3034B720170DD60043753D /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3034B520170DD60043753D /* HudView.swift */; };
 		3D3034B820170DD60043753D /* UIViewController+Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3034B620170DD60043753D /* UIViewController+Hud.swift */; };
 		3D3034BA20170DF20043753D /* LogsDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3034B920170DF10043753D /* LogsDisplayViewController.swift */; };
-		3DCA30B4205542BE00AFCF0F /* GeoSpark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3034C0201714630043753D /* GeoSpark.framework */; };
-		3DCA30B5205542BE00AFCF0F /* GeoSpark.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3034C0201714630043753D /* GeoSpark.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9472055CA96A6376FF54AD21 /* Pods_GeoSparkExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +25,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3DCA30B5205542BE00AFCF0F /* GeoSpark.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A58D532152EBA304D8C2832 /* Pods-GeoSparkExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSparkExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample.debug.xcconfig"; sourceTree = "<group>"; };
 		3D30349E20170D620043753D /* GeoSparkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoSparkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3034A120170D620043753D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D3034A320170D620043753D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,7 +44,8 @@
 		3D3034B520170DD60043753D /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 		3D3034B620170DD60043753D /* UIViewController+Hud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Hud.swift"; sourceTree = "<group>"; };
 		3D3034B920170DF10043753D /* LogsDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogsDisplayViewController.swift; sourceTree = "<group>"; };
-		3D3034C0201714630043753D /* GeoSpark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoSpark.framework; sourceTree = "<group>"; };
+		458F4D5832D79894C1D15499 /* Pods-GeoSparkExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSparkExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample.release.xcconfig"; sourceTree = "<group>"; };
+		C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSparkExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DCA30B4205542BE00AFCF0F /* GeoSpark.framework in Frameworks */,
+				9472055CA96A6376FF54AD21 /* Pods_GeoSparkExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +65,8 @@
 			children = (
 				3D3034A020170D620043753D /* GeoSparkExample */,
 				3D30349F20170D620043753D /* Products */,
+				B162929E2C085608A3202753 /* Pods */,
+				4E8B984B039D62D51A7B481B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,7 +81,6 @@
 		3D3034A020170D620043753D /* GeoSparkExample */ = {
 			isa = PBXGroup;
 			children = (
-				3D3034C0201714630043753D /* GeoSpark.framework */,
 				3D3034B420170DD60043753D /* Utils */,
 				3D3034B320170D8C0043753D /* GeoSparkExample.entitlements */,
 				3D3034A120170D620043753D /* AppDelegate.swift */,
@@ -102,6 +103,23 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		4E8B984B039D62D51A7B481B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B162929E2C085608A3202753 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A58D532152EBA304D8C2832 /* Pods-GeoSparkExample.debug.xcconfig */,
+				458F4D5832D79894C1D15499 /* Pods-GeoSparkExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,11 +127,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D3034B020170D620043753D /* Build configuration list for PBXNativeTarget "GeoSparkExample" */;
 			buildPhases = (
+				A524F057357A4F239F3C68C7 /* [CP] Check Pods Manifest.lock */,
 				3D30349A20170D620043753D /* Sources */,
 				3D30349B20170D620043753D /* Frameworks */,
 				3D30349C20170D620043753D /* Resources */,
 				3D3034C4201715EE0043753D /* ShellScript */,
 				3DCA30B6205542BE00AFCF0F /* Embed Frameworks */,
+				92F69749D6C8FFB287F15D5A /* [CP] Embed Pods Frameworks */,
+				F0245F0BEB7394FDDA854CD9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +213,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi\n";
+		};
+		92F69749D6C8FFB287F15D5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample-frameworks.sh",
+				"${PODS_ROOT}/GeoSpark/GeoSpark.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GeoSpark.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A524F057357A4F239F3C68C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoSparkExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0245F0BEB7394FDDA854CD9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -339,6 +411,7 @@
 		};
 		3D3034B120170D620043753D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A58D532152EBA304D8C2832 /* Pods-GeoSparkExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GeoSparkExample/GeoSparkExample.entitlements;
@@ -361,6 +434,7 @@
 		};
 		3D3034B220170D620043753D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 458F4D5832D79894C1D15499 /* Pods-GeoSparkExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GeoSparkExample/GeoSparkExample.entitlements;
