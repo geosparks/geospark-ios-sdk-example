@@ -8,9 +8,10 @@ import UIKit
 import GeoSpark
 import CoreLocation
 
-class ViewController: UIViewController, LocationProtocol, UITextFieldDelegate {
-    
-    
+class ViewController: UIViewController, GeoSparkDelegate, UITextFieldDelegate {
+    func didUpdateLocation(_ location: CLLocation, user: GeoSparkUser) {
+        
+    }
     @IBOutlet weak var clearSessionButton: UIButton!
     @IBOutlet weak var startSessionButton: UIButton!
     @IBOutlet weak var createUserButton: UIButton!
@@ -20,7 +21,7 @@ class ViewController: UIViewController, LocationProtocol, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        GeoSpark.sharedInstance.geoFencingDelegate = self
+        GeoSpark.sharedInstance.delegate = self
         setupIntialStateForButtons()
         logInIfNeeded()
         

@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        GeoSpark.sharedInstance.initialize(”YOUR-SDK-KEY”,apiSecret:”YOUR-SECRET”,application: application);
-
+        GeoSpark.sharedInstance.intialize("YOUR-SDK-KEY",apiSecret:"YOUR-SECRET",application: application);
+        
         registerForPushNotifications()
 
         return true
