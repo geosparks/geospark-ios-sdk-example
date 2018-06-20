@@ -12,7 +12,7 @@ Download this project and open it in Xcode.
 
 2. [Request](https://geospark.co) for a GeoSpark developer account to get your SDK key and Secret.
 
-3. Open the `GeoSparkExample.xcodeproj` file. In the  `AppDelegate.m`, update this line `GeoSpark.sharedInstance.initialize(”YOUR-SDK-KEY”,apiSecret:”YOUR-SECRET”,application: application);` to contain your GeoSpark SDK key and Secret.
+3. Open the `GeoSparkExample.xcodeproj` file. In the  `AppDelegate.m`, update this line `GeoSpark.sharedInstance.initialize(”YOUR-SDK-KEY”,apiSecret:”YOUR-SECRET”);` to contain your GeoSpark SDK key and Secret.
 
 4. Replace with your bundle identifier.
 
