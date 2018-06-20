@@ -14,3 +14,4 @@ FOUNDATION_EXPORT const unsigned char GeoSparkVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <GeoSpark/PublicHeader.h>
 
 
+#import <GeoSpark/GeoSpark.h>

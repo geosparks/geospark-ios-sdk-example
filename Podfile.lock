@@ -1,5 +1,5 @@
 PODS:
-  - GeoSpark (0.0.4)
+  - GeoSpark (0.0.6)
 
 DEPENDENCIES:
   - GeoSpark
@@ -9,7 +9,7 @@ SPEC REPOS:
     - GeoSpark
 
 SPEC CHECKSUMS:
-  GeoSpark: a8e82308c81b2e446d9495ebac32652e1aebb5c4
+  GeoSpark: e53da325e16d304cc62dff453fd91ee7dd61beb6
 
 PODFILE CHECKSUM: 539f9142b9884e6ae6556c9fedb46d5928f1cef0
 

@@ -12,14 +12,12 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
     var window: UIWindow?
-    
-    let geoSparkManager = GeoSpark.sharedInstance
-    
+        
     var backgroundTaskIdentifier: UIBackgroundTaskIdentifier?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        GeoSpark.sharedInstance.intialize("YOUR-SDK-KEY",apiSecret:"YOUR-SECRET",application: application);
+        GeoSpark.sharedInstance.intialize("YOUR-SDK-KEY",apiSecret:"YOUR-SECRET");
         
         registerForPushNotifications()
 
@@ -28,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func application(_ application: UIApplication,
                      didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        GeoSpark.sharedInstance.didFailToRegisterForRemoteNotificationsWithError(error)
         print("Failed to register: \(error)")
     }
     
@@ -58,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
         
         let token = tokenParts.joined()
-        geoSparkManager.didRegisterForRemoteNotificationsWithDeviceToken(token)
+        GeoSpark.sharedInstance.didRegisterForRemoteNotificationsWithDeviceToken(token)
     }
     
     

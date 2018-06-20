@@ -182,15 +182,66 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@protocol GeoSparkDelegate;
+@class NSNumber;
 
 SWIFT_CLASS("_TtC8GeoSpark8GeoSpark")
 @interface GeoSpark : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GeoSpark * _Nonnull sharedInstance;)
++ (GeoSpark * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, strong) id <GeoSparkDelegate> _Null_unspecified delegate;
+/// Call this method to initialize Geospark SDKs with your Account’s PublishableKey
+/// in the application didFinishLaunchingWithOptions delegate method
+/// <ul>
+///   <li>
+///     Registering for local notification
+///   </li>
+///   <li>
+///     Checking for internet connection
+///   </li>
+///   <li>
+///     Initialization of Location Manager
+///   </li>
+/// </ul>
+/// \param APIKey Your account’s API key
+///
+/// \param SecretKey Your account’s Secret key
+///
+- (void)intialize:(NSString * _Nonnull)apiKey apiSecret:(NSString * _Nonnull)apiSecret;
+/// Call this method to handle successful remote notification registration
+/// inside application(_:didRegisterForRemoteNotificationsWithDeviceToken:)
+/// \param deviceToken The device token passed to the didRegisterForRemoteNotificationsWithDeviceToken application method
+///
+- (void)didRegisterForRemoteNotificationsWithDeviceToken:(NSString * _Nonnull)deviceToken;
+/// Call this method to handle unsuccessful remote notification registration
+/// inside application(_:didFailToRegisterForRemoteNotificationsWithError:)
+- (void)didFailToRegisterForRemoteNotificationsWithError:(NSError * _Nonnull)error;
+/// Call this method to handle receiving a silent (remote) notification
+/// inside application(_:didReceiveRemoteNotification:)
+- (void)didReceiveRemoteNotification:(NSDictionary * _Nonnull)userInfo;
+- (void)startLocationTracking;
+- (void)startLocationTrackingInBackground;
+- (void)stopLocationTracking;
+- (void)createUser:(void (^ _Nullable)(BOOL, NSError * _Nullable, NSNumber * _Nullable, NSString * _Nonnull))completion;
+- (void)startSessionForUser:(NSString * _Nonnull)userID completion:(void (^ _Nullable)(BOOL, NSError * _Nullable, NSNumber * _Nullable, NSString * _Nonnull))completion;
+- (void)setDescription:(NSString * _Nonnull)userDescription;
+- (void)startSessionIfNeeded:(void (^ _Nullable)(BOOL, NSError * _Nullable, NSNumber * _Nullable, NSString * _Nonnull))completion;
+- (void)clearSession;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CLLocation;
+@class GeoSparkUser;
+
+SWIFT_PROTOCOL("_TtP8GeoSpark16GeoSparkDelegate_")
+@protocol GeoSparkDelegate
+- (void)didUpdateLocation:(CLLocation * _Nonnull)location user:(GeoSparkUser * _Nonnull)user;
 @end
 
 
 SWIFT_CLASS("_TtC8GeoSpark12GeoSparkUser")
 @interface GeoSparkUser : NSObject
+@property (nonatomic, copy) NSString * _Nonnull userId;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
