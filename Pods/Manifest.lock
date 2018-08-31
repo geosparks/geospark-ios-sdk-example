@@ -1,16 +1,20 @@
 PODS:
-  - GeoSpark (0.0.6)
+  - GeoSpark (0.0.10)
+  - MultiSelectSegmentedControl (1.2)
 
 DEPENDENCIES:
   - GeoSpark
+  - MultiSelectSegmentedControl
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - GeoSpark
+    - MultiSelectSegmentedControl
 
 SPEC CHECKSUMS:
-  GeoSpark: e53da325e16d304cc62dff453fd91ee7dd61beb6
+  GeoSpark: dac80ebdbe8816073a770ef1f3ace6198f862f8a
+  MultiSelectSegmentedControl: ab9fade00f2b457334bcd451474dfc68c4690edb
 
-PODFILE CHECKSUM: 539f9142b9884e6ae6556c9fedb46d5928f1cef0
+PODFILE CHECKSUM: 9e9a3e823c3cc2b15929384739a80c8025420928
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3

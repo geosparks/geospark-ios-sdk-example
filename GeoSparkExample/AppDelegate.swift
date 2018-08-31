@@ -12,13 +12,20 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
     var window: UIWindow?
-        
+    
     var backgroundTaskIdentifier: UIBackgroundTaskIdentifier?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         GeoSpark.sharedInstance.intialize("YOUR-SDK-KEY",apiSecret:"YOUR-SECRET");
-        
+
+        GeoSpark.sharedInstance.setLocationMode(GSLocation.Best)
+        GeoSpark.sharedInstance.setDistanceFilter(GS.High)
+        GeoSpark.sharedInstance.setLocationFrequency(GS.High)
+        GeoSpark.sharedInstance.setLocationAccuracy(GS.Low)
+        GeoSpark.sharedInstance.trackLocationInAppState([GSAppState.AlwaysOn])
+        GeoSpark.sharedInstance.trackLocationInMotion([GSMotion.All])
+
         registerForPushNotifications()
 
         return true

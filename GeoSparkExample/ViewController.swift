@@ -9,9 +9,8 @@ import GeoSpark
 import CoreLocation
 
 class ViewController: UIViewController, GeoSparkDelegate, UITextFieldDelegate {
-    func didUpdateLocation(_ location: CLLocation, user: GeoSparkUser) {
-        
-    }
+    
+    
     @IBOutlet weak var clearSessionButton: UIButton!
     @IBOutlet weak var startSessionButton: UIButton!
     @IBOutlet weak var createUserButton: UIButton!
@@ -138,17 +137,6 @@ class ViewController: UIViewController, GeoSparkDelegate, UITextFieldDelegate {
         stopMonitoringButton.isEnabled = false
     }
     
-    func didUpdateLocation(_ location : CLLocation, speed : Double) {
-        print("location",location)
-        print("Speed",speed)
-        NotificationCenter.default.post(name: .locationUpdated, object: location)
-    }
-    
-    func locationAccessDenied() {
-        
-    }
-
-    
     
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -168,6 +156,23 @@ class ViewController: UIViewController, GeoSparkDelegate, UITextFieldDelegate {
         }
         return []
     }
+    
+    // GeoSpark Delegate
+    
+    func didUpdateLocation(_ location: CLLocation, user: GeoSparkUser) {
+        print(location)
+    }
+    
+    @IBAction func trackedLocation(){
+        let vc = MapViewController.viewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func settingBtn(){
+        let vc = SettingViewController.viewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+
     
 }
 
