@@ -18,6 +18,8 @@
 		9472055CA96A6376FF54AD21 /* Pods_GeoSparkExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */; };
 		DACA4C36212BE39E009F4AF9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACA4C34212BE39E009F4AF9 /* MapViewController.swift */; };
 		DACA4C37212BE39E009F4AF9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACA4C35212BE39E009F4AF9 /* SettingViewController.swift */; };
+		DAF978D5217648DC00AA2C33 /* Pods_GeoSparkExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */; };
+		DAF978D6217648DC00AA2C33 /* Pods_GeoSparkExample.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DAF978D6217648DC00AA2C33 /* Pods_GeoSparkExample.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9472055CA96A6376FF54AD21 /* Pods_GeoSparkExample.framework in Frameworks */,
+				DAF978D5217648DC00AA2C33 /* Pods_GeoSparkExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
