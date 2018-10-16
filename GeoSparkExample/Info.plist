@@ -31,8 +31,6 @@
 	<string>Need Location for this App.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Need Location for this App.</string>
-	<key>NSMotionUsageDescription</key>
-	<string>Need Motion for this App.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>

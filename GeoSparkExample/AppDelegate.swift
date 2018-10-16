@@ -7,11 +7,9 @@
 import UIKit
 import GeoSpark
 import UserNotifications
-import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate,GeoSparkDelegate{
-    
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
     var window: UIWindow?
     
@@ -20,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         GeoSpark.sharedInstance.intialize("YOUR-SDK-KEY",apiSecret:"YOUR-SECRET");
-        GeoSpark.sharedInstance.delegate  = self
+
         GeoSpark.sharedInstance.setLocationMode(GSLocation.Best)
         GeoSpark.sharedInstance.setDistanceFilter(GS.High)
         GeoSpark.sharedInstance.setLocationFrequency(GS.High)
@@ -69,8 +67,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         GeoSpark.sharedInstance.didRegisterForRemoteNotificationsWithDeviceToken(token)
     }
     
-    func didUpdateLocation(_ location: CLLocation, user: GeoSparkUser) {
-        print("\(location)")
-    }
-
+    
 }

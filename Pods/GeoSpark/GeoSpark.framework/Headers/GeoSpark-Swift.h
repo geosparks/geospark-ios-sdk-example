@@ -163,6 +163,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_DEPRECATED_OBJC(Msg) SWIFT_DEPRECATED_MSG(Msg)
 #endif
 #if __has_feature(modules)
+@import CoreLocation;
 @import Foundation;
 @import ObjectiveC;
 #endif
@@ -181,6 +182,21 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="GeoSpark",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+
+SWIFT_CLASS("_TtC8GeoSpark25ForegroundLocationService")
+@interface ForegroundLocationService : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+@class CLLocationManager;
+@class CLLocation;
+
+@interface ForegroundLocationService (SWIFT_EXTENSION(GeoSpark)) <CLLocationManagerDelegate>
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
+@end
 
 
 SWIFT_CLASS("_TtC8GeoSpark2GS")
@@ -269,7 +285,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GeoSpark * _
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class CLLocation;
 @class GeoSparkUser;
 
 SWIFT_PROTOCOL("_TtP8GeoSpark16GeoSparkDelegate_")
