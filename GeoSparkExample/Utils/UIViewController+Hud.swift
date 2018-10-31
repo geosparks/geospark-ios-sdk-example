@@ -38,16 +38,15 @@ public extension UIViewController {
         hudView!.startProgress()
     }
     
-    public func dismissHud(withCompletion completionBlock: ((Void) -> Void)? = nil) {
+    public func dismissHud(withCompletion completionBlock: (() -> Void)? = nil) {
         
-        if let hudView = hudView {
-            UIView.animate(withDuration: 0.25, animations: {
-                hudView.alpha = 0
-            }, completion: { (isValue) in
-                self.removeHudIfPresent()
-            })
-        }
-        
+            if let hudView = self.hudView {
+                UIView.animate(withDuration: 0.25, animations: {
+                    hudView.alpha = 0
+                }, completion: { (isValue) in
+                    self.removeHudIfPresent()
+                })
+            }
     }
     
     private func removeHudIfPresent() {

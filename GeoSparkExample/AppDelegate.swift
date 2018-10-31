@@ -7,10 +7,12 @@
 import UIKit
 import GeoSpark
 import UserNotifications
-import CoreLocation
+
+let PUBLISABLEKEY = ""
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate,GeoSparkDelegate{
+    
     
     var window: UIWindow?
     
@@ -18,25 +20,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        GeoSpark.sharedInstance.intialize("YOUR-SDK-KEY",apiSecret:"YOUR-SECRET");
-        GeoSpark.sharedInstance.delegate = self
-        GeoSpark.sharedInstance.setLocationMode(GSLocation.Best)
-        GeoSpark.sharedInstance.setDistanceFilter(GS.High)
-        GeoSpark.sharedInstance.setLocationFrequency(GS.High)
-        GeoSpark.sharedInstance.setLocationAccuracy(GS.Low)
-        GeoSpark.sharedInstance.trackLocationInAppState([GSAppState.AlwaysOn])
-        GeoSpark.sharedInstance.trackLocationInMotion([GSMotion.All])
 
+        GeoSpark.intialize(PUBLISABLEKEY)
+        GeoSpark.delegate = self
+        GeoSpark.trackLocationInAppState([GSAppState.AlwaysOn])
+        GeoSpark.trackLocationInMotion([GSMotion.All])
+        GeoSpark.setLocationAccuracy(70)
+        
         registerForPushNotifications()
 
         return true
     }
     
-    func application(_ application: UIApplication,
-                     didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        GeoSpark.sharedInstance.didFailToRegisterForRemoteNotificationsWithError(error)
-        print("Failed to register: \(error)")
-    }
     
     func getNotificationSettings() {
         UNUserNotificationCenter.current().getNotificationSettings { (settings) in
@@ -60,19 +55,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func application(_ application: UIApplication,
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        let tokenParts = deviceToken.map { data -> String in
-            return String(format: "%02.2hhx", data)
-        }
-        
-        let token = tokenParts.joined()
-        GeoSpark.sharedInstance.didRegisterForRemoteNotificationsWithDeviceToken(token)
+        print("deviceToken",deviceToken)
+        GeoSpark.didRegisterForRemoteNotificationsWithDeviceToken(deviceToken)
     }
     
-    // GeoSpark Delegate
-    
-    func didUpdateLocation(_ location: CLLocation, user: GeoSparkUser) {
-        print(location)
+    func didUpdateLocation(_ location: GSLocation) {
+        Utils.saveLocationToLocal(location.latitude, longitude: location.longitude)
     }
 
-    
 }
