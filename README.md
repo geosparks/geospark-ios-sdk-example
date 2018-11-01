@@ -2,8 +2,6 @@
 
 An example app for iOS which implements the GeoSpark SDK and shows your location history.
 
-## Example App
-
 
 ## Documentation
 
