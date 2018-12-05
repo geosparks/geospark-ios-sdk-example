@@ -1,20 +1,21 @@
-//
-//  SettingViewController.swift
-//  TestExample
-//
-//  Created by GeoSpark Mac #1 on 14/08/18.
-//  Copyright © 2018 GeoSpark, Inc. All rights reserved.
-//
+
+ // SettingViewController.swift
+ // TestExample
+
+ // Created by GeoSpark Mac #1 on 14/08/18.
+ // Copyright © 2018 GeoSpark, Inc. All rights reserved.
+
 
 import UIKit
-import MultiSelectSegmentedControl
 import GeoSpark
+import MultiSelectSegmentedControl
 
 class SettingViewController: UIViewController,MultiSelectSegmentedControlDelegate{
     
     @IBOutlet weak var appStateSegmentControl: MultiSelectSegmentedControl!
     @IBOutlet weak var motionSegmentControl: MultiSelectSegmentedControl!
-    
+    @IBOutlet weak var textField: UITextField!
+
     
     static public func viewController() -> SettingViewController {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -32,7 +33,6 @@ class SettingViewController: UIViewController,MultiSelectSegmentedControlDelegat
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func multiSelect(_ multiSelectSegmentedControl: MultiSelectSegmentedControl, didChangeValue value: Bool, at index: UInt) {
@@ -68,11 +68,15 @@ class SettingViewController: UIViewController,MultiSelectSegmentedControlDelegat
         }
     }
     
-
-    
     @IBAction func defaultSetting(_ sender: Any) {
         defaultValue()
         print("Default Settings")
+    }
+    
+    @IBAction func accuracyBtn(_ sender: Any) {
+        if textField.text?.isEmpty == false {
+            GeoSpark.setLocationAccuracy(Int(textField!.text!)!)
+        }
     }
     
     fileprivate func defaultValue(){
@@ -84,3 +88,10 @@ class SettingViewController: UIViewController,MultiSelectSegmentedControlDelegat
     
 }
 
+extension SettingViewController : UITextFieldDelegate{
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}

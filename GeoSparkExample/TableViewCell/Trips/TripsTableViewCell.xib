@@ -72,6 +72,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="endTripBtn" destination="smk-KO-AV4" id="faW-pw-Kg7"/>
+                <outlet property="timeLable" destination="DFq-Ej-DBC" id="lmz-X5-or0"/>
                 <outlet property="userId" destination="wbM-hK-agk" id="AoP-wU-Zhs"/>
             </connections>
             <point key="canvasLocation" x="158" y="-9"/>

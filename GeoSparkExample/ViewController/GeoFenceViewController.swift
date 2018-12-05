@@ -143,7 +143,7 @@ class GeoFenceViewController: UIViewController,MKMapViewDelegate {
         DispatchQueue.main.async{
             self.mapView.delegate = self
             let circle = MKCircle(center: location.coordinate, radius: radius)
-            self.mapView.add(circle)
+            self.mapView.addOverlay(circle)
         }
     }
     

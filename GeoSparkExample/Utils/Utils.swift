@@ -12,13 +12,21 @@ class Utils: NSObject {
     
     static func currentTimestamp() -> String {
         let dateFormatter : DateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateFormatter.dateFormat = "yyyy-MM-dd"
         let date = Date()
         return dateFormatter.string(from: date)
     }
     
+    static func currentTimestampWithHours() -> String {
+        let dateFormatter : DateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let date = Date()
+        return dateFormatter.string(from: date)
+    }
+
     static func saveLocationToLocal(_ latitude : Double, longitude : Double) {
-        let dataDictionary = ["latitude" : latitude, "longitude" : longitude,"timeStamp" : Utils.currentTimestamp(),] as [String : Any]
+        let dataDictionary = ["latitude" : latitude, "longitude" : longitude,"timeStamp" : Utils.currentTimestampWithHours()] as [String : Any]
+        print("saveLocationToLocal",dataDictionary)
         var dataArray = UserDefaults.standard.array(forKey: "GeoSparkKeyForLatLongInfo")
         if let _ = dataArray {
             dataArray?.append(dataDictionary)
@@ -37,6 +45,27 @@ class Utils: NSObject {
                 defaults.removeObject(forKey: key)
             }
         }
+    }
+
+    static func saveLogs(_ dicts:Dictionary<String,Any>) {
+        
+        for dict in dicts.enumerated() {
+            let dictValue = dict.element
+            let dictVal = dictValue.value as? String
+            if dictVal?.isEmpty == false {
+                let dataDictionary = dicts
+                var dataArray = UserDefaults.standard.array(forKey: "GeoSparkKeyForLogs")
+                if let _ = dataArray {
+                    dataArray?.append(dataDictionary)
+                }else{
+                    dataArray = [dataDictionary]
+                }
+                UserDefaults.standard.set(dataArray, forKey: "GeoSparkKeyForLogs")
+                UserDefaults.standard.synchronize()
+                
+            }
+        }
+        
     }
 
 }

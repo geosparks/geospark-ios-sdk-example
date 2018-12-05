@@ -1,5 +1,5 @@
 PODS:
-  - GeoSpark (1.0)
+  - GeoSpark (1.5)
   - MultiSelectSegmentedControl (1.2.1)
 
 DEPENDENCIES:
@@ -12,7 +12,7 @@ SPEC REPOS:
     - MultiSelectSegmentedControl
 
 SPEC CHECKSUMS:
-  GeoSpark: acd9a6bc83912453dbe3f30919715df0d03295ca
+  GeoSpark: c206d6b2bba7ab3cd15296b036a9974cd3ed1348
   MultiSelectSegmentedControl: 495230a5a5fbb6edb03d541f173433922ef0c592
 
 PODFILE CHECKSUM: 029d2d07035a40e911ed1f3a4b3d17948849f696

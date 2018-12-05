@@ -23,12 +23,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var requestMotionButton: UIButton!
 
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var desctextField: UITextField!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupIntialStateForButtons()
         logInIfNeeded()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -75,11 +76,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func clearSession() {
-        textField.text = ""
-        enableLocationTracking()
-        setupIntialStateForButtons()
-        GeoSpark.stopTracking()
-        Utils.resetDefaults()
+        GeoSpark.logout({ (userId) in            
+            DispatchQueue.main.async {
+                self.textField.text = ""
+                self.enableLocationTracking()
+                self.setupIntialStateForButtons()
+                Utils.resetDefaults()
+            }
+
+        }, onFailure: {(error) in
+            print(error)
+        })
     }
     
     func logInIfNeeded() {
@@ -153,11 +160,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    @IBAction func settingBtn(){
-        let vc = SettingViewController.viewController()
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
     @IBAction func startLocationTracking() {
         GeoSpark.startTracking()
         startMonitoringButton.isEnabled = false
@@ -198,7 +200,38 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return []
     }
     
-    
+    @IBAction func setDesciption() {
+        
+        if (desctextField.text?.isEmpty)! {
+            let alertController = UIAlertController(title: "Error", message: "Please enter User Id", preferredStyle: .alert)
+            let destructionButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(destructionButton)
+            present(alertController, animated: true, completion: nil)
+
+        }else {
+            showHud()
+
+            GeoSpark.setDescription(desctextField.text!, { (user) in
+                
+                    DispatchQueue.main.async {
+                        self.dismissHud()
+                }
+            }, onFailure:  { (erorr) in
+                print(erorr)
+                DispatchQueue.main.async {
+                    self.dismissHud()
+                }
+
+            })
+
+        }
+    }
+
+    @IBAction func settingBtn(){
+        let vc = SettingViewController.viewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+
 }
 
 extension Notification.Name {

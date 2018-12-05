@@ -10,20 +10,19 @@ import UIKit
 import GeoSpark
 
 class GeofenceListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
-
+    
     @IBOutlet weak var contentTableView: UITableView!
     var dataArray:[GeoSparkGeofenceListData] = []
-
+    var activityIndicator:ActivityIndicator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        GeoSpark.geofenceList({ (geofenceList) in
-            self.dataArray = geofenceList.data
-            DispatchQueue.main.async {
-                self.contentTableView.reloadData()
-            }
-        }, onFailure: { (error) in
-            print(error)
-        })
+        activityIndicator = ActivityIndicator(view: self.view)
+        
+        let nib = UINib(nibName: "GeofenceListTableViewCell", bundle: nil)
+        contentTableView.register(nib, forCellReuseIdentifier: "GeofenceListTableViewCell")
+        
+        activeGeofence()
     }
     
     static public func viewController() -> GeofenceListViewController {
@@ -31,18 +30,38 @@ class GeofenceListViewController: UIViewController,UITableViewDelegate,UITableVi
         let logsDisplayVC = storyBoard.instantiateViewController(withIdentifier: "GeofenceListViewController") as! GeofenceListViewController
         return logsDisplayVC
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+    fileprivate func activeGeofence() {
+        GeoSpark.geofenceList({ (geofenceList) in
+            self.dataArray = geofenceList.data
+            DispatchQueue.main.async {
+                if geofenceList.data.count != 0{
+                    let dict:Dictionary<String,Any> = ["name":"Geofence list","message": "\(geofenceList.data.count)"]
+                    Utils.saveLogs(dict)
+                }
+                self.activityIndicator?.stopActivityIndicator()
+                self.contentTableView.reloadData()
+            }
+        }, onFailure: { (error) in
+            print(error)
+            DispatchQueue.main.async {
+                let dict:Dictionary<String,Any> = ["name":"Geofence list","message": error.errorMessage]
+                Utils.saveLogs(dict)
+                
+                self.activityIndicator?.stopActivityIndicator()
+            }
+        })
+    }
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if dataArray.count == 0 {
             self.contentTableView.setEmptyMessage("No geofence created")
@@ -53,11 +72,44 @@ class GeofenceListViewController: UIViewController,UITableViewDelegate,UITableVi
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "logsCell", for: indexPath)
-        tableViewCell.textLabel?.text = dataArray[indexPath.row].geofenceId
-        tableViewCell.detailTextLabel?.text = dataArray[indexPath.row].geofenceId
-        return tableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GeofenceListTableViewCell") as? GeofenceListTableViewCell
+        cell?.userId.text = dataArray[indexPath.row].geofenceId
+        cell?.timeLable.text = dataArray[indexPath.row].createdAt
+        cell?.cellDelegate = self
+        return cell!
     }
+}
+
+extension GeofenceListViewController: GeofenceListTableViewDelegate{
+    
+    func didChangeSwitchState(_ sender: GeofenceListTableViewCell) {
+        let indexPath = self.contentTableView.indexPath(for: sender)
+        deleteGeofence(dataArray[indexPath!.row].geofenceId)
+    }
+    
+    func deleteGeofence(_ id:String){
+        GeoSpark.deleteGeofence(id, { (string) in
+            print(string)
+            if string.isEmpty == false {
+                let dict:Dictionary<String,Any> = ["name":"Delete Geofence","message": string]
+                Utils.saveLogs(dict)
+                
+            }
+            DispatchQueue.main.async {
+                self.activityIndicator?.stopActivityIndicator()
+                self.activeGeofence()
+            }
+            
+        }) { (error) in
+            let dict:Dictionary<String,Any> = ["name":"Delete Geofence","message": error.errorMessage]
+            Utils.saveLogs(dict)
+            
+            DispatchQueue.main.async {
+                self.activityIndicator?.stopActivityIndicator()
+            }
+        }
+    }
+    
 }
 extension UITableView {
     
@@ -79,3 +131,4 @@ extension UITableView {
         self.separatorStyle = .singleLine
     }
 }
+

@@ -23,7 +23,7 @@ struct ActivityIndicator {
         viewForActivityIndicator.addSubview(loadingTextLabel)
         
         activityIndicatorView.hidesWhenStopped = true
-        activityIndicatorView.activityIndicatorViewStyle = .gray
+        activityIndicatorView.style = .gray
         viewForActivityIndicator.addSubview(activityIndicatorView)
         activityIndicatorView.startAnimating()
     }

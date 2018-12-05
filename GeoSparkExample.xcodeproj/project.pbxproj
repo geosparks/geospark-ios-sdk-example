@@ -10,37 +10,24 @@
 		3D3034A720170D620043753D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3034A520170D620043753D /* Main.storyboard */; };
 		3D3034A920170D620043753D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3034A820170D620043753D /* Assets.xcassets */; };
 		3D3034AC20170D620043753D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3034AA20170D620043753D /* LaunchScreen.storyboard */; };
-		9472055CA96A6376FF54AD21 /* Pods_GeoSparkExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */; };
 		DAC1762C218A320A005CE753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17624218A320A005CE753 /* AppDelegate.swift */; };
-		DAC1762D218A320A005CE753 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17626218A320A005CE753 /* SettingViewController.swift */; };
-		DAC1762E218A320A005CE753 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17627218A320A005CE753 /* ViewController.swift */; };
-		DAC1762F218A320A005CE753 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17628218A320A005CE753 /* MapViewController.swift */; };
-		DAC17630218A320A005CE753 /* GeofenceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17629218A320A005CE753 /* GeofenceListViewController.swift */; };
-		DAC17631218A320A005CE753 /* GeoFenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1762A218A320A005CE753 /* GeoFenceViewController.swift */; };
-		DAC17632218A320A005CE753 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1762B218A320A005CE753 /* TripViewController.swift */; };
-		DAC1763B218A3214005CE753 /* TripsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC17634218A3214005CE753 /* TripsTableViewCell.xib */; };
-		DAC1763C218A3215005CE753 /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17635218A3214005CE753 /* TripsTableViewCell.swift */; };
 		DAC1763D218A3215005CE753 /* UIViewController+Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17637218A3214005CE753 /* UIViewController+Hud.swift */; };
 		DAC1763E218A3215005CE753 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17638218A3214005CE753 /* Spinner.swift */; };
 		DAC1763F218A3215005CE753 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17639218A3214005CE753 /* HudView.swift */; };
 		DAC17640218A3215005CE753 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1763A218A3214005CE753 /* Utils.swift */; };
-		DAF978D5217648DC00AA2C33 /* Pods_GeoSparkExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */; };
-		DAF978D6217648DC00AA2C33 /* Pods_GeoSparkExample.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAD3588121B7FBEA004804B8 /* GeofenceListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD3587C21B7FBEA004804B8 /* GeofenceListTableViewCell.xib */; };
+		DAD3588221B7FBEA004804B8 /* GeofenceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3587D21B7FBEA004804B8 /* GeofenceListTableViewCell.swift */; };
+		DAD3588321B7FBEA004804B8 /* TripsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD3587F21B7FBEA004804B8 /* TripsTableViewCell.xib */; };
+		DAD3588421B7FBEA004804B8 /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3588021B7FBEA004804B8 /* TripsTableViewCell.swift */; };
+		DAD3588C21B7FBF7004804B8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3588621B7FBF7004804B8 /* SettingViewController.swift */; };
+		DAD3588D21B7FBF7004804B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3588721B7FBF7004804B8 /* ViewController.swift */; };
+		DAD3588E21B7FBF7004804B8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3588821B7FBF7004804B8 /* MapViewController.swift */; };
+		DAD3588F21B7FBF7004804B8 /* GeofenceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3588921B7FBF7004804B8 /* GeofenceListViewController.swift */; };
+		DAD3589021B7FBF7004804B8 /* GeoFenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3588A21B7FBF7004804B8 /* GeoFenceViewController.swift */; };
+		DAD3589121B7FBF7004804B8 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3588B21B7FBF7004804B8 /* TripViewController.swift */; };
+		DAD3589421B7FD7A004804B8 /* MultiSelectSegmentedControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD3589321B7FD7A004804B8 /* MultiSelectSegmentedControl.framework */; };
+		DAD3589521B7FDF8004804B8 /* Pods_GeoSparkExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		3DCA30B6205542BE00AFCF0F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DAF978D6217648DC00AA2C33 /* Pods_GeoSparkExample.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3A58D532152EBA304D8C2832 /* Pods-GeoSparkExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSparkExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -53,18 +40,21 @@
 		458F4D5832D79894C1D15499 /* Pods-GeoSparkExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSparkExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample.release.xcconfig"; sourceTree = "<group>"; };
 		C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSparkExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC17624218A320A005CE753 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DAC17626218A320A005CE753 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		DAC17627218A320A005CE753 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DAC17628218A320A005CE753 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		DAC17629218A320A005CE753 /* GeofenceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceListViewController.swift; sourceTree = "<group>"; };
-		DAC1762A218A320A005CE753 /* GeoFenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoFenceViewController.swift; sourceTree = "<group>"; };
-		DAC1762B218A320A005CE753 /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
-		DAC17634218A3214005CE753 /* TripsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripsTableViewCell.xib; sourceTree = "<group>"; };
-		DAC17635218A3214005CE753 /* TripsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
 		DAC17637218A3214005CE753 /* UIViewController+Hud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Hud.swift"; sourceTree = "<group>"; };
 		DAC17638218A3214005CE753 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		DAC17639218A3214005CE753 /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 		DAC1763A218A3214005CE753 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		DAD3587C21B7FBEA004804B8 /* GeofenceListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeofenceListTableViewCell.xib; sourceTree = "<group>"; };
+		DAD3587D21B7FBEA004804B8 /* GeofenceListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceListTableViewCell.swift; sourceTree = "<group>"; };
+		DAD3587F21B7FBEA004804B8 /* TripsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripsTableViewCell.xib; sourceTree = "<group>"; };
+		DAD3588021B7FBEA004804B8 /* TripsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
+		DAD3588621B7FBF7004804B8 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		DAD3588721B7FBF7004804B8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAD3588821B7FBF7004804B8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DAD3588921B7FBF7004804B8 /* GeofenceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceListViewController.swift; sourceTree = "<group>"; };
+		DAD3588A21B7FBF7004804B8 /* GeoFenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoFenceViewController.swift; sourceTree = "<group>"; };
+		DAD3588B21B7FBF7004804B8 /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
+		DAD3589321B7FD7A004804B8 /* MultiSelectSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MultiSelectSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9472055CA96A6376FF54AD21 /* Pods_GeoSparkExample.framework in Frameworks */,
-				DAF978D5217648DC00AA2C33 /* Pods_GeoSparkExample.framework in Frameworks */,
+				DAD3589421B7FD7A004804B8 /* MultiSelectSegmentedControl.framework in Frameworks */,
+				DAD3589521B7FDF8004804B8 /* Pods_GeoSparkExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,15 +91,15 @@
 		3D3034A020170D620043753D /* GeoSparkExample */ = {
 			isa = PBXGroup;
 			children = (
-				DAC17624218A320A005CE753 /* AppDelegate.swift */,
-				DAC17625218A320A005CE753 /* ViewController */,
 				3D3034B320170D8C0043753D /* GeoSparkExample.entitlements */,
 				3D3034AD20170D620043753D /* Info.plist */,
+				DAC17624218A320A005CE753 /* AppDelegate.swift */,
 				3D3034A820170D620043753D /* Assets.xcassets */,
 				3D3034AA20170D620043753D /* LaunchScreen.storyboard */,
 				3D3034A520170D620043753D /* Main.storyboard */,
-				DAC17633218A3214005CE753 /* TableViewCell */,
+				DAD3587A21B7FBEA004804B8 /* TableViewCell */,
 				DAC17636218A3214005CE753 /* Utils */,
+				DAD3588521B7FBF7004804B8 /* ViewController */,
 			);
 			path = GeoSparkExample;
 			sourceTree = "<group>";
@@ -117,6 +107,7 @@
 		4E8B984B039D62D51A7B481B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DAD3589321B7FD7A004804B8 /* MultiSelectSegmentedControl.framework */,
 				C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */,
 			);
 			name = Frameworks;
@@ -131,28 +122,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		DAC17625218A320A005CE753 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				DAC17626218A320A005CE753 /* SettingViewController.swift */,
-				DAC17627218A320A005CE753 /* ViewController.swift */,
-				DAC17628218A320A005CE753 /* MapViewController.swift */,
-				DAC17629218A320A005CE753 /* GeofenceListViewController.swift */,
-				DAC1762A218A320A005CE753 /* GeoFenceViewController.swift */,
-				DAC1762B218A320A005CE753 /* TripViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		DAC17633218A3214005CE753 /* TableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				DAC17634218A3214005CE753 /* TripsTableViewCell.xib */,
-				DAC17635218A3214005CE753 /* TripsTableViewCell.swift */,
-			);
-			path = TableViewCell;
-			sourceTree = "<group>";
-		};
 		DAC17636218A3214005CE753 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +131,46 @@
 				DAC1763A218A3214005CE753 /* Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		DAD3587A21B7FBEA004804B8 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DAD3587B21B7FBEA004804B8 /* GeofenceList */,
+				DAD3587E21B7FBEA004804B8 /* Trips */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		DAD3587B21B7FBEA004804B8 /* GeofenceList */ = {
+			isa = PBXGroup;
+			children = (
+				DAD3587C21B7FBEA004804B8 /* GeofenceListTableViewCell.xib */,
+				DAD3587D21B7FBEA004804B8 /* GeofenceListTableViewCell.swift */,
+			);
+			path = GeofenceList;
+			sourceTree = "<group>";
+		};
+		DAD3587E21B7FBEA004804B8 /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				DAD3587F21B7FBEA004804B8 /* TripsTableViewCell.xib */,
+				DAD3588021B7FBEA004804B8 /* TripsTableViewCell.swift */,
+			);
+			path = Trips;
+			sourceTree = "<group>";
+		};
+		DAD3588521B7FBF7004804B8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DAD3588621B7FBF7004804B8 /* SettingViewController.swift */,
+				DAD3588721B7FBF7004804B8 /* ViewController.swift */,
+				DAD3588821B7FBF7004804B8 /* MapViewController.swift */,
+				DAD3588921B7FBF7004804B8 /* GeofenceListViewController.swift */,
+				DAD3588A21B7FBF7004804B8 /* GeoFenceViewController.swift */,
+				DAD3588B21B7FBF7004804B8 /* TripViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +185,6 @@
 				3D30349B20170D620043753D /* Frameworks */,
 				3D30349C20170D620043753D /* Resources */,
 				3D3034C4201715EE0043753D /* ShellScript */,
-				3DCA30B6205542BE00AFCF0F /* Embed Frameworks */,
 				38A27EED4C96C5B6D05E17D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -200,7 +208,7 @@
 				TargetAttributes = {
 					3D30349D20170D620043753D = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -235,9 +243,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAC1763B218A3214005CE753 /* TripsTableViewCell.xib in Resources */,
 				3D3034AC20170D620043753D /* LaunchScreen.storyboard in Resources */,
+				DAD3588121B7FBEA004804B8 /* GeofenceListTableViewCell.xib in Resources */,
 				3D3034A920170D620043753D /* Assets.xcassets in Resources */,
+				DAD3588321B7FBEA004804B8 /* TripsTableViewCell.xib in Resources */,
 				3D3034A720170D620043753D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,16 +312,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAC1763C218A3215005CE753 /* TripsTableViewCell.swift in Sources */,
-				DAC1762E218A320A005CE753 /* ViewController.swift in Sources */,
-				DAC1762F218A320A005CE753 /* MapViewController.swift in Sources */,
-				DAC17631218A320A005CE753 /* GeoFenceViewController.swift in Sources */,
-				DAC17632218A320A005CE753 /* TripViewController.swift in Sources */,
 				DAC1762C218A320A005CE753 /* AppDelegate.swift in Sources */,
-				DAC17630218A320A005CE753 /* GeofenceListViewController.swift in Sources */,
+				DAD3588F21B7FBF7004804B8 /* GeofenceListViewController.swift in Sources */,
 				DAC1763F218A3215005CE753 /* HudView.swift in Sources */,
-				DAC1762D218A320A005CE753 /* SettingViewController.swift in Sources */,
+				DAD3588421B7FBEA004804B8 /* TripsTableViewCell.swift in Sources */,
+				DAD3588E21B7FBF7004804B8 /* MapViewController.swift in Sources */,
+				DAD3588D21B7FBF7004804B8 /* ViewController.swift in Sources */,
+				DAD3589121B7FBF7004804B8 /* TripViewController.swift in Sources */,
+				DAD3589021B7FBF7004804B8 /* GeoFenceViewController.swift in Sources */,
+				DAD3588C21B7FBF7004804B8 /* SettingViewController.swift in Sources */,
 				DAC1763D218A3215005CE753 /* UIViewController+Hud.swift in Sources */,
+				DAD3588221B7FBEA004804B8 /* GeofenceListTableViewCell.swift in Sources */,
 				DAC1763E218A3215005CE753 /* Spinner.swift in Sources */,
 				DAC17640218A3215005CE753 /* Utils.swift in Sources */,
 			);
@@ -453,8 +463,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GeoSparkExample/GeoSparkExample.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QH6UW9Q7Y4;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GeoSparkExample",
@@ -464,7 +474,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -475,8 +486,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GeoSparkExample/GeoSparkExample.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QH6UW9Q7Y4;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GeoSparkExample",
@@ -486,7 +497,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

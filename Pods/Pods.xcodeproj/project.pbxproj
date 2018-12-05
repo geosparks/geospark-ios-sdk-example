@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1444A5988526FAA4E1889E37EDD34FD0 /* Pods-GeoSparkExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 811BD22FE9840C2B77C164346D3803A5 /* Pods-GeoSparkExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1498A3B78687805EF8834215C3784338 /* MultiSelectSegmentedControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B841A99C6882D34AD8D4F626573A8D8 /* MultiSelectSegmentedControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F971923E3D669D961B2156DA0A459D8 /* MultiSelectSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = E3F1ABD193DB3C1EEFC78D5E82090ABA /* MultiSelectSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1498A3B78687805EF8834215C3784338 /* MultiSelectSegmentedControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B187AC351476DD020E24D87A5E5FEC4F /* MultiSelectSegmentedControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F971923E3D669D961B2156DA0A459D8 /* MultiSelectSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D6ED064CCF1896F38E4A45E90090A5 /* MultiSelectSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FDEA706C9218AB8B289CB49E93021A6 /* Pods-GeoSparkExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 602C780D4CCA8A9D9F1DA1457D5B4443 /* Pods-GeoSparkExample-dummy.m */; };
-		8E5A603D8C25A5DD9B176C638562D2D1 /* MultiSelectSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 354BC2D24C2F48F2AE4CC6FDC92A159A /* MultiSelectSegmentedControl.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8E5A603D8C25A5DD9B176C638562D2D1 /* MultiSelectSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B54804A7327628C1FDDF5B067389 /* MultiSelectSegmentedControl.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A4C06C672187B8CE700A79CAF800AC67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		D86B7415287E1C8DAD17A7C53F62B53D /* MultiSelectSegmentedControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19195081AB16A898599B33DF5FDD26A5 /* MultiSelectSegmentedControl-dummy.m */; };
+		D86B7415287E1C8DAD17A7C53F62B53D /* MultiSelectSegmentedControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7390ADE7D494089A158E21B388B78A0 /* MultiSelectSegmentedControl-dummy.m */; };
 		E74233B234CDD99203577F20C51A684D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,32 +28,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04703BBA9CFEA61DD93A939525B480E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08B6F70B9E7B27B911AB187B4FAA2BA1 /* MultiSelectSegmentedControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MultiSelectSegmentedControl.modulemap; sourceTree = "<group>"; };
+		0B09E269356E38D75124CA870AC64AA4 /* MultiSelectSegmentedControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiSelectSegmentedControl-prefix.pch"; sourceTree = "<group>"; };
 		144FE2DBF9AFA46C0CEE54874C69526B /* Pods-GeoSparkExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GeoSparkExample.modulemap"; sourceTree = "<group>"; };
-		19195081AB16A898599B33DF5FDD26A5 /* MultiSelectSegmentedControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MultiSelectSegmentedControl-dummy.m"; sourceTree = "<group>"; };
-		354BC2D24C2F48F2AE4CC6FDC92A159A /* MultiSelectSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MultiSelectSegmentedControl.m; sourceTree = "<group>"; };
+		45D6ED064CCF1896F38E4A45E90090A5 /* MultiSelectSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MultiSelectSegmentedControl.h; sourceTree = "<group>"; };
 		47926B8C7D6677695AEBEA8FC3DB830F /* Pods-GeoSparkExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoSparkExample.debug.xcconfig"; sourceTree = "<group>"; };
-		4B841A99C6882D34AD8D4F626573A8D8 /* MultiSelectSegmentedControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiSelectSegmentedControl-umbrella.h"; sourceTree = "<group>"; };
 		4BB92E97648C31B896E67882D4C68612 /* Pods_GeoSparkExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GeoSparkExample.framework; path = "Pods-GeoSparkExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5CC7C8D23AE4B04CF0FE2BB76CCFA96F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		602C780D4CCA8A9D9F1DA1457D5B4443 /* Pods-GeoSparkExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GeoSparkExample-dummy.m"; sourceTree = "<group>"; };
+		64C4B54804A7327628C1FDDF5B067389 /* MultiSelectSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MultiSelectSegmentedControl.m; sourceTree = "<group>"; };
+		69409A1B912FB637608792485994D355 /* MultiSelectSegmentedControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiSelectSegmentedControl.xcconfig; sourceTree = "<group>"; };
 		6C3A09EF0966FFA58D8E58ADB03845C3 /* MultiSelectSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MultiSelectSegmentedControl.framework; path = MultiSelectSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C566D6D795AB547752E488285F029C0 /* GeoSpark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoSpark.framework; sourceTree = "<group>"; };
 		79FB9CEB87C9C07083E1AAD1304EEA47 /* Pods-GeoSparkExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoSparkExample.release.xcconfig"; sourceTree = "<group>"; };
 		7E0EAC02953A44EE5A270EFBD320C4B2 /* Pods-GeoSparkExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeoSparkExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		811BD22FE9840C2B77C164346D3803A5 /* Pods-GeoSparkExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GeoSparkExample-umbrella.h"; sourceTree = "<group>"; };
 		82654D5C762AD66D426991D08AA56308 /* Pods-GeoSparkExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GeoSparkExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		84C69999ABC40C5D60D615E57ADD40A6 /* VersionInfo.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = VersionInfo.plist; path = GeoSpark.framework/GSLocationData.momd/VersionInfo.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9474BA6FEF6937F1D4217474571F389A /* GeoSpark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoSpark.framework; sourceTree = "<group>"; };
 		9492AC2F4A3F9A04D46B10F6157454C2 /* Pods-GeoSparkExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeoSparkExample-frameworks.sh"; sourceTree = "<group>"; };
-		963604AC4F4868D58270EB5634F386C9 /* GSLocationData.mom */ = {isa = PBXFileReference; includeInIndex = 1; name = GSLocationData.mom; path = GeoSpark.framework/GSLocationData.momd/GSLocationData.mom; sourceTree = "<group>"; };
-		A0D66A3558C25D115927547125863AFF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = GeoSpark.framework/Info.plist; sourceTree = "<group>"; };
-		CD28DF264200F50A84ACFBCB854EE720 /* MultiSelectSegmentedControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiSelectSegmentedControl.xcconfig; sourceTree = "<group>"; };
-		D10830F70895B8D4FA9C88A740B4BC44 /* MultiSelectSegmentedControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiSelectSegmentedControl-prefix.pch"; sourceTree = "<group>"; };
-		E3F1ABD193DB3C1EEFC78D5E82090ABA /* MultiSelectSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MultiSelectSegmentedControl.h; sourceTree = "<group>"; };
-		E5FC54D0867A9090A4247DB09A018324 /* MultiSelectSegmentedControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MultiSelectSegmentedControl.modulemap; sourceTree = "<group>"; };
+		B187AC351476DD020E24D87A5E5FEC4F /* MultiSelectSegmentedControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiSelectSegmentedControl-umbrella.h"; sourceTree = "<group>"; };
+		B7390ADE7D494089A158E21B388B78A0 /* MultiSelectSegmentedControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MultiSelectSegmentedControl-dummy.m"; sourceTree = "<group>"; };
 		EE8861A5176751EF015B3795CB598A12 /* Pods-GeoSparkExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeoSparkExample-resources.sh"; sourceTree = "<group>"; };
+		FB2BB3594C6773982FD74DED460AF521 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,24 +73,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23A5C7BEA0AF1B0E4620EFCEE63D5E69 /* GeoSpark */ = {
+		0A21F5B9C450A1466E986DA17798064A /* GeoSpark */ = {
 			isa = PBXGroup;
 			children = (
-				F225CF70D106B7D4F778E29ED128BEBF /* Frameworks */,
-				391037F4ACE4E334F070082C64B30276 /* Resources */,
+				13C897614DB47FA2B696ADAF25F447BC /* Frameworks */,
 			);
 			name = GeoSpark;
 			path = GeoSpark;
 			sourceTree = "<group>";
 		};
-		391037F4ACE4E334F070082C64B30276 /* Resources */ = {
+		13C897614DB47FA2B696ADAF25F447BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				963604AC4F4868D58270EB5634F386C9 /* GSLocationData.mom */,
-				A0D66A3558C25D115927547125863AFF /* Info.plist */,
-				84C69999ABC40C5D60D615E57ADD40A6 /* VersionInfo.plist */,
+				9474BA6FEF6937F1D4217474571F389A /* GeoSpark.framework */,
 			);
-			name = Resources;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35D80E49CA7828E4EF4580CAE7DBB2D6 /* MultiSelectSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				45D6ED064CCF1896F38E4A45E90090A5 /* MultiSelectSegmentedControl.h */,
+				64C4B54804A7327628C1FDDF5B067389 /* MultiSelectSegmentedControl.m */,
+				7F846F95011BD09505A3750036E67D5B /* Support Files */,
+			);
+			name = MultiSelectSegmentedControl;
+			path = MultiSelectSegmentedControl;
 			sourceTree = "<group>";
 		};
 		4497A6EB95157221DA2B2C6CB6A7EB7C /* Targets Support Files */ = {
@@ -130,24 +135,29 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6E7AD71558FA829F79D80AAE3B3E2110 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				23A5C7BEA0AF1B0E4620EFCEE63D5E69 /* GeoSpark */,
-				F0A2C7EB8E602B00DA0F7DC949EDB477 /* MultiSelectSegmentedControl */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				6E7AD71558FA829F79D80AAE3B3E2110 /* Pods */,
+				CF23D68058B01087AFDBE8D0C0252C30 /* Pods */,
 				83538CA8FD7E383F4F751E0C55CE86A2 /* Products */,
 				4497A6EB95157221DA2B2C6CB6A7EB7C /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7F846F95011BD09505A3750036E67D5B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB2BB3594C6773982FD74DED460AF521 /* Info.plist */,
+				08B6F70B9E7B27B911AB187B4FAA2BA1 /* MultiSelectSegmentedControl.modulemap */,
+				69409A1B912FB637608792485994D355 /* MultiSelectSegmentedControl.xcconfig */,
+				B7390ADE7D494089A158E21B388B78A0 /* MultiSelectSegmentedControl-dummy.m */,
+				0B09E269356E38D75124CA870AC64AA4 /* MultiSelectSegmentedControl-prefix.pch */,
+				B187AC351476DD020E24D87A5E5FEC4F /* MultiSelectSegmentedControl-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MultiSelectSegmentedControl";
 			sourceTree = "<group>";
 		};
 		83538CA8FD7E383F4F751E0C55CE86A2 /* Products */ = {
@@ -167,37 +177,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CC24EA2115A63C8A46B13408F9F6EA30 /* Support Files */ = {
+		CF23D68058B01087AFDBE8D0C0252C30 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				04703BBA9CFEA61DD93A939525B480E8 /* Info.plist */,
-				E5FC54D0867A9090A4247DB09A018324 /* MultiSelectSegmentedControl.modulemap */,
-				CD28DF264200F50A84ACFBCB854EE720 /* MultiSelectSegmentedControl.xcconfig */,
-				19195081AB16A898599B33DF5FDD26A5 /* MultiSelectSegmentedControl-dummy.m */,
-				D10830F70895B8D4FA9C88A740B4BC44 /* MultiSelectSegmentedControl-prefix.pch */,
-				4B841A99C6882D34AD8D4F626573A8D8 /* MultiSelectSegmentedControl-umbrella.h */,
+				0A21F5B9C450A1466E986DA17798064A /* GeoSpark */,
+				35D80E49CA7828E4EF4580CAE7DBB2D6 /* MultiSelectSegmentedControl */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MultiSelectSegmentedControl";
-			sourceTree = "<group>";
-		};
-		F0A2C7EB8E602B00DA0F7DC949EDB477 /* MultiSelectSegmentedControl */ = {
-			isa = PBXGroup;
-			children = (
-				E3F1ABD193DB3C1EEFC78D5E82090ABA /* MultiSelectSegmentedControl.h */,
-				354BC2D24C2F48F2AE4CC6FDC92A159A /* MultiSelectSegmentedControl.m */,
-				CC24EA2115A63C8A46B13408F9F6EA30 /* Support Files */,
-			);
-			name = MultiSelectSegmentedControl;
-			path = MultiSelectSegmentedControl;
-			sourceTree = "<group>";
-		};
-		F225CF70D106B7D4F778E29ED128BEBF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6C566D6D795AB547752E488285F029C0 /* GeoSpark.framework */,
-			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,7 +372,7 @@
 		};
 		185E1171A24721CF5BEB651140AC114E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD28DF264200F50A84ACFBCB854EE720 /* MultiSelectSegmentedControl.xcconfig */;
+			baseConfigurationReference = 69409A1B912FB637608792485994D355 /* MultiSelectSegmentedControl.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -418,7 +404,7 @@
 		};
 		2FC9B030077AE69A974B5D68B1C7F564 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD28DF264200F50A84ACFBCB854EE720 /* MultiSelectSegmentedControl.xcconfig */;
+			baseConfigurationReference = 69409A1B912FB637608792485994D355 /* MultiSelectSegmentedControl.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

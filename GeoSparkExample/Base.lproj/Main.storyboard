@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fAx-6y-lRg">
-                                <rect key="frame" x="20" y="114" width="335" height="119"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fAx-6y-lRg">
+                                <rect key="frame" x="20" y="104" width="335" height="197"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKO-PX-kWE">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="33"/>
@@ -40,8 +40,8 @@
                                             <action selector="createUser" destination="BYZ-38-t0r" eventType="touchUpInside" id="1mP-ct-gym"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYy-J3-hi3">
-                                        <rect key="frame" x="0.0" y="43" width="335" height="33"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter userId" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYy-J3-hi3">
+                                        <rect key="frame" x="0.0" y="41" width="335" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -50,7 +50,7 @@
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xcp-TR-MlL">
-                                        <rect key="frame" x="0.0" y="86" width="335" height="33"/>
+                                        <rect key="frame" x="0.0" y="82" width="335" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title="Log In">
@@ -68,35 +68,20 @@
                                             <action selector="startSession" destination="BYZ-38-t0r" eventType="touchUpInside" id="ecv-iv-Hv4"/>
                                         </connections>
                                     </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="P18-x0-awm">
-                                <rect key="frame" x="20" y="243" width="335" height="33"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxm-ft-SoT">
-                                        <rect key="frame" x="0.0" y="0.0" width="157.5" height="33"/>
-                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
-                                        <state key="normal" title="Request Location">
-                                            <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <state key="disabled">
-                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter description" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CGn-ZQ-SOb">
+                                        <rect key="frame" x="0.0" y="123" width="335" height="33"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="requestLocation" destination="BYZ-38-t0r" eventType="touchUpInside" id="2bZ-st-5Mx"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="oBj-Vb-eFZ"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="za6-6o-Vqw">
-                                        <rect key="frame" x="177.5" y="0.0" width="157.5" height="33"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imj-Sv-aQV">
+                                        <rect key="frame" x="0.0" y="164" width="335" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
-                                        <state key="normal" title="Request Motion">
+                                        <state key="normal" title="Set Desciption">
                                             <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <state key="disabled">
@@ -108,13 +93,13 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="requestMotion" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Xl-SO-1nb"/>
+                                            <action selector="setDesciption" destination="BYZ-38-t0r" eventType="touchUpInside" id="AOT-qV-rMj"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JnE-Lt-c9E">
-                                <rect key="frame" x="20" y="286" width="335" height="33"/>
+                                <rect key="frame" x="20" y="354" width="335" height="33"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="647-bu-EP1">
                                         <rect key="frame" x="0.0" y="0.0" width="157.5" height="33"/>
@@ -156,30 +141,11 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bvQ-gs-cnu">
-                                <rect key="frame" x="20" y="329" width="335" height="245"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6BL-mc-Kfi">
+                                <rect key="frame" x="20" y="397" width="335" height="33"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="70" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zns-Sa-vKx">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="33"/>
-                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
-                                        <state key="normal" title="Log Out">
-                                            <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <state key="disabled">
-                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="clearSession" destination="BYZ-38-t0r" eventType="touchUpInside" id="2l4-vx-Tp0"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="70" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug2-Ww-eAD">
-                                        <rect key="frame" x="0.0" y="53" width="335" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="157.5" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title="Trips">
@@ -198,7 +164,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IQ-vf-6Eo">
-                                        <rect key="frame" x="0.0" y="106" width="335" height="33"/>
+                                        <rect key="frame" x="177.5" y="0.0" width="157.5" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title="Geofence">
@@ -216,27 +182,13 @@
                                             <action selector="geofence" destination="BYZ-38-t0r" eventType="touchUpInside" id="SuD-9B-Mvb"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5p-1w-czj">
-                                        <rect key="frame" x="0.0" y="159" width="335" height="33"/>
-                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
-                                        <state key="normal" title="Settings">
-                                            <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <state key="disabled">
-                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="settingBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="4yK-ad-m92"/>
-                                        </connections>
-                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bvQ-gs-cnu">
+                                <rect key="frame" x="20" y="440" width="335" height="139"/>
+                                <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmB-kK-lcL">
-                                        <rect key="frame" x="0.0" y="212" width="335" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title="Tracked Location">
@@ -254,29 +206,114 @@
                                             <action selector="trackedLocation" destination="BYZ-38-t0r" eventType="touchUpInside" id="H03-wG-Cet"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUJ-Yk-IpD">
+                                        <rect key="frame" x="0.0" y="53" width="335" height="33"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                        <state key="normal" title="Setting">
+                                            <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="settingBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="KUg-c7-0pZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="70" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zns-Sa-vKx">
+                                        <rect key="frame" x="0.0" y="106" width="335" height="33"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                        <state key="normal" title="Log Out">
+                                            <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clearSession" destination="BYZ-38-t0r" eventType="touchUpInside" id="2l4-vx-Tp0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="P18-x0-awm">
+                                <rect key="frame" x="20" y="311" width="335" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxm-ft-SoT">
+                                        <rect key="frame" x="0.0" y="0.0" width="157.5" height="33"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                        <state key="normal" title="Request Location">
+                                            <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="requestLocation" destination="BYZ-38-t0r" eventType="touchUpInside" id="2bZ-st-5Mx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="za6-6o-Vqw">
+                                        <rect key="frame" x="177.5" y="0.0" width="157.5" height="33"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                        <state key="normal" title="Request Motion">
+                                            <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="requestMotion" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Xl-SO-1nb"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="P18-x0-awm" firstAttribute="leading" secondItem="G3f-O1-9aL" secondAttribute="leading" constant="20" id="4If-cV-WnE"/>
-                            <constraint firstItem="JnE-Lt-c9E" firstAttribute="leading" secondItem="G3f-O1-9aL" secondAttribute="leading" constant="20" id="90a-tn-g6J"/>
-                            <constraint firstItem="fAx-6y-lRg" firstAttribute="top" secondItem="G3f-O1-9aL" secondAttribute="top" constant="50" id="C1u-51-0qj"/>
-                            <constraint firstItem="G3f-O1-9aL" firstAttribute="trailing" secondItem="fAx-6y-lRg" secondAttribute="trailing" constant="20" id="C4U-GC-Z2W"/>
-                            <constraint firstItem="bvQ-gs-cnu" firstAttribute="leading" secondItem="G3f-O1-9aL" secondAttribute="leading" constant="20" id="KTZ-fo-FiP"/>
-                            <constraint firstItem="JnE-Lt-c9E" firstAttribute="top" secondItem="P18-x0-awm" secondAttribute="bottom" constant="10" id="ZeO-VF-Vl7"/>
-                            <constraint firstItem="G3f-O1-9aL" firstAttribute="trailing" secondItem="P18-x0-awm" secondAttribute="trailing" constant="20" id="blx-gD-ve4"/>
-                            <constraint firstItem="G3f-O1-9aL" firstAttribute="trailing" secondItem="JnE-Lt-c9E" secondAttribute="trailing" constant="20" id="f6w-5q-fWg"/>
-                            <constraint firstItem="G3f-O1-9aL" firstAttribute="trailing" secondItem="bvQ-gs-cnu" secondAttribute="trailing" constant="20" id="iPn-07-5yN"/>
-                            <constraint firstItem="P18-x0-awm" firstAttribute="top" secondItem="fAx-6y-lRg" secondAttribute="bottom" constant="10" id="nP4-0g-Noh"/>
-                            <constraint firstItem="bvQ-gs-cnu" firstAttribute="top" secondItem="JnE-Lt-c9E" secondAttribute="bottom" constant="10" id="ooC-hv-JJh"/>
-                            <constraint firstItem="fAx-6y-lRg" firstAttribute="leading" secondItem="G3f-O1-9aL" secondAttribute="leading" constant="20" id="znG-1e-vTA"/>
+                            <constraint firstItem="G3f-O1-9aL" firstAttribute="trailing" secondItem="fAx-6y-lRg" secondAttribute="trailing" constant="20" id="0Cp-Sf-auC"/>
+                            <constraint firstItem="JnE-Lt-c9E" firstAttribute="top" secondItem="P18-x0-awm" secondAttribute="bottom" constant="10" id="14R-8G-EKM"/>
+                            <constraint firstItem="6BL-mc-Kfi" firstAttribute="trailing" secondItem="JnE-Lt-c9E" secondAttribute="trailing" id="1Ke-nJ-4Jj"/>
+                            <constraint firstItem="fAx-6y-lRg" firstAttribute="top" secondItem="G3f-O1-9aL" secondAttribute="top" constant="40" id="2xf-4I-I5F"/>
+                            <constraint firstItem="fAx-6y-lRg" firstAttribute="leading" secondItem="G3f-O1-9aL" secondAttribute="leading" constant="20" id="3T7-Rg-6iH"/>
+                            <constraint firstItem="P18-x0-awm" firstAttribute="trailing" secondItem="fAx-6y-lRg" secondAttribute="trailing" id="5Jc-gP-qSv"/>
+                            <constraint firstItem="JnE-Lt-c9E" firstAttribute="trailing" secondItem="P18-x0-awm" secondAttribute="trailing" id="7og-dA-Sgo"/>
+                            <constraint firstItem="bvQ-gs-cnu" firstAttribute="top" secondItem="6BL-mc-Kfi" secondAttribute="bottom" constant="10" id="8gR-v7-3zx"/>
+                            <constraint firstItem="bvQ-gs-cnu" firstAttribute="leading" secondItem="6BL-mc-Kfi" secondAttribute="leading" id="94a-2w-fOD"/>
+                            <constraint firstItem="P18-x0-awm" firstAttribute="leading" secondItem="fAx-6y-lRg" secondAttribute="leading" id="Crw-Zh-Fu5"/>
+                            <constraint firstItem="6BL-mc-Kfi" firstAttribute="top" secondItem="JnE-Lt-c9E" secondAttribute="bottom" constant="10" id="QfD-vn-67h"/>
+                            <constraint firstItem="6BL-mc-Kfi" firstAttribute="leading" secondItem="JnE-Lt-c9E" secondAttribute="leading" id="iPJ-Jj-Hsk"/>
+                            <constraint firstItem="bvQ-gs-cnu" firstAttribute="trailing" secondItem="6BL-mc-Kfi" secondAttribute="trailing" id="vY9-z9-uZ1"/>
+                            <constraint firstItem="JnE-Lt-c9E" firstAttribute="leading" secondItem="P18-x0-awm" secondAttribute="leading" id="x4D-yg-wVy"/>
+                            <constraint firstItem="P18-x0-awm" firstAttribute="top" secondItem="fAx-6y-lRg" secondAttribute="bottom" constant="10" id="yCI-En-sH5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G3f-O1-9aL"/>
                     </view>
                     <navigationItem key="navigationItem" id="GZ3-7r-Apv"/>
                     <connections>
                         <outlet property="createUserButton" destination="cKO-PX-kWE" id="4wC-gr-GLz"/>
+                        <outlet property="desctextField" destination="CGn-ZQ-SOb" id="MlE-1a-ZVj"/>
                         <outlet property="geofenceButton" destination="5IQ-vf-6Eo" id="0h8-uY-BeB"/>
                         <outlet property="requestLocationButton" destination="Qxm-ft-SoT" id="WqL-SG-aWv"/>
                         <outlet property="requestMotionButton" destination="za6-6o-Vqw" id="9Y8-Nv-yEW"/>
@@ -290,119 +327,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1031" y="-118"/>
-        </scene>
-        <!--Setting View Controller-->
-        <scene sceneID="f7F-ig-0A3">
-            <objects>
-                <viewController storyboardIdentifier="SettingViewController" id="5St-ec-uqY" customClass="SettingViewController" customModule="GeoSparkExample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="og0-JK-a0g">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8dU-VM-JwI">
-                                <rect key="frame" x="10" y="60" width="355" height="66"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASR-KF-XfD">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="28"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <segmentedControl opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yIP-Ue-A31" customClass="MultiSelectSegmentedControl">
-                                        <rect key="frame" x="0.0" y="38" width="355" height="29"/>
-                                        <segments>
-                                            <segment title="AlwaysON"/>
-                                            <segment title="Terminated"/>
-                                            <segment title="ForeGround"/>
-                                            <segment title="BackGround"/>
-                                        </segments>
-                                    </segmentedControl>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="BTm-Gy-9dz"/>
-                                </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tvl-21-sz5">
-                                <rect key="frame" x="10" y="141" width="355" height="66"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anu-gQ-VLY">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="19"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <segmentedControl opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6o3-Jy-J0U" customClass="MultiSelectSegmentedControl">
-                                        <rect key="frame" x="0.0" y="29" width="355" height="38"/>
-                                        <segments>
-                                            <segment title="ALL"/>
-                                            <segment title="Running"/>
-                                            <segment title="Walking"/>
-                                            <segment title="Auto"/>
-                                            <segment title="Stationary"/>
-                                        </segments>
-                                    </segmentedControl>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="hbq-32-YcA"/>
-                                </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fiw-dS-WcQ">
-                                <rect key="frame" x="10" y="222" width="355" height="60"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Accuracy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yn5-JW-PT0">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Accuracy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qx9-yP-Hmg">
-                                        <rect key="frame" x="0.0" y="30" width="355" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                                    </textField>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="EIp-G2-kAO"/>
-                                </constraints>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWX-vW-iii">
-                                <rect key="frame" x="10" y="292" width="355" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="Hgb-Xa-zLF"/>
-                                </constraints>
-                                <state key="normal" title="Reset Settings"/>
-                                <connections>
-                                    <action selector="defaultSetting:" destination="5St-ec-uqY" eventType="touchUpInside" id="8KH-0b-RoB"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="tvl-21-sz5" firstAttribute="leading" secondItem="8dU-VM-JwI" secondAttribute="leading" id="4Si-F9-tEP"/>
-                            <constraint firstItem="1cV-K8-FcS" firstAttribute="trailing" secondItem="XWX-vW-iii" secondAttribute="trailing" constant="10" id="8rB-dI-2NF"/>
-                            <constraint firstItem="tvl-21-sz5" firstAttribute="trailing" secondItem="8dU-VM-JwI" secondAttribute="trailing" id="9T9-GY-9xX"/>
-                            <constraint firstItem="XWX-vW-iii" firstAttribute="leading" secondItem="tvl-21-sz5" secondAttribute="leading" id="Di5-rv-yDX"/>
-                            <constraint firstItem="fiw-dS-WcQ" firstAttribute="trailing" secondItem="tvl-21-sz5" secondAttribute="trailing" id="Moh-hY-fyg"/>
-                            <constraint firstItem="8dU-VM-JwI" firstAttribute="top" secondItem="1cV-K8-FcS" secondAttribute="top" constant="40" id="P7H-Vv-P0M"/>
-                            <constraint firstItem="fiw-dS-WcQ" firstAttribute="leading" secondItem="tvl-21-sz5" secondAttribute="leading" id="RDU-dA-dYF"/>
-                            <constraint firstItem="tvl-21-sz5" firstAttribute="top" secondItem="8dU-VM-JwI" secondAttribute="bottom" constant="15" id="SGD-ve-20K"/>
-                            <constraint firstItem="8dU-VM-JwI" firstAttribute="leading" secondItem="1cV-K8-FcS" secondAttribute="leading" constant="10" id="SMz-lI-CZu"/>
-                            <constraint firstItem="XWX-vW-iii" firstAttribute="top" secondItem="fiw-dS-WcQ" secondAttribute="bottom" constant="10" id="UdX-j3-UCv"/>
-                            <constraint firstItem="1cV-K8-FcS" firstAttribute="trailing" secondItem="8dU-VM-JwI" secondAttribute="trailing" constant="10" id="aob-xs-bgh"/>
-                            <constraint firstItem="XWX-vW-iii" firstAttribute="leading" secondItem="1cV-K8-FcS" secondAttribute="leading" constant="10" id="egB-jQ-Ffk"/>
-                            <constraint firstItem="fiw-dS-WcQ" firstAttribute="top" secondItem="tvl-21-sz5" secondAttribute="bottom" constant="15" id="m52-XL-q0E"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="1cV-K8-FcS"/>
-                    </view>
-                    <connections>
-                        <outlet property="appStateSegmentControl" destination="yIP-Ue-A31" id="LOr-vV-Ovf"/>
-                        <outlet property="motionSegmentControl" destination="6o3-Jy-J0U" id="9ce-39-ssA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yhu-G5-1BE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1685.5999999999999" y="-849.62518740629696"/>
         </scene>
         <!--Geofence List View Controller-->
         <scene sceneID="tmT-We-6rg">
@@ -468,18 +392,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ljE-2o-2Ik">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="607"/>
                                 <connections>
                                     <outlet property="delegate" destination="bWY-Sy-7sY" id="Oy1-zb-bhF"/>
                                 </connections>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ues-SV-6Sz">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bBB-Qz-Pcl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Select Date">
+                                    <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="selectDate" destination="bWY-Sy-7sY" eventType="touchUpInside" id="bfT-1h-37L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ljE-2o-2Ik" firstAttribute="top" secondItem="WEu-1P-vzv" secondAttribute="top" id="Ub0-9V-MPr"/>
-                            <constraint firstItem="ljE-2o-2Ik" firstAttribute="leading" secondItem="WEu-1P-vzv" secondAttribute="leading" id="eeo-qc-yfL"/>
-                            <constraint firstAttribute="trailing" secondItem="ljE-2o-2Ik" secondAttribute="trailing" id="nbs-b1-Yrl"/>
-                            <constraint firstItem="WEu-1P-vzv" firstAttribute="bottom" secondItem="ljE-2o-2Ik" secondAttribute="bottom" id="zKB-IQ-6qx"/>
+                            <constraint firstItem="ljE-2o-2Ik" firstAttribute="top" secondItem="WEu-1P-vzv" secondAttribute="top" id="AGo-la-Sn6"/>
+                            <constraint firstItem="Ues-SV-6Sz" firstAttribute="top" secondItem="ljE-2o-2Ik" secondAttribute="bottom" id="GDA-ZU-mlI"/>
+                            <constraint firstItem="ljE-2o-2Ik" firstAttribute="leading" secondItem="WEu-1P-vzv" secondAttribute="leading" id="Jr4-iG-G2m"/>
+                            <constraint firstItem="WEu-1P-vzv" firstAttribute="trailing" secondItem="Ues-SV-6Sz" secondAttribute="trailing" id="OGY-sG-33g"/>
+                            <constraint firstItem="Ues-SV-6Sz" firstAttribute="leading" secondItem="WEu-1P-vzv" secondAttribute="leading" id="bQV-Tg-pBP"/>
+                            <constraint firstItem="WEu-1P-vzv" firstAttribute="bottom" secondItem="Ues-SV-6Sz" secondAttribute="bottom" id="eaH-0c-BzM"/>
+                            <constraint firstItem="ljE-2o-2Ik" firstAttribute="trailing" secondItem="WEu-1P-vzv" secondAttribute="trailing" id="hY3-w3-WGS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WEu-1P-vzv"/>
                     </view>
@@ -489,7 +438,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fSy-td-Ial" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2358" y="-118"/>
+            <point key="canvasLocation" x="2357.5999999999999" y="-118.29085457271366"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LIh-Ko-GYe">
@@ -512,16 +461,16 @@
         <!--Trip View Controller-->
         <scene sceneID="pGs-D6-ejo">
             <objects>
-                <viewController storyboardIdentifier="TripViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MWC-Hc-HZb" customClass="TripViewController" customModule="GeoSparkExample" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TripViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MWC-Hc-HZb" customClass="TripViewController" customModule="GeoSparkExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lsd-LK-w99">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Qpl-rJ-yac">
-                                <rect key="frame" x="0.0" y="20" width="375" height="40"/>
+                                <rect key="frame" x="10" y="70" width="355" height="33"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zed-XQ-SKh">
-                                        <rect key="frame" x="0.0" y="0.0" width="185" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title=" Start Trip">
@@ -540,7 +489,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sev-pA-DD7">
-                                        <rect key="frame" x="190" y="0.0" width="185" height="40"/>
+                                        <rect key="frame" x="180" y="0.0" width="175" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title="Active Trips">
@@ -560,34 +509,44 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="pE6-bh-M6S"/>
+                                    <constraint firstAttribute="height" constant="33" id="d4S-cS-T0i"/>
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gs1-SB-Xrv">
-                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <rect key="frame" x="0.0" y="113" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="MWC-Hc-HZb" id="qLE-yl-At4"/>
                                     <outlet property="delegate" destination="MWC-Hc-HZb" id="cBr-pl-EF1"/>
                                 </connections>
                             </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Description for Start Trip" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SoB-7j-ShT">
+                                <rect key="frame" x="10" y="30" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qoI-LA-McY"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gs1-SB-Xrv" firstAttribute="bottom" secondItem="LaY-GQ-Gss" secondAttribute="bottom" id="B7d-Ck-Lrf"/>
-                            <constraint firstItem="gs1-SB-Xrv" firstAttribute="top" secondItem="Qpl-rJ-yac" secondAttribute="bottom" constant="10" id="LxQ-fZ-B0g"/>
-                            <constraint firstItem="gs1-SB-Xrv" firstAttribute="trailing" secondItem="LaY-GQ-Gss" secondAttribute="trailing" id="Q6G-SU-E9E"/>
-                            <constraint firstItem="LaY-GQ-Gss" firstAttribute="trailing" secondItem="Qpl-rJ-yac" secondAttribute="trailing" id="TOB-fm-7l1"/>
-                            <constraint firstItem="Qpl-rJ-yac" firstAttribute="top" secondItem="LaY-GQ-Gss" secondAttribute="top" id="aiF-DE-BO7"/>
-                            <constraint firstItem="Qpl-rJ-yac" firstAttribute="leading" secondItem="LaY-GQ-Gss" secondAttribute="leading" id="bcY-Ay-1Ey"/>
-                            <constraint firstItem="Qpl-rJ-yac" firstAttribute="top" secondItem="LaY-GQ-Gss" secondAttribute="top" id="dFk-wb-YOb"/>
-                            <constraint firstItem="gs1-SB-Xrv" firstAttribute="leading" secondItem="LaY-GQ-Gss" secondAttribute="leading" id="mue-W0-y8X"/>
-                            <constraint firstItem="Qpl-rJ-yac" firstAttribute="trailing" secondItem="LaY-GQ-Gss" secondAttribute="trailing" id="t6C-1B-Re1"/>
-                            <constraint firstItem="Qpl-rJ-yac" firstAttribute="leading" secondItem="LaY-GQ-Gss" secondAttribute="leading" id="wzk-LD-i00"/>
+                            <constraint firstItem="SoB-7j-ShT" firstAttribute="leading" secondItem="LaY-GQ-Gss" secondAttribute="leading" constant="10" id="VQS-Nz-wAi"/>
+                            <constraint firstAttribute="trailing" secondItem="gs1-SB-Xrv" secondAttribute="trailing" id="VTY-8B-heq"/>
+                            <constraint firstItem="Qpl-rJ-yac" firstAttribute="top" secondItem="SoB-7j-ShT" secondAttribute="bottom" constant="10" id="Xd7-sl-pm5"/>
+                            <constraint firstAttribute="bottom" secondItem="gs1-SB-Xrv" secondAttribute="bottom" id="esE-Oe-sc8"/>
+                            <constraint firstItem="LaY-GQ-Gss" firstAttribute="trailing" secondItem="Qpl-rJ-yac" secondAttribute="trailing" constant="10" id="lgr-Ou-sGT"/>
+                            <constraint firstItem="LaY-GQ-Gss" firstAttribute="trailing" secondItem="SoB-7j-ShT" secondAttribute="trailing" constant="10" id="lpj-21-2WG"/>
+                            <constraint firstItem="SoB-7j-ShT" firstAttribute="top" secondItem="LaY-GQ-Gss" secondAttribute="top" constant="10" id="oOf-pj-OhJ"/>
+                            <constraint firstItem="Qpl-rJ-yac" firstAttribute="leading" secondItem="LaY-GQ-Gss" secondAttribute="leading" constant="10" id="orj-fO-2h7"/>
+                            <constraint firstItem="gs1-SB-Xrv" firstAttribute="leading" secondItem="LaY-GQ-Gss" secondAttribute="leading" id="tBX-vQ-B2I"/>
+                            <constraint firstItem="gs1-SB-Xrv" firstAttribute="top" secondItem="Qpl-rJ-yac" secondAttribute="bottom" constant="10" id="xlo-4w-zaZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LaY-GQ-Gss"/>
                     </view>
                     <connections>
+                        <outlet property="seeTripDesc" destination="SoB-7j-ShT" id="lU3-kC-WVw"/>
                         <outlet property="tableview" destination="gs1-SB-Xrv" id="AuL-DO-vDV"/>
                     </connections>
                 </viewController>
@@ -598,7 +557,7 @@
         <!--Geo Fence View Controller-->
         <scene sceneID="xXI-tH-Wb7">
             <objects>
-                <viewController storyboardIdentifier="GeoFenceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FFq-17-9rV" customClass="GeoFenceViewController" customModule="GeoSparkTestSDK" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GeoFenceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FFq-17-9rV" customClass="GeoFenceViewController" customModule="GeoSparkExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xsa-Xg-BVk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -709,6 +668,92 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3d-Bx-5N9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1686" y="554"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="bcJ-e9-R2Q">
+            <objects>
+                <viewController storyboardIdentifier="SettingViewController" id="aBS-Yg-q7E" customClass="SettingViewController" customModule="GeoSparkExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mvi-LK-f0S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ycc-SE-T9r">
+                                <rect key="frame" x="10" y="60" width="355" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aA-wf-TRp">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="28"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nbm-25-apU" customClass="MultiSelectSegmentedControl">
+                                        <rect key="frame" x="0.0" y="38" width="355" height="29"/>
+                                        <segments>
+                                            <segment title="AlwaysON"/>
+                                            <segment title="Terminated"/>
+                                            <segment title="ForeGround"/>
+                                            <segment title="BackGround"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="U5U-qL-Yzd"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Yo-Pg-Tjs">
+                                <rect key="frame" x="10" y="141" width="355" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="628-OC-Bhw">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="19"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SNH-zr-C65" customClass="MultiSelectSegmentedControl">
+                                        <rect key="frame" x="0.0" y="29" width="355" height="38"/>
+                                        <segments>
+                                            <segment title="ALL"/>
+                                            <segment title="Running"/>
+                                            <segment title="Walking"/>
+                                            <segment title="Auto"/>
+                                            <segment title="Stationary"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="vSr-Hr-oIV"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gu7-d6-vKr">
+                                <rect key="frame" x="10" y="237" width="355" height="30"/>
+                                <state key="normal" title="Reset Settings"/>
+                                <connections>
+                                    <action selector="defaultSetting:" destination="aBS-Yg-q7E" eventType="touchUpInside" id="fAn-ea-qrx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gu7-d6-vKr" firstAttribute="leading" secondItem="4Yo-Pg-Tjs" secondAttribute="leading" id="2DB-fv-I6s"/>
+                            <constraint firstItem="4Yo-Pg-Tjs" firstAttribute="top" secondItem="ycc-SE-T9r" secondAttribute="bottom" constant="15" id="8H5-hK-mNW"/>
+                            <constraint firstItem="WWQ-1i-4Ym" firstAttribute="trailing" secondItem="ycc-SE-T9r" secondAttribute="trailing" constant="10" id="9B5-Zh-ifv"/>
+                            <constraint firstItem="ycc-SE-T9r" firstAttribute="top" secondItem="WWQ-1i-4Ym" secondAttribute="top" constant="40" id="FMy-KF-wvl"/>
+                            <constraint firstItem="4Yo-Pg-Tjs" firstAttribute="leading" secondItem="ycc-SE-T9r" secondAttribute="leading" id="ILK-VG-mOT"/>
+                            <constraint firstItem="4Yo-Pg-Tjs" firstAttribute="trailing" secondItem="ycc-SE-T9r" secondAttribute="trailing" id="NWC-5a-MCc"/>
+                            <constraint firstItem="gu7-d6-vKr" firstAttribute="top" secondItem="4Yo-Pg-Tjs" secondAttribute="bottom" constant="30" id="aOc-ou-hfq"/>
+                            <constraint firstItem="ycc-SE-T9r" firstAttribute="leading" secondItem="WWQ-1i-4Ym" secondAttribute="leading" constant="10" id="dZJ-rL-CCq"/>
+                            <constraint firstItem="gu7-d6-vKr" firstAttribute="trailing" secondItem="4Yo-Pg-Tjs" secondAttribute="trailing" id="x3w-OW-Hgw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WWQ-1i-4Ym"/>
+                    </view>
+                    <connections>
+                        <outlet property="appStateSegmentControl" destination="Nbm-25-apU" id="xYw-uV-jaQ"/>
+                        <outlet property="motionSegmentControl" destination="SNH-zr-C65" id="Mtb-c2-PC8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZaC-iO-ZKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1685.5999999999999" y="-849.62518740629696"/>
         </scene>
     </scenes>
 </document>
