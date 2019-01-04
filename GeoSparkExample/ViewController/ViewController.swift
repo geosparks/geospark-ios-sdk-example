@@ -54,25 +54,24 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func createUser() {
         showHud()
-        GeoSpark.createUser({ (user) in
+        var descString:String = ""
+        if desctextField.text?.isEmpty == false {
+            descString = desctextField.text!
+        }
+        
+        GeoSpark.createUser(descString, { (user) in
             DispatchQueue.main.async {
-                
                 if user.userId.isEmpty == false{
                     self.dismissHud()
                     self.textField.text = user.userId
                     self.enableLocationTracking()
-                    
                 }
                 self.dismissHud()
-                
             }
-            
+
         }, onFailure: { (error) in
-            print(error)
             self.dismissHud()
-            
-        })
-        
+        })        
     }
     
     @IBAction func clearSession() {
