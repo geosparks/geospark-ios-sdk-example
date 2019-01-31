@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/GeoSpark-Swift.h</key>
 		<data>
-		u3M2UFmFPGTkBL3dqjdxkRUdcxY=
+		gmfr//40rFyydMmGlbQFBXuZ7No=
 		</data>
 		<key>Headers/GeoSpark.h</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/GeoSpark.swiftmodule/arm.swiftdoc</key>
 		<data>
-		e4DJmrNlorZ/iVCu5UoCNdIk8Wo=
+		2oEg+vtNNeaKc7bZPdY0WEGdyuw=
 		</data>
 		<key>Modules/GeoSpark.swiftmodule/arm.swiftmodule</key>
 		<data>
-		7dyjKZ65D1KT3gSwTqkVUgGQGLQ=
+		eeHXEZ7SYesr95DODVPQclFOTXE=
 		</data>
 		<key>Modules/GeoSpark.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		p+f3v7oxF/YndXZIcYZygrVr4JE=
+		Btyo9qCi5fR7vrI+wGq9yDEUifc=
 		</data>
 		<key>Modules/GeoSpark.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		ZaNKYNM/qGQ7PMbRH0lZ5kGAr9g=
+		obeuiTCv9uqTnGgHLcjs/hkQ4/Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -73,11 +73,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			u3M2UFmFPGTkBL3dqjdxkRUdcxY=
+			gmfr//40rFyydMmGlbQFBXuZ7No=
 			</data>
 			<key>hash2</key>
 			<data>
-			bJXTKTELDnPvzkveFeoV7FEfLdBeF/17KnmkdTjA+7E=
+			uy539xrr/7ipJb778nOcMZci242c+96zM3zlrgfE6Cw=
 			</data>
 		</dict>
 		<key>Headers/GeoSpark.h</key>
@@ -95,44 +95,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e4DJmrNlorZ/iVCu5UoCNdIk8Wo=
+			2oEg+vtNNeaKc7bZPdY0WEGdyuw=
 			</data>
 			<key>hash2</key>
 			<data>
-			+P86q7IMskU/H7hcdjKoSlnRL1T7SxcKptKnvvtnHaY=
+			BUck3u5CEqoXRTn6qehWtJK5lMDvojv9Y+JpROF1t9o=
 			</data>
 		</dict>
 		<key>Modules/GeoSpark.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7dyjKZ65D1KT3gSwTqkVUgGQGLQ=
+			eeHXEZ7SYesr95DODVPQclFOTXE=
 			</data>
 			<key>hash2</key>
 			<data>
-			H9Y9WzgqnDN1ZDvp2Aei+rJN+yY5fZDvrbu+epu+z/w=
+			fv7CJ+uInye88Bm42aTu+hwn+3JYfW6Ae0XylzCYBtQ=
 			</data>
 		</dict>
 		<key>Modules/GeoSpark.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			p+f3v7oxF/YndXZIcYZygrVr4JE=
+			Btyo9qCi5fR7vrI+wGq9yDEUifc=
 			</data>
 			<key>hash2</key>
 			<data>
-			uUGniUT3mPziYokpN00uLjk+EWgF6DY1bUWTn33rvyc=
+			dkAOa+0EWE6yhF2+H1rm5/LdTRPZkGJdu6vSg16JVaY=
 			</data>
 		</dict>
 		<key>Modules/GeoSpark.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZaNKYNM/qGQ7PMbRH0lZ5kGAr9g=
+			obeuiTCv9uqTnGgHLcjs/hkQ4/Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			xYrY0gzeFsRfaieot0OBI7TcKMuu8QCoB7QBIWfe638=
+			3xjNSD3jUj3MmyuJbdPSEAApzxDs5V+MGIyHsspFhUg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

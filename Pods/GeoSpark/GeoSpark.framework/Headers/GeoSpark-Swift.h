@@ -165,6 +165,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -205,6 +206,7 @@ SWIFT_CLASS("_TtC8GeoSpark10GSLocation")
 @property (nonatomic, copy) NSString * _Null_unspecified activity;
 @property (nonatomic) double latitude;
 @property (nonatomic) double longitude;
+@property (nonatomic) double accuracy;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -262,6 +264,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <GeoSparkDelegate> 
 + (void)trackLocationInAppState:(NSArray<NSString *> * _Nonnull)states;
 + (void)trackLocationInMotion:(NSArray<NSString *> * _Nonnull)motions;
 + (void)setLocationAccuracy:(NSInteger)accuracy;
++ (void)enableLogger:(BOOL)value;
++ (void)getCurrentLocationWithLocation:(void (^ _Nonnull)(GSLocation * _Nonnull))location;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -347,6 +351,8 @@ SWIFT_CLASS("_TtC8GeoSpark12GeoSparkUser")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
+
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

@@ -190,7 +190,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bvQ-gs-cnu">
-                                <rect key="frame" x="20" y="399" width="335" height="139"/>
+                                <rect key="frame" x="20" y="399" width="335" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmB-kK-lcL">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="33"/>
@@ -211,8 +211,27 @@
                                             <action selector="trackedLocation" destination="BYZ-38-t0r" eventType="touchUpInside" id="H03-wG-Cet"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUJ-Yk-IpD">
+                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lj-fP-ezA">
                                         <rect key="frame" x="0.0" y="53" width="335" height="33"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                        <state key="normal" title="Current Location">
+                                            <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showCurrent" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hzg-mK-4mM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUJ-Yk-IpD">
+                                        <rect key="frame" x="0.0" y="106" width="335" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title="Setting">
@@ -231,7 +250,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="70" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zns-Sa-vKx">
-                                        <rect key="frame" x="0.0" y="106" width="335" height="33"/>
+                                        <rect key="frame" x="0.0" y="159" width="335" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title="Log Out">
@@ -759,6 +778,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZaC-iO-ZKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1685.5999999999999" y="-849.62518740629696"/>
+        </scene>
+        <!--Get Current Location View Controller-->
+        <scene sceneID="Bn3-Ff-if3">
+            <objects>
+                <viewController storyboardIdentifier="GetCurrentLocationViewController" id="wwF-KU-GQI" customClass="GetCurrentLocationViewController" customModule="GeoSparkExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bRZ-VD-i4t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gS2-Th-lMr">
+                                <rect key="frame" x="0.0" y="20" width="375" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ff4-rE-Yzp">
+                                        <rect key="frame" x="149.5" y="0.0" width="76.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="fAg-5z-Q8t"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIt-hd-A6X">
+                                        <rect key="frame" x="156" y="40" width="63" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="CTr-fw-6sH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="cPM-ad-qkQ"/>
+                                </constraints>
+                            </stackView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EUR-uj-Fm6">
+                                <rect key="frame" x="0.0" y="100" width="375" height="527"/>
+                                <connections>
+                                    <outlet property="delegate" destination="wwF-KU-GQI" id="DlS-7u-Y4a"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HM2-F2-FbD">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hdQ-3i-9Ky"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Get Current location">
+                                    <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="selectDate" destination="wwF-KU-GQI" eventType="touchUpInside" id="DHc-S4-y0b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HM2-F2-FbD" firstAttribute="top" secondItem="EUR-uj-Fm6" secondAttribute="bottom" id="2UI-df-wCe"/>
+                            <constraint firstItem="HM2-F2-FbD" firstAttribute="leading" secondItem="76E-A8-eYh" secondAttribute="leading" id="N2f-IE-C11"/>
+                            <constraint firstItem="76E-A8-eYh" firstAttribute="bottom" secondItem="HM2-F2-FbD" secondAttribute="bottom" id="UxM-vI-d9H"/>
+                            <constraint firstItem="76E-A8-eYh" firstAttribute="trailing" secondItem="gS2-Th-lMr" secondAttribute="trailing" id="fFk-ZJ-Mmy"/>
+                            <constraint firstItem="76E-A8-eYh" firstAttribute="trailing" secondItem="HM2-F2-FbD" secondAttribute="trailing" id="heS-l1-9xR"/>
+                            <constraint firstItem="gS2-Th-lMr" firstAttribute="leading" secondItem="76E-A8-eYh" secondAttribute="leading" id="mcN-cT-mCJ"/>
+                            <constraint firstItem="EUR-uj-Fm6" firstAttribute="trailing" secondItem="76E-A8-eYh" secondAttribute="trailing" id="raV-X6-hLl"/>
+                            <constraint firstItem="gS2-Th-lMr" firstAttribute="top" secondItem="76E-A8-eYh" secondAttribute="top" id="s3s-Qh-yDK"/>
+                            <constraint firstItem="EUR-uj-Fm6" firstAttribute="leading" secondItem="76E-A8-eYh" secondAttribute="leading" id="w7H-av-Q5z"/>
+                            <constraint firstItem="EUR-uj-Fm6" firstAttribute="top" secondItem="gS2-Th-lMr" secondAttribute="bottom" id="x59-eS-BoF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="76E-A8-eYh"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Ff4-rE-Yzp" id="wfP-mD-NyQ"/>
+                        <outlet property="label1" destination="OIt-hd-A6X" id="FFJ-qJ-3HG"/>
+                        <outlet property="mapView" destination="EUR-uj-Fm6" id="13D-91-pz2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CR3-yr-Vxn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357.5999999999999" y="-118.29085457271366"/>
         </scene>
     </scenes>
 </document>

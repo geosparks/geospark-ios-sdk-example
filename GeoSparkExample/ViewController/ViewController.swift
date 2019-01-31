@@ -230,6 +230,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let vc = SettingViewController.viewController()
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func showCurrent() {
+        let vc = GetCurrentLocationViewController.viewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 
 }
 
