@@ -42,9 +42,11 @@ class GeofenceListViewController: UIViewController,UITableViewDelegate,UITableVi
      */
     
     fileprivate func activeGeofence() {
+        showHud()
         GeoSpark.geofenceList({ (geofenceList) in
             self.dataArray = geofenceList.data
             DispatchQueue.main.async {
+                self.dismissHud()
                 if geofenceList.data.count != 0{
                     let dict:Dictionary<String,Any> = ["name":"Geofence list","message": "\(geofenceList.data.count)"]
                     Utils.saveLogs(dict)
@@ -55,6 +57,7 @@ class GeofenceListViewController: UIViewController,UITableViewDelegate,UITableVi
         }, onFailure: { (error) in
             print(error)
             DispatchQueue.main.async {
+                self.dismissHud()
                 let dict:Dictionary<String,Any> = ["name":"Geofence list","message": error.errorMessage]
                 Utils.saveLogs(dict)
                 
@@ -88,14 +91,15 @@ extension GeofenceListViewController: GeofenceListTableViewDelegate{
     }
     
     func deleteGeofence(_ id:String){
+        showHud()
         GeoSpark.deleteGeofence(id, { (string) in
-            print(string)
             if string.isEmpty == false {
                 let dict:Dictionary<String,Any> = ["name":"Delete Geofence","message": string]
                 Utils.saveLogs(dict)
                 
             }
             DispatchQueue.main.async {
+                self.dismissHud()
                 self.activityIndicator?.stopActivityIndicator()
                 self.activeGeofence()
             }
@@ -103,8 +107,8 @@ extension GeofenceListViewController: GeofenceListTableViewDelegate{
         }) { (error) in
             let dict:Dictionary<String,Any> = ["name":"Delete Geofence","message": error.errorMessage]
             Utils.saveLogs(dict)
-            
             DispatchQueue.main.async {
+                self.dismissHud()
                 self.activityIndicator?.stopActivityIndicator()
             }
         }

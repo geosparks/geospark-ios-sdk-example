@@ -6,234 +6,245 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		FB99BD3FDCA6D16E278D43BDA8221C43 /* GeoSpark */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1F1EEE9F716D996B08EC8038C7008D2E /* Build configuration list for PBXAggregateTarget "GeoSpark" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GeoSpark;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		1444A5988526FAA4E1889E37EDD34FD0 /* Pods-GeoSparkExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 811BD22FE9840C2B77C164346D3803A5 /* Pods-GeoSparkExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1498A3B78687805EF8834215C3784338 /* MultiSelectSegmentedControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B187AC351476DD020E24D87A5E5FEC4F /* MultiSelectSegmentedControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F971923E3D669D961B2156DA0A459D8 /* MultiSelectSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D6ED064CCF1896F38E4A45E90090A5 /* MultiSelectSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FDEA706C9218AB8B289CB49E93021A6 /* Pods-GeoSparkExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 602C780D4CCA8A9D9F1DA1457D5B4443 /* Pods-GeoSparkExample-dummy.m */; };
-		8E5A603D8C25A5DD9B176C638562D2D1 /* MultiSelectSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C4B54804A7327628C1FDDF5B067389 /* MultiSelectSegmentedControl.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A4C06C672187B8CE700A79CAF800AC67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		D86B7415287E1C8DAD17A7C53F62B53D /* MultiSelectSegmentedControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7390ADE7D494089A158E21B388B78A0 /* MultiSelectSegmentedControl-dummy.m */; };
-		E74233B234CDD99203577F20C51A684D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		0EE0C838FC14F905C82635218A2BA629 /* MultiSelectSegmentedControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 928BA867A671DA86569A378B618BE7F9 /* MultiSelectSegmentedControl-dummy.m */; };
+		1F93397C5E760B24A530903037A2041D /* Pods-GeoSparkExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A91B68270F3DCADE73F62FE9C613782 /* Pods-GeoSparkExample-dummy.m */; };
+		68D5B94B8DE81E37E7525BFA7C83B811 /* MultiSelectSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 69EAFC4E5A7E1782799063270604A931 /* MultiSelectSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		820864D415734FB0FF3B949AD0FBAFF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		8231A9086A634214E9AC14FBE59E6987 /* MultiSelectSegmentedControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26F534D86AF15026F46642B057CFCB41 /* MultiSelectSegmentedControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		934FB822C7879434310EA50071DF9C1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		A0C7E426B5F0EE64DF58742EFFA5657E /* MultiSelectSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5394673F4FF0C8E3193130CC3CF1FBD9 /* MultiSelectSegmentedControl.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F996CB54605280D92192009A87B8552E /* Pods-GeoSparkExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFD639A4006CAE9DD4CD70BD23F78C5 /* Pods-GeoSparkExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EC8201431515CE564C0E414F730DE704 /* PBXContainerItemProxy */ = {
+		8021BA7EB78995291186F5C4FAFD76BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 94EA86AAABF9A454A48FFE7A138A0113;
+			remoteGlobalIDString = 3B3ABC398225CDA9F7DCCF5F63B977C4;
 			remoteInfo = MultiSelectSegmentedControl;
+		};
+		DAD68BA31E7F6634E6A5DD4C4D589D19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB99BD3FDCA6D16E278D43BDA8221C43;
+			remoteInfo = GeoSpark;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08B6F70B9E7B27B911AB187B4FAA2BA1 /* MultiSelectSegmentedControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MultiSelectSegmentedControl.modulemap; sourceTree = "<group>"; };
-		0B09E269356E38D75124CA870AC64AA4 /* MultiSelectSegmentedControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiSelectSegmentedControl-prefix.pch"; sourceTree = "<group>"; };
-		144FE2DBF9AFA46C0CEE54874C69526B /* Pods-GeoSparkExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GeoSparkExample.modulemap"; sourceTree = "<group>"; };
-		45D6ED064CCF1896F38E4A45E90090A5 /* MultiSelectSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MultiSelectSegmentedControl.h; sourceTree = "<group>"; };
-		47926B8C7D6677695AEBEA8FC3DB830F /* Pods-GeoSparkExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoSparkExample.debug.xcconfig"; sourceTree = "<group>"; };
-		4BB92E97648C31B896E67882D4C68612 /* Pods_GeoSparkExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GeoSparkExample.framework; path = "Pods-GeoSparkExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5CC7C8D23AE4B04CF0FE2BB76CCFA96F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		602C780D4CCA8A9D9F1DA1457D5B4443 /* Pods-GeoSparkExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GeoSparkExample-dummy.m"; sourceTree = "<group>"; };
-		64C4B54804A7327628C1FDDF5B067389 /* MultiSelectSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MultiSelectSegmentedControl.m; sourceTree = "<group>"; };
-		69409A1B912FB637608792485994D355 /* MultiSelectSegmentedControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiSelectSegmentedControl.xcconfig; sourceTree = "<group>"; };
-		6C3A09EF0966FFA58D8E58ADB03845C3 /* MultiSelectSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MultiSelectSegmentedControl.framework; path = MultiSelectSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79FB9CEB87C9C07083E1AAD1304EEA47 /* Pods-GeoSparkExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoSparkExample.release.xcconfig"; sourceTree = "<group>"; };
-		7E0EAC02953A44EE5A270EFBD320C4B2 /* Pods-GeoSparkExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeoSparkExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		811BD22FE9840C2B77C164346D3803A5 /* Pods-GeoSparkExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GeoSparkExample-umbrella.h"; sourceTree = "<group>"; };
-		82654D5C762AD66D426991D08AA56308 /* Pods-GeoSparkExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GeoSparkExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9474BA6FEF6937F1D4217474571F389A /* GeoSpark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoSpark.framework; sourceTree = "<group>"; };
-		9492AC2F4A3F9A04D46B10F6157454C2 /* Pods-GeoSparkExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeoSparkExample-frameworks.sh"; sourceTree = "<group>"; };
-		B187AC351476DD020E24D87A5E5FEC4F /* MultiSelectSegmentedControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiSelectSegmentedControl-umbrella.h"; sourceTree = "<group>"; };
-		B7390ADE7D494089A158E21B388B78A0 /* MultiSelectSegmentedControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MultiSelectSegmentedControl-dummy.m"; sourceTree = "<group>"; };
-		EE8861A5176751EF015B3795CB598A12 /* Pods-GeoSparkExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeoSparkExample-resources.sh"; sourceTree = "<group>"; };
-		FB2BB3594C6773982FD74DED460AF521 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03443F6E47DE28FA645E4F9BAB9CBEBF /* Pods-GeoSparkExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoSparkExample.release.xcconfig"; sourceTree = "<group>"; };
+		05DEAD7F1944B768500145B649440375 /* Pods_GeoSparkExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GeoSparkExample.framework; path = "Pods-GeoSparkExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F534D86AF15026F46642B057CFCB41 /* MultiSelectSegmentedControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiSelectSegmentedControl-umbrella.h"; sourceTree = "<group>"; };
+		29C8A1BC729F2CBB6EA47AD1C38FDD96 /* MultiSelectSegmentedControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MultiSelectSegmentedControl.modulemap; sourceTree = "<group>"; };
+		36E9A899FE4DA11D46C2CF0325D12C35 /* MultiSelectSegmentedControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MultiSelectSegmentedControl-Info.plist"; sourceTree = "<group>"; };
+		3A91B68270F3DCADE73F62FE9C613782 /* Pods-GeoSparkExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GeoSparkExample-dummy.m"; sourceTree = "<group>"; };
+		4B1DFE93A25B936020977BAEFC2FFD0E /* GeoSpark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoSpark.framework; sourceTree = "<group>"; };
+		4CFD639A4006CAE9DD4CD70BD23F78C5 /* Pods-GeoSparkExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GeoSparkExample-umbrella.h"; sourceTree = "<group>"; };
+		4F7FD5234343AF1DDCCF5FE2E165DC85 /* Pods-GeoSparkExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeoSparkExample-frameworks.sh"; sourceTree = "<group>"; };
+		5027FDB3AD3EBF207D5EB99EDF38A142 /* MultiSelectSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MultiSelectSegmentedControl.framework; path = MultiSelectSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5394673F4FF0C8E3193130CC3CF1FBD9 /* MultiSelectSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MultiSelectSegmentedControl.m; sourceTree = "<group>"; };
+		5650A80B8A1BC0367719C3D2C9F6BACD /* Pods-GeoSparkExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeoSparkExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		623A55549E22AB9873404C61DBC6E9D0 /* MultiSelectSegmentedControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiSelectSegmentedControl-prefix.pch"; sourceTree = "<group>"; };
+		69EAFC4E5A7E1782799063270604A931 /* MultiSelectSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MultiSelectSegmentedControl.h; sourceTree = "<group>"; };
+		701FB440A77FA01B8B67E1CD91A26D25 /* Pods-GeoSparkExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeoSparkExample-Info.plist"; sourceTree = "<group>"; };
+		78B38573A2E8BEF3EFF8131E9E068BD5 /* Pods-GeoSparkExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GeoSparkExample.modulemap"; sourceTree = "<group>"; };
+		928BA867A671DA86569A378B618BE7F9 /* MultiSelectSegmentedControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MultiSelectSegmentedControl-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B35830F22EEC46CE0ED14FDC037C04BF /* GeoSpark.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GeoSpark.xcconfig; sourceTree = "<group>"; };
+		C42CCF0328C179CD6D9051B6B601E9AF /* MultiSelectSegmentedControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiSelectSegmentedControl.xcconfig; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D7E5ABD5FD45D697C7C3E164F279586C /* Pods-GeoSparkExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoSparkExample.debug.xcconfig"; sourceTree = "<group>"; };
+		F5AAC82073EA2E0EDCCBDF2A080F6E82 /* Pods-GeoSparkExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GeoSparkExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2502CE6CD59F3CF2BC0B38BB2856EA0A /* Frameworks */ = {
+		4F474EA35E45A25F89733E7CB5F29293 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E74233B234CDD99203577F20C51A684D /* Foundation.framework in Frameworks */,
+				934FB822C7879434310EA50071DF9C1C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F63192D3FEF21F5C707EF12EF11E8D7 /* Frameworks */ = {
+		ED231734F57F05F59F7784E9A8C0A574 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4C06C672187B8CE700A79CAF800AC67 /* Foundation.framework in Frameworks */,
+				820864D415734FB0FF3B949AD0FBAFF0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A21F5B9C450A1466E986DA17798064A /* GeoSpark */ = {
+		0696A2412E29BACCF35AAA46216C69C1 /* Pods-GeoSparkExample */ = {
 			isa = PBXGroup;
 			children = (
-				13C897614DB47FA2B696ADAF25F447BC /* Frameworks */,
-			);
-			name = GeoSpark;
-			path = GeoSpark;
-			sourceTree = "<group>";
-		};
-		13C897614DB47FA2B696ADAF25F447BC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9474BA6FEF6937F1D4217474571F389A /* GeoSpark.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		35D80E49CA7828E4EF4580CAE7DBB2D6 /* MultiSelectSegmentedControl */ = {
-			isa = PBXGroup;
-			children = (
-				45D6ED064CCF1896F38E4A45E90090A5 /* MultiSelectSegmentedControl.h */,
-				64C4B54804A7327628C1FDDF5B067389 /* MultiSelectSegmentedControl.m */,
-				7F846F95011BD09505A3750036E67D5B /* Support Files */,
-			);
-			name = MultiSelectSegmentedControl;
-			path = MultiSelectSegmentedControl;
-			sourceTree = "<group>";
-		};
-		4497A6EB95157221DA2B2C6CB6A7EB7C /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				496463E3BE9F32359F4A9056FF2BDC9B /* Pods-GeoSparkExample */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		496463E3BE9F32359F4A9056FF2BDC9B /* Pods-GeoSparkExample */ = {
-			isa = PBXGroup;
-			children = (
-				5CC7C8D23AE4B04CF0FE2BB76CCFA96F /* Info.plist */,
-				144FE2DBF9AFA46C0CEE54874C69526B /* Pods-GeoSparkExample.modulemap */,
-				82654D5C762AD66D426991D08AA56308 /* Pods-GeoSparkExample-acknowledgements.markdown */,
-				7E0EAC02953A44EE5A270EFBD320C4B2 /* Pods-GeoSparkExample-acknowledgements.plist */,
-				602C780D4CCA8A9D9F1DA1457D5B4443 /* Pods-GeoSparkExample-dummy.m */,
-				9492AC2F4A3F9A04D46B10F6157454C2 /* Pods-GeoSparkExample-frameworks.sh */,
-				EE8861A5176751EF015B3795CB598A12 /* Pods-GeoSparkExample-resources.sh */,
-				811BD22FE9840C2B77C164346D3803A5 /* Pods-GeoSparkExample-umbrella.h */,
-				47926B8C7D6677695AEBEA8FC3DB830F /* Pods-GeoSparkExample.debug.xcconfig */,
-				79FB9CEB87C9C07083E1AAD1304EEA47 /* Pods-GeoSparkExample.release.xcconfig */,
+				78B38573A2E8BEF3EFF8131E9E068BD5 /* Pods-GeoSparkExample.modulemap */,
+				F5AAC82073EA2E0EDCCBDF2A080F6E82 /* Pods-GeoSparkExample-acknowledgements.markdown */,
+				5650A80B8A1BC0367719C3D2C9F6BACD /* Pods-GeoSparkExample-acknowledgements.plist */,
+				3A91B68270F3DCADE73F62FE9C613782 /* Pods-GeoSparkExample-dummy.m */,
+				4F7FD5234343AF1DDCCF5FE2E165DC85 /* Pods-GeoSparkExample-frameworks.sh */,
+				701FB440A77FA01B8B67E1CD91A26D25 /* Pods-GeoSparkExample-Info.plist */,
+				4CFD639A4006CAE9DD4CD70BD23F78C5 /* Pods-GeoSparkExample-umbrella.h */,
+				D7E5ABD5FD45D697C7C3E164F279586C /* Pods-GeoSparkExample.debug.xcconfig */,
+				03443F6E47DE28FA645E4F9BAB9CBEBF /* Pods-GeoSparkExample.release.xcconfig */,
 			);
 			name = "Pods-GeoSparkExample";
 			path = "Target Support Files/Pods-GeoSparkExample";
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		15B43B867B62EA3E34AF95DC549EEF47 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+				5027FDB3AD3EBF207D5EB99EDF38A142 /* MultiSelectSegmentedControl.framework */,
+				05DEAD7F1944B768500145B649440375 /* Pods_GeoSparkExample.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F1AE239695CB1215918381596A722E1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0696A2412E29BACCF35AAA46216C69C1 /* Pods-GeoSparkExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4EA7D98B54B0326B28E7073D96F2FC0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C315B8781C1523E2D2872DEA3F02D0B4 /* GeoSpark */,
+				6802E97A1CBA98969B9184B5DE3C85DD /* MultiSelectSegmentedControl */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6802E97A1CBA98969B9184B5DE3C85DD /* MultiSelectSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				69EAFC4E5A7E1782799063270604A931 /* MultiSelectSegmentedControl.h */,
+				5394673F4FF0C8E3193130CC3CF1FBD9 /* MultiSelectSegmentedControl.m */,
+				DE6094168E844FCA74CBAE1C591C1DE8 /* Support Files */,
+			);
+			name = MultiSelectSegmentedControl;
+			path = MultiSelectSegmentedControl;
+			sourceTree = "<group>";
+		};
+		6A0611050DBB678EE997BB1028D00E06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B1DFE93A25B936020977BAEFC2FFD0E /* GeoSpark.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7766BB69EEF595880B798E0564958948 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B35830F22EEC46CE0ED14FDC037C04BF /* GeoSpark.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GeoSpark";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		C315B8781C1523E2D2872DEA3F02D0B4 /* GeoSpark */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				CF23D68058B01087AFDBE8D0C0252C30 /* Pods */,
-				83538CA8FD7E383F4F751E0C55CE86A2 /* Products */,
-				4497A6EB95157221DA2B2C6CB6A7EB7C /* Targets Support Files */,
+				6A0611050DBB678EE997BB1028D00E06 /* Frameworks */,
+				7766BB69EEF595880B798E0564958948 /* Support Files */,
+			);
+			name = GeoSpark;
+			path = GeoSpark;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4EA7D98B54B0326B28E7073D96F2FC0C /* Pods */,
+				15B43B867B62EA3E34AF95DC549EEF47 /* Products */,
+				1F1AE239695CB1215918381596A722E1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7F846F95011BD09505A3750036E67D5B /* Support Files */ = {
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FB2BB3594C6773982FD74DED460AF521 /* Info.plist */,
-				08B6F70B9E7B27B911AB187B4FAA2BA1 /* MultiSelectSegmentedControl.modulemap */,
-				69409A1B912FB637608792485994D355 /* MultiSelectSegmentedControl.xcconfig */,
-				B7390ADE7D494089A158E21B388B78A0 /* MultiSelectSegmentedControl-dummy.m */,
-				0B09E269356E38D75124CA870AC64AA4 /* MultiSelectSegmentedControl-prefix.pch */,
-				B187AC351476DD020E24D87A5E5FEC4F /* MultiSelectSegmentedControl-umbrella.h */,
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE6094168E844FCA74CBAE1C591C1DE8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				29C8A1BC729F2CBB6EA47AD1C38FDD96 /* MultiSelectSegmentedControl.modulemap */,
+				C42CCF0328C179CD6D9051B6B601E9AF /* MultiSelectSegmentedControl.xcconfig */,
+				928BA867A671DA86569A378B618BE7F9 /* MultiSelectSegmentedControl-dummy.m */,
+				36E9A899FE4DA11D46C2CF0325D12C35 /* MultiSelectSegmentedControl-Info.plist */,
+				623A55549E22AB9873404C61DBC6E9D0 /* MultiSelectSegmentedControl-prefix.pch */,
+				26F534D86AF15026F46642B057CFCB41 /* MultiSelectSegmentedControl-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MultiSelectSegmentedControl";
 			sourceTree = "<group>";
 		};
-		83538CA8FD7E383F4F751E0C55CE86A2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6C3A09EF0966FFA58D8E58ADB03845C3 /* MultiSelectSegmentedControl.framework */,
-				4BB92E97648C31B896E67882D4C68612 /* Pods_GeoSparkExample.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CF23D68058B01087AFDBE8D0C0252C30 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0A21F5B9C450A1466E986DA17798064A /* GeoSpark */,
-				35D80E49CA7828E4EF4580CAE7DBB2D6 /* MultiSelectSegmentedControl */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		716BE4D8799E7BB4C537D58B522FD3BA /* Headers */ = {
+		2C3F8549C7D4C8B8408C0E8E113AFD6E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1498A3B78687805EF8834215C3784338 /* MultiSelectSegmentedControl-umbrella.h in Headers */,
-				6F971923E3D669D961B2156DA0A459D8 /* MultiSelectSegmentedControl.h in Headers */,
+				8231A9086A634214E9AC14FBE59E6987 /* MultiSelectSegmentedControl-umbrella.h in Headers */,
+				68D5B94B8DE81E37E7525BFA7C83B811 /* MultiSelectSegmentedControl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B8C7EECBDAA8F7A12A495CAF55A2E9A /* Headers */ = {
+		D8943A196FB197FCAC6A953A96C23BD6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1444A5988526FAA4E1889E37EDD34FD0 /* Pods-GeoSparkExample-umbrella.h in Headers */,
+				F996CB54605280D92192009A87B8552E /* Pods-GeoSparkExample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9441725109960B62F26090BE42C56D90 /* Pods-GeoSparkExample */ = {
+		3B3ABC398225CDA9F7DCCF5F63B977C4 /* MultiSelectSegmentedControl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 71E258C45F86E7AFFD8C1F64CB4906FC /* Build configuration list for PBXNativeTarget "Pods-GeoSparkExample" */;
+			buildConfigurationList = EAFF43B3F71F43EC56A9170CAB1822B5 /* Build configuration list for PBXNativeTarget "MultiSelectSegmentedControl" */;
 			buildPhases = (
-				F61F42E7E057791F250D5EE16B664710 /* Sources */,
-				9F63192D3FEF21F5C707EF12EF11E8D7 /* Frameworks */,
-				7B8C7EECBDAA8F7A12A495CAF55A2E9A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5794C2D6E12A5484430A33B00C822ED7 /* PBXTargetDependency */,
-			);
-			name = "Pods-GeoSparkExample";
-			productName = "Pods-GeoSparkExample";
-			productReference = 4BB92E97648C31B896E67882D4C68612 /* Pods_GeoSparkExample.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		94EA86AAABF9A454A48FFE7A138A0113 /* MultiSelectSegmentedControl */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9CA27A02128FF3640A548525AE592EAB /* Build configuration list for PBXNativeTarget "MultiSelectSegmentedControl" */;
-			buildPhases = (
-				6A0F9A175FE38A56A4889488979C1FE3 /* Sources */,
-				2502CE6CD59F3CF2BC0B38BB2856EA0A /* Frameworks */,
-				716BE4D8799E7BB4C537D58B522FD3BA /* Headers */,
+				2C3F8549C7D4C8B8408C0E8E113AFD6E /* Headers */,
+				68F48B4EB580025FD1CD3561ECFDA68B /* Sources */,
+				4F474EA35E45A25F89733E7CB5F29293 /* Frameworks */,
+				7EA31E05E7439870369EF88F0C8CD741 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -241,100 +252,113 @@
 			);
 			name = MultiSelectSegmentedControl;
 			productName = MultiSelectSegmentedControl;
-			productReference = 6C3A09EF0966FFA58D8E58ADB03845C3 /* MultiSelectSegmentedControl.framework */;
+			productReference = 5027FDB3AD3EBF207D5EB99EDF38A142 /* MultiSelectSegmentedControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BFC3C7E7DC2B7FE765B41712045ED7A7 /* Pods-GeoSparkExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 793657091FA1B7E799D71DA6C4624888 /* Build configuration list for PBXNativeTarget "Pods-GeoSparkExample" */;
+			buildPhases = (
+				D8943A196FB197FCAC6A953A96C23BD6 /* Headers */,
+				14493C5DC4B98BBA4C310A693B45FEDA /* Sources */,
+				ED231734F57F05F59F7784E9A8C0A574 /* Frameworks */,
+				0F5A30CCCF14035B51ECBC502B32CC13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E1D2B5A583F4C19F5F61C0A3BAB08E7 /* PBXTargetDependency */,
+				0DF6FAAA45951C647F6BDDE1F813AF31 /* PBXTargetDependency */,
+			);
+			name = "Pods-GeoSparkExample";
+			productName = "Pods-GeoSparkExample";
+			productReference = 05DEAD7F1944B768500145B649440375 /* Pods_GeoSparkExample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 83538CA8FD7E383F4F751E0C55CE86A2 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 15B43B867B62EA3E34AF95DC549EEF47 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				94EA86AAABF9A454A48FFE7A138A0113 /* MultiSelectSegmentedControl */,
-				9441725109960B62F26090BE42C56D90 /* Pods-GeoSparkExample */,
+				FB99BD3FDCA6D16E278D43BDA8221C43 /* GeoSpark */,
+				3B3ABC398225CDA9F7DCCF5F63B977C4 /* MultiSelectSegmentedControl */,
+				BFC3C7E7DC2B7FE765B41712045ED7A7 /* Pods-GeoSparkExample */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		6A0F9A175FE38A56A4889488979C1FE3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		0F5A30CCCF14035B51ECBC502B32CC13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D86B7415287E1C8DAD17A7C53F62B53D /* MultiSelectSegmentedControl-dummy.m in Sources */,
-				8E5A603D8C25A5DD9B176C638562D2D1 /* MultiSelectSegmentedControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F61F42E7E057791F250D5EE16B664710 /* Sources */ = {
+		7EA31E05E7439870369EF88F0C8CD741 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14493C5DC4B98BBA4C310A693B45FEDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FDEA706C9218AB8B289CB49E93021A6 /* Pods-GeoSparkExample-dummy.m in Sources */,
+				1F93397C5E760B24A530903037A2041D /* Pods-GeoSparkExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F48B4EB580025FD1CD3561ECFDA68B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EE0C838FC14F905C82635218A2BA629 /* MultiSelectSegmentedControl-dummy.m in Sources */,
+				A0C7E426B5F0EE64DF58742EFFA5657E /* MultiSelectSegmentedControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5794C2D6E12A5484430A33B00C822ED7 /* PBXTargetDependency */ = {
+		0DF6FAAA45951C647F6BDDE1F813AF31 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MultiSelectSegmentedControl;
-			target = 94EA86AAABF9A454A48FFE7A138A0113 /* MultiSelectSegmentedControl */;
-			targetProxy = EC8201431515CE564C0E414F730DE704 /* PBXContainerItemProxy */;
+			target = 3B3ABC398225CDA9F7DCCF5F63B977C4 /* MultiSelectSegmentedControl */;
+			targetProxy = 8021BA7EB78995291186F5C4FAFD76BF /* PBXContainerItemProxy */;
+		};
+		6E1D2B5A583F4C19F5F61C0A3BAB08E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GeoSpark;
+			target = FB99BD3FDCA6D16E278D43BDA8221C43 /* GeoSpark */;
+			targetProxy = DAD68BA31E7F6634E6A5DD4C4D589D19 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		014A0480DC98F0DB8B73FD9D06155BB0 /* Debug */ = {
+		10A86E33A88BC144155892F7EFD2FA21 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69409A1B912FB637608792485994D355 /* MultiSelectSegmentedControl.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MultiSelectSegmentedControl/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl.modulemap";
-				PRODUCT_MODULE_NAME = MultiSelectSegmentedControl;
-				PRODUCT_NAME = MultiSelectSegmentedControl;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		0ACF17A57115D40B4577988A0EFC6DD9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47926B8C7D6677695AEBEA8FC3DB830F /* Pods-GeoSparkExample.debug.xcconfig */;
+			baseConfigurationReference = 03443F6E47DE28FA645E4F9BAB9CBEBF /* Pods-GeoSparkExample.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -347,41 +371,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GeoSparkExample/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		0B34095DE64425B8A728F6C80A473465 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79FB9CEB87C9C07083E1AAD1304EEA47 /* Pods-GeoSparkExample.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GeoSparkExample/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -401,7 +391,7 @@
 			};
 			name = Release;
 		};
-		553022A828EE1991F07D2D73F565AEF8 /* Debug */ = {
+		3048B0C5C704DFFF688DA57F5380ED58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -433,8 +423,100 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		592D8567856D519A3F66269154BA83D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7E5ABD5FD45D697C7C3E164F279586C /* Pods-GeoSparkExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B0C8287D755FD95091CF35D87FB8B2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -455,76 +537,50 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		58CE816B060A41D32CEC095441D0E3E0 /* Release */ = {
+		7236676179EF22479A187151AB14124B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B35830F22EEC46CE0ED14FDC037C04BF /* GeoSpark.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C310684509572D7588F3BD26FDD29CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B35830F22EEC46CE0ED14FDC037C04BF /* GeoSpark.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		615ED2701E048A21402734D76648ADF0 /* Release */ = {
+		C9577A9D71AE4DB2BFF36A0B22A53C95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69409A1B912FB637608792485994D355 /* MultiSelectSegmentedControl.xcconfig */;
+			baseConfigurationReference = C42CCF0328C179CD6D9051B6B601E9AF /* MultiSelectSegmentedControl.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -536,7 +592,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MultiSelectSegmentedControl/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -554,37 +610,77 @@
 			};
 			name = Release;
 		};
+		DD1FCE962CE750F2FF8365BEDCC2D28C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42CCF0328C179CD6D9051B6B601E9AF /* MultiSelectSegmentedControl.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl.modulemap";
+				PRODUCT_MODULE_NAME = MultiSelectSegmentedControl;
+				PRODUCT_NAME = MultiSelectSegmentedControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		1F1EEE9F716D996B08EC8038C7008D2E /* Build configuration list for PBXAggregateTarget "GeoSpark" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				553022A828EE1991F07D2D73F565AEF8 /* Debug */,
-				58CE816B060A41D32CEC095441D0E3E0 /* Release */,
+				7236676179EF22479A187151AB14124B /* Debug */,
+				7C310684509572D7588F3BD26FDD29CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		71E258C45F86E7AFFD8C1F64CB4906FC /* Build configuration list for PBXNativeTarget "Pods-GeoSparkExample" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0ACF17A57115D40B4577988A0EFC6DD9 /* Debug */,
-				0B34095DE64425B8A728F6C80A473465 /* Release */,
+				5B0C8287D755FD95091CF35D87FB8B2D /* Debug */,
+				3048B0C5C704DFFF688DA57F5380ED58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CA27A02128FF3640A548525AE592EAB /* Build configuration list for PBXNativeTarget "MultiSelectSegmentedControl" */ = {
+		793657091FA1B7E799D71DA6C4624888 /* Build configuration list for PBXNativeTarget "Pods-GeoSparkExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				014A0480DC98F0DB8B73FD9D06155BB0 /* Debug */,
-				615ED2701E048A21402734D76648ADF0 /* Release */,
+				592D8567856D519A3F66269154BA83D2 /* Debug */,
+				10A86E33A88BC144155892F7EFD2FA21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFF43B3F71F43EC56A9170CAB1822B5 /* Build configuration list for PBXNativeTarget "MultiSelectSegmentedControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD1FCE962CE750F2FF8365BEDCC2D28C /* Debug */,
+				C9577A9D71AE4DB2BFF36A0B22A53C95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

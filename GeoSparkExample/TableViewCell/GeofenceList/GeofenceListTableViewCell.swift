@@ -27,7 +27,6 @@ class GeofenceListTableViewCell: UITableViewCell {
         // Initialization code
     }
     @IBAction func endTrip(_ sender: Any) {
-        print("Clicked trip")
             cellDelegate?.didChangeSwitchState(self)
     }
     

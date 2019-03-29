@@ -17,12 +17,9 @@ class TripViewController: UIViewController {
     var userIds:[GeoSparkTripsData] = []
     var isTripBool:Bool = false
     
-    var activityIndicator:ActivityIndicator?
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        activityIndicator = ActivityIndicator(view: self.view)
         let nib = UINib(nibName: "TripsTableViewCell", bundle: nil)
         tableview.register(nib, forCellReuseIdentifier: "TripsTableViewCell")
     }
@@ -36,7 +33,7 @@ class TripViewController: UIViewController {
     
 
     @IBAction func startTrip(){
-        activityIndicator?.showActivityIndicator()
+        showHud()
         isTripBool = false
 
         var descStr:String = ""
@@ -48,14 +45,14 @@ class TripViewController: UIViewController {
         
         GeoSpark.startTrip(descStr, { (trip) in
             DispatchQueue.main.async{
+                self.dismissHud()
                 self.seeTripDesc.text = ""
                 self.alert("Trip Started for", trip.tripId)
-                self.activityIndicator?.stopActivityIndicator()
             }
 
         }, onFailure: {(error) in
             DispatchQueue.main.async{
-                self.activityIndicator?.stopActivityIndicator()
+                self.dismissHud()
                 self.tableview.reloadData()
             }
         })
@@ -67,22 +64,17 @@ class TripViewController: UIViewController {
     }
 
     func activeTripValue(){
-        activityIndicator?.showActivityIndicator()
+        showHud()
         GeoSpark.activeTrips({ (trips) in
-            print(trips)
-            
-            self.userIds = trips.data
-            print("activeTripValue",self.userIds)
-
+            self.userIds = trips.data.reversed()
             DispatchQueue.main.async{
-                self.activityIndicator?.stopActivityIndicator()
+                self.dismissHud()
                 self.tableview.reloadData()
             }
 
         }, onFailure: { (error) in
-            print(error)
             DispatchQueue.main.async{
-                self.activityIndicator?.stopActivityIndicator()
+                self.dismissHud()
                 self.tableview.reloadData()
             }
         })
@@ -97,6 +89,11 @@ extension TripViewController: UITableViewDelegate, UITableViewDataSource,TripsTa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TripsTableViewCell") as? TripsTableViewCell
+        if userIds[indexPath.row].tripDescription == nil{
+            cell?.userDescription.text = "No Description"
+        }else {
+            cell?.userDescription.text = userIds[indexPath.row].tripDescription
+        }
         cell?.userId.text = userIds[indexPath.row].tripId
         cell?.timeLable.text = userIds[indexPath.row].tripStartedAt
         cell?.cellDelegate = self
@@ -110,17 +107,17 @@ extension TripViewController: UITableViewDelegate, UITableViewDataSource,TripsTa
     }
     
     func endTrip(_ tripId:String){
-        activityIndicator?.showActivityIndicator()
+        showHud()
         GeoSpark.endTrip(tripId, { (tripInfo) in
             self.activeTripValue()
             DispatchQueue.main.async{
-                self.activityIndicator?.stopActivityIndicator()
+                self.dismissHud()
                 self.tableview.reloadData()
             }
 
         }, onFailure: { (error) in
             DispatchQueue.main.async{
-                self.activityIndicator?.stopActivityIndicator()
+                self.dismissHud()
                 self.tableview.reloadData()
             }
         })

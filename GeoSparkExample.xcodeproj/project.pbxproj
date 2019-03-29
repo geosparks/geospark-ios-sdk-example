@@ -7,56 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D3034A220170D620043753D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3034A120170D620043753D /* AppDelegate.swift */; };
 		3D3034A720170D620043753D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3034A520170D620043753D /* Main.storyboard */; };
 		3D3034A920170D620043753D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3034A820170D620043753D /* Assets.xcassets */; };
 		3D3034AC20170D620043753D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3034AA20170D620043753D /* LaunchScreen.storyboard */; };
-		DA2CEB4D2203476900AE61EE /* GetCurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2CEB4C2203476900AE61EE /* GetCurrentLocationViewController.swift */; };
-		DAC1762C218A320A005CE753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17624218A320A005CE753 /* AppDelegate.swift */; };
-		DAC1763D218A3215005CE753 /* UIViewController+Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17637218A3214005CE753 /* UIViewController+Hud.swift */; };
-		DAC1763E218A3215005CE753 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17638218A3214005CE753 /* Spinner.swift */; };
-		DAC1763F218A3215005CE753 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17639218A3214005CE753 /* HudView.swift */; };
-		DAC17640218A3215005CE753 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1763A218A3214005CE753 /* Utils.swift */; };
-		DAD3588121B7FBEA004804B8 /* GeofenceListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD3587C21B7FBEA004804B8 /* GeofenceListTableViewCell.xib */; };
-		DAD3588221B7FBEA004804B8 /* GeofenceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3587D21B7FBEA004804B8 /* GeofenceListTableViewCell.swift */; };
-		DAD3588321B7FBEA004804B8 /* TripsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD3587F21B7FBEA004804B8 /* TripsTableViewCell.xib */; };
-		DAD3588421B7FBEA004804B8 /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3588021B7FBEA004804B8 /* TripsTableViewCell.swift */; };
-		DAD3588C21B7FBF7004804B8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3588621B7FBF7004804B8 /* SettingViewController.swift */; };
-		DAD3588D21B7FBF7004804B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3588721B7FBF7004804B8 /* ViewController.swift */; };
-		DAD3588E21B7FBF7004804B8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3588821B7FBF7004804B8 /* MapViewController.swift */; };
-		DAD3588F21B7FBF7004804B8 /* GeofenceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3588921B7FBF7004804B8 /* GeofenceListViewController.swift */; };
-		DAD3589021B7FBF7004804B8 /* GeoFenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3588A21B7FBF7004804B8 /* GeoFenceViewController.swift */; };
-		DAD3589121B7FBF7004804B8 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3588B21B7FBF7004804B8 /* TripViewController.swift */; };
-		DAD3589421B7FD7A004804B8 /* MultiSelectSegmentedControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD3589321B7FD7A004804B8 /* MultiSelectSegmentedControl.framework */; };
-		DAD3589521B7FDF8004804B8 /* Pods_GeoSparkExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */; };
+		3D3034B720170DD60043753D /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3034B520170DD60043753D /* HudView.swift */; };
+		3D3034B820170DD60043753D /* UIViewController+Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3034B620170DD60043753D /* UIViewController+Hud.swift */; };
+		DA38AE4B21A5636700318560 /* MultiSelectSegmentedControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA38AE4821A5618A00318560 /* MultiSelectSegmentedControl.framework */; };
+		DA38AE4E21A5636A00318560 /* Pods_GeoSparkExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */; };
+		DA5AE74A2228FA8700315C38 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AE7492228FA8700315C38 /* LogViewController.swift */; };
+		DA5AE74D2228FAA700315C38 /* LogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AE74C2228FAA700315C38 /* LogTableViewCell.swift */; };
+		DA5AE7512228FC3300315C38 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AE74F2228FC3300315C38 /* Reachability.swift */; };
+		DA5AE7522228FC3300315C38 /* RechabilityCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AE7502228FC3300315C38 /* RechabilityCheck.swift */; };
+		DA9DC9D621870AF7001667D6 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9DC9D521870AF7001667D6 /* Spinner.swift */; };
+		DAA754A2220311B500F2A327 /* GetCurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA754A1220311B500F2A327 /* GetCurrentLocationViewController.swift */; };
+		DAC07ED622434D2F00153BE6 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC07ED422434D2F00153BE6 /* AppConstant.swift */; };
+		DAC07ED722434D2F00153BE6 /* UserDefaultsValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC07ED522434D2F00153BE6 /* UserDefaultsValue.swift */; };
+		DAC1761A218A22DB005CE753 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC17619218A22DB005CE753 /* Utils.swift */; };
+		DAD358B321B836B3004804B8 /* GeofenceListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD358A721B836B3004804B8 /* GeofenceListTableViewCell.xib */; };
+		DAD358B421B836B3004804B8 /* GeofenceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358A821B836B3004804B8 /* GeofenceListTableViewCell.swift */; };
+		DAD358B521B836B3004804B8 /* TripsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD358AA21B836B3004804B8 /* TripsTableViewCell.xib */; };
+		DAD358B621B836B3004804B8 /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358AB21B836B3004804B8 /* TripsTableViewCell.swift */; };
+		DAD358B721B836B3004804B8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358AD21B836B3004804B8 /* SettingViewController.swift */; };
+		DAD358B821B836B3004804B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358AE21B836B3004804B8 /* ViewController.swift */; };
+		DAD358B921B836B3004804B8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358AF21B836B3004804B8 /* MapViewController.swift */; };
+		DAD358BA21B836B3004804B8 /* GeofenceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358B021B836B3004804B8 /* GeofenceListViewController.swift */; };
+		DAD358BB21B836B3004804B8 /* GeoFenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358B121B836B3004804B8 /* GeoFenceViewController.swift */; };
+		DAD358BC21B836B3004804B8 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358B221B836B3004804B8 /* TripViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A58D532152EBA304D8C2832 /* Pods-GeoSparkExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSparkExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample.debug.xcconfig"; sourceTree = "<group>"; };
 		3D30349E20170D620043753D /* GeoSparkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoSparkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3034A120170D620043753D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D3034A620170D620043753D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D3034A820170D620043753D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D3034AB20170D620043753D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D3034AD20170D620043753D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D3034B320170D8C0043753D /* GeoSparkExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GeoSparkExample.entitlements; sourceTree = "<group>"; };
+		3D3034B520170DD60043753D /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		3D3034B620170DD60043753D /* UIViewController+Hud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Hud.swift"; sourceTree = "<group>"; };
 		458F4D5832D79894C1D15499 /* Pods-GeoSparkExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSparkExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample.release.xcconfig"; sourceTree = "<group>"; };
 		C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSparkExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA2CEB4C2203476900AE61EE /* GetCurrentLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCurrentLocationViewController.swift; sourceTree = "<group>"; };
-		DAC17624218A320A005CE753 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DAC17637218A3214005CE753 /* UIViewController+Hud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Hud.swift"; sourceTree = "<group>"; };
-		DAC17638218A3214005CE753 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
-		DAC17639218A3214005CE753 /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
-		DAC1763A218A3214005CE753 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		DAD3587C21B7FBEA004804B8 /* GeofenceListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeofenceListTableViewCell.xib; sourceTree = "<group>"; };
-		DAD3587D21B7FBEA004804B8 /* GeofenceListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceListTableViewCell.swift; sourceTree = "<group>"; };
-		DAD3587F21B7FBEA004804B8 /* TripsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripsTableViewCell.xib; sourceTree = "<group>"; };
-		DAD3588021B7FBEA004804B8 /* TripsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
-		DAD3588621B7FBF7004804B8 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		DAD3588721B7FBF7004804B8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DAD3588821B7FBF7004804B8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		DAD3588921B7FBF7004804B8 /* GeofenceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceListViewController.swift; sourceTree = "<group>"; };
-		DAD3588A21B7FBF7004804B8 /* GeoFenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoFenceViewController.swift; sourceTree = "<group>"; };
-		DAD3588B21B7FBF7004804B8 /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
-		DAD3589321B7FD7A004804B8 /* MultiSelectSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MultiSelectSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA38AE4821A5618A00318560 /* MultiSelectSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MultiSelectSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5AE7492228FA8700315C38 /* LogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		DA5AE74C2228FAA700315C38 /* LogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogTableViewCell.swift; sourceTree = "<group>"; };
+		DA5AE74F2228FC3300315C38 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		DA5AE7502228FC3300315C38 /* RechabilityCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RechabilityCheck.swift; sourceTree = "<group>"; };
+		DA9DC9D521870AF7001667D6 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		DAA754A1220311B500F2A327 /* GetCurrentLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCurrentLocationViewController.swift; sourceTree = "<group>"; };
+		DAC07ED422434D2F00153BE6 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		DAC07ED522434D2F00153BE6 /* UserDefaultsValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsValue.swift; sourceTree = "<group>"; };
+		DAC17619218A22DB005CE753 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		DAD358A721B836B3004804B8 /* GeofenceListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeofenceListTableViewCell.xib; sourceTree = "<group>"; };
+		DAD358A821B836B3004804B8 /* GeofenceListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceListTableViewCell.swift; sourceTree = "<group>"; };
+		DAD358AA21B836B3004804B8 /* TripsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripsTableViewCell.xib; sourceTree = "<group>"; };
+		DAD358AB21B836B3004804B8 /* TripsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
+		DAD358AD21B836B3004804B8 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		DAD358AE21B836B3004804B8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAD358AF21B836B3004804B8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DAD358B021B836B3004804B8 /* GeofenceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceListViewController.swift; sourceTree = "<group>"; };
+		DAD358B121B836B3004804B8 /* GeoFenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoFenceViewController.swift; sourceTree = "<group>"; };
+		DAD358B221B836B3004804B8 /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAD3589421B7FD7A004804B8 /* MultiSelectSegmentedControl.framework in Frameworks */,
-				DAD3589521B7FDF8004804B8 /* Pods_GeoSparkExample.framework in Frameworks */,
+				DA38AE4B21A5636700318560 /* MultiSelectSegmentedControl.framework in Frameworks */,
+				DA38AE4E21A5636A00318560 /* Pods_GeoSparkExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,21 +107,35 @@
 			children = (
 				3D3034B320170D8C0043753D /* GeoSparkExample.entitlements */,
 				3D3034AD20170D620043753D /* Info.plist */,
-				DAC17624218A320A005CE753 /* AppDelegate.swift */,
+				3D3034A120170D620043753D /* AppDelegate.swift */,
 				3D3034A820170D620043753D /* Assets.xcassets */,
 				3D3034AA20170D620043753D /* LaunchScreen.storyboard */,
 				3D3034A520170D620043753D /* Main.storyboard */,
-				DAD3587A21B7FBEA004804B8 /* TableViewCell */,
-				DAC17636218A3214005CE753 /* Utils */,
-				DAD3588521B7FBF7004804B8 /* ViewController */,
+				DA5AE74E2228FC3300315C38 /* Rechability */,
+				DAD358A521B836B3004804B8 /* TableViewCell */,
+				3D3034B420170DD60043753D /* Utils */,
+				DAD358AC21B836B3004804B8 /* ViewController */,
 			);
 			path = GeoSparkExample;
+			sourceTree = "<group>";
+		};
+		3D3034B420170DD60043753D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DAC07ED422434D2F00153BE6 /* AppConstant.swift */,
+				DAC07ED522434D2F00153BE6 /* UserDefaultsValue.swift */,
+				DA9DC9D521870AF7001667D6 /* Spinner.swift */,
+				3D3034B520170DD60043753D /* HudView.swift */,
+				3D3034B620170DD60043753D /* UIViewController+Hud.swift */,
+				DAC17619218A22DB005CE753 /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		4E8B984B039D62D51A7B481B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DAD3589321B7FD7A004804B8 /* MultiSelectSegmentedControl.framework */,
+				DA38AE4821A5618A00318560 /* MultiSelectSegmentedControl.framework */,
 				C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */,
 			);
 			name = Frameworks;
@@ -124,54 +150,62 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		DAC17636218A3214005CE753 /* Utils */ = {
+		DA5AE74B2228FAA700315C38 /* LogCell */ = {
 			isa = PBXGroup;
 			children = (
-				DAC17637218A3214005CE753 /* UIViewController+Hud.swift */,
-				DAC17638218A3214005CE753 /* Spinner.swift */,
-				DAC17639218A3214005CE753 /* HudView.swift */,
-				DAC1763A218A3214005CE753 /* Utils.swift */,
+				DA5AE74C2228FAA700315C38 /* LogTableViewCell.swift */,
 			);
-			path = Utils;
+			path = LogCell;
 			sourceTree = "<group>";
 		};
-		DAD3587A21B7FBEA004804B8 /* TableViewCell */ = {
+		DA5AE74E2228FC3300315C38 /* Rechability */ = {
 			isa = PBXGroup;
 			children = (
-				DAD3587B21B7FBEA004804B8 /* GeofenceList */,
-				DAD3587E21B7FBEA004804B8 /* Trips */,
+				DA5AE74F2228FC3300315C38 /* Reachability.swift */,
+				DA5AE7502228FC3300315C38 /* RechabilityCheck.swift */,
+			);
+			path = Rechability;
+			sourceTree = "<group>";
+		};
+		DAD358A521B836B3004804B8 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DA5AE74B2228FAA700315C38 /* LogCell */,
+				DAD358A621B836B3004804B8 /* GeofenceList */,
+				DAD358A921B836B3004804B8 /* Trips */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
-		DAD3587B21B7FBEA004804B8 /* GeofenceList */ = {
+		DAD358A621B836B3004804B8 /* GeofenceList */ = {
 			isa = PBXGroup;
 			children = (
-				DAD3587C21B7FBEA004804B8 /* GeofenceListTableViewCell.xib */,
-				DAD3587D21B7FBEA004804B8 /* GeofenceListTableViewCell.swift */,
+				DAD358A721B836B3004804B8 /* GeofenceListTableViewCell.xib */,
+				DAD358A821B836B3004804B8 /* GeofenceListTableViewCell.swift */,
 			);
 			path = GeofenceList;
 			sourceTree = "<group>";
 		};
-		DAD3587E21B7FBEA004804B8 /* Trips */ = {
+		DAD358A921B836B3004804B8 /* Trips */ = {
 			isa = PBXGroup;
 			children = (
-				DAD3587F21B7FBEA004804B8 /* TripsTableViewCell.xib */,
-				DAD3588021B7FBEA004804B8 /* TripsTableViewCell.swift */,
+				DAD358AA21B836B3004804B8 /* TripsTableViewCell.xib */,
+				DAD358AB21B836B3004804B8 /* TripsTableViewCell.swift */,
 			);
 			path = Trips;
 			sourceTree = "<group>";
 		};
-		DAD3588521B7FBF7004804B8 /* ViewController */ = {
+		DAD358AC21B836B3004804B8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DA2CEB4C2203476900AE61EE /* GetCurrentLocationViewController.swift */,
-				DAD3588621B7FBF7004804B8 /* SettingViewController.swift */,
-				DAD3588721B7FBF7004804B8 /* ViewController.swift */,
-				DAD3588821B7FBF7004804B8 /* MapViewController.swift */,
-				DAD3588921B7FBF7004804B8 /* GeofenceListViewController.swift */,
-				DAD3588A21B7FBF7004804B8 /* GeoFenceViewController.swift */,
-				DAD3588B21B7FBF7004804B8 /* TripViewController.swift */,
+				DA5AE7492228FA8700315C38 /* LogViewController.swift */,
+				DAA754A1220311B500F2A327 /* GetCurrentLocationViewController.swift */,
+				DAD358AD21B836B3004804B8 /* SettingViewController.swift */,
+				DAD358AE21B836B3004804B8 /* ViewController.swift */,
+				DAD358AF21B836B3004804B8 /* MapViewController.swift */,
+				DAD358B021B836B3004804B8 /* GeofenceListViewController.swift */,
+				DAD358B121B836B3004804B8 /* GeoFenceViewController.swift */,
+				DAD358B221B836B3004804B8 /* TripViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -187,8 +221,7 @@
 				3D30349A20170D620043753D /* Sources */,
 				3D30349B20170D620043753D /* Frameworks */,
 				3D30349C20170D620043753D /* Resources */,
-				3D3034C4201715EE0043753D /* ShellScript */,
-				38A27EED4C96C5B6D05E17D4 /* [CP] Embed Pods Frameworks */,
+				DBF3444CDB976AAC35E26292 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,7 +239,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Geospark Inc.";
 				TargetAttributes = {
 					3D30349D20170D620043753D = {
@@ -247,9 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D3034AC20170D620043753D /* LaunchScreen.storyboard in Resources */,
-				DAD3588121B7FBEA004804B8 /* GeofenceListTableViewCell.xib in Resources */,
+				DAD358B321B836B3004804B8 /* GeofenceListTableViewCell.xib in Resources */,
 				3D3034A920170D620043753D /* Assets.xcassets in Resources */,
-				DAD3588321B7FBEA004804B8 /* TripsTableViewCell.xib in Resources */,
+				DAD358B521B836B3004804B8 /* TripsTableViewCell.xib in Resources */,
 				3D3034A720170D620043753D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,39 +290,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		38A27EED4C96C5B6D05E17D4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample-frameworks.sh",
-				"${PODS_ROOT}/GeoSpark/GeoSpark.framework",
-				"${BUILT_PRODUCTS_DIR}/MultiSelectSegmentedControl/MultiSelectSegmentedControl.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GeoSpark.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiSelectSegmentedControl.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3D3034C4201715EE0043753D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi\n";
-		};
 		A524F057357A4F239F3C68C7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,6 +308,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DBF3444CDB976AAC35E26292 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample-frameworks.sh",
+				"${PODS_ROOT}/GeoSpark/GeoSpark.framework",
+				"${BUILT_PRODUCTS_DIR}/MultiSelectSegmentedControl/MultiSelectSegmentedControl.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GeoSpark.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiSelectSegmentedControl.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -315,20 +335,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAC1762C218A320A005CE753 /* AppDelegate.swift in Sources */,
-				DAD3588F21B7FBF7004804B8 /* GeofenceListViewController.swift in Sources */,
-				DAC1763F218A3215005CE753 /* HudView.swift in Sources */,
-				DAD3588421B7FBEA004804B8 /* TripsTableViewCell.swift in Sources */,
-				DA2CEB4D2203476900AE61EE /* GetCurrentLocationViewController.swift in Sources */,
-				DAD3588E21B7FBF7004804B8 /* MapViewController.swift in Sources */,
-				DAD3588D21B7FBF7004804B8 /* ViewController.swift in Sources */,
-				DAD3589121B7FBF7004804B8 /* TripViewController.swift in Sources */,
-				DAD3589021B7FBF7004804B8 /* GeoFenceViewController.swift in Sources */,
-				DAD3588C21B7FBF7004804B8 /* SettingViewController.swift in Sources */,
-				DAC1763D218A3215005CE753 /* UIViewController+Hud.swift in Sources */,
-				DAD3588221B7FBEA004804B8 /* GeofenceListTableViewCell.swift in Sources */,
-				DAC1763E218A3215005CE753 /* Spinner.swift in Sources */,
-				DAC17640218A3215005CE753 /* Utils.swift in Sources */,
+				3D3034A220170D620043753D /* AppDelegate.swift in Sources */,
+				DAD358BA21B836B3004804B8 /* GeofenceListViewController.swift in Sources */,
+				3D3034B820170DD60043753D /* UIViewController+Hud.swift in Sources */,
+				3D3034B720170DD60043753D /* HudView.swift in Sources */,
+				DAA754A2220311B500F2A327 /* GetCurrentLocationViewController.swift in Sources */,
+				DAD358B921B836B3004804B8 /* MapViewController.swift in Sources */,
+				DAC07ED722434D2F00153BE6 /* UserDefaultsValue.swift in Sources */,
+				DA5AE7512228FC3300315C38 /* Reachability.swift in Sources */,
+				DA5AE74D2228FAA700315C38 /* LogTableViewCell.swift in Sources */,
+				DA5AE74A2228FA8700315C38 /* LogViewController.swift in Sources */,
+				DA5AE7522228FC3300315C38 /* RechabilityCheck.swift in Sources */,
+				DAD358B821B836B3004804B8 /* ViewController.swift in Sources */,
+				DAD358BC21B836B3004804B8 /* TripViewController.swift in Sources */,
+				DAD358BB21B836B3004804B8 /* GeoFenceViewController.swift in Sources */,
+				DAC07ED622434D2F00153BE6 /* AppConstant.swift in Sources */,
+				DAD358B721B836B3004804B8 /* SettingViewController.swift in Sources */,
+				DAD358B421B836B3004804B8 /* GeofenceListTableViewCell.swift in Sources */,
+				DA9DC9D621870AF7001667D6 /* Spinner.swift in Sources */,
+				DAD358B621B836B3004804B8 /* TripsTableViewCell.swift in Sources */,
+				DAC1761A218A22DB005CE753 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +394,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -375,6 +402,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -425,6 +453,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -432,6 +461,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -467,9 +497,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GeoSparkExample/GeoSparkExample.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GeoSparkExample",
@@ -478,6 +508,7 @@
 				INFOPLIST_FILE = GeoSparkExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -491,9 +522,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GeoSparkExample/GeoSparkExample.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GeoSparkExample",
@@ -502,6 +533,7 @@
 				INFOPLIST_FILE = GeoSparkExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;

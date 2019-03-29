@@ -8,28 +8,44 @@ import UIKit
 import GeoSpark
 import CoreLocation
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController {
     
-    
-    
-    @IBOutlet weak var startSessionButton: UIButton!
-    @IBOutlet weak var createUserButton: UIButton!
-    @IBOutlet weak var stopMonitoringButton: UIButton!
-    @IBOutlet weak var startMonitoringButton: UIButton!
-    @IBOutlet weak var tripButton: UIButton!
-    @IBOutlet weak var geofenceButton: UIButton!
 
+    
+    @IBOutlet weak var createUserButton: UIButton!
+    @IBOutlet weak var setDescriptionButton: UIButton!
+    @IBOutlet weak var getUserButton: UIButton!
     @IBOutlet weak var requestLocationButton: UIButton!
     @IBOutlet weak var requestMotionButton: UIButton!
-
-    @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var desctextField: UITextField!
-
+    @IBOutlet weak var stopTrackingButton: UIButton!
+    @IBOutlet weak var startTrackingButton: UIButton!
+    @IBOutlet weak var tripsButton: UIButton!
+    @IBOutlet weak var geofenceButton: UIButton!
+    @IBOutlet weak var showCurrentLocationButton: UIButton!
+    @IBOutlet weak var showLogs: UIButton!
+    @IBOutlet weak var trackedLocation: UIButton!
+    @IBOutlet weak var updatedLocation: UIButton!
+    @IBOutlet weak var logoutButton: UIButton!
+    
+    @IBOutlet weak var userIdField: UITextField!
+    @IBOutlet weak var userDescField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupIntialStateForButtons()
-        logInIfNeeded()
+        
+        showHud()
+        
+        if UserDefaultsValue.getDefaultString("UserId").isEmpty == false{
+            resetDefaultButton(true)
+            self.userIdField.text = UserDefaultsValue.getDefaultString("UserId")
+            if UserDefaultsValue.getDefaultString("appUserName").isEmpty == false{
+                self.userDescField.text = UserDefaultsValue.getDefaultString("appUserName")
+            }
+        }else{
+            resetDefaultButton(false)
+        }
+        
+        dismissHud()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -52,192 +68,227 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func createUser() {
+    @IBAction func createUser(_ sender: Any) {
         showHud()
-        var descString:String = ""
-        if desctextField.text?.isEmpty == false {
-            descString = desctextField.text!
+        var userDes:String = ""
+        if userDescField.text?.isEmpty == false {
+            userDes = userDescField.text!
+        }
+        GeoSpark.createUser(userDes, { (user) in
+            if user.userId.isEmpty == false{
+                DispatchQueue.main.async {
+                    UserDefaultsValue.setDefaultString(user.userId, "UserId")
+                    self.userIdField.text = user.userId
+                    if userDes.isEmpty == false {
+                        self.userDescField.text = userDes
+                        UserDefaultsValue.setDefaultString(userDes, "appUserName")
+                    }
+                    self.resetDefaultButton(true)
+                    self.dismissHud()
+                }
+            }
+        }) { (error) in
+            self.defaultError(error)
         }
         
-        GeoSpark.createUser(descString, { (user) in
-            DispatchQueue.main.async {
-                if user.userId.isEmpty == false{
-                    self.dismissHud()
-                    self.textField.text = user.userId
-                    self.enableLocationTracking()
-                }
-                self.dismissHud()
-            }
-
-        }, onFailure: { (error) in
-            self.dismissHud()
-        })        
     }
     
-    @IBAction func clearSession() {
-        GeoSpark.logout({ (userId) in            
-            DispatchQueue.main.async {
-                self.textField.text = ""
-                self.enableLocationTracking()
-                self.setupIntialStateForButtons()
-                Utils.resetDefaults()
-            }
-
-        }, onFailure: {(error) in
-            print(error)
-        })
-    }
-    
-    func logInIfNeeded() {
-        showHud()
-        GeoSpark.startSessionIfNeeded({ (user) in
-            DispatchQueue.main.async {
-
-            if user.userId.isEmpty == false{
-                self.textField.text = user.userId
-                self.enableLocationTracking()
-            }
-            self.dismissHud()
-            }
-        }, onFailure: { (error) in
-            self.dismissHud()
-        })
-    }
-    
-    @IBAction func startSession() {
-        if textField.text != "" {
-            let userID = textField.text!
+    @IBAction func setDescription(_ sender: Any) {
+        if userDescField.text?.isEmpty == false {
             showHud()
-            GeoSpark.getUser(userID, { (user) in
-                if user.userId.isEmpty {
-                    self.enableLocationTracking()
-                    self.textField.text = user.userId
+            var userDes:String = ""
+            userDes = userDescField.text!
+            GeoSpark.setDescription(userDes, { (user) in
+                if user.userId.isEmpty == false{
+                    DispatchQueue.main.async {
+                        self.userDescField.text = userDes
+                        UserDefaultsValue.setDefaultString(userDes, "UserId")
+                        self.resetDefaultButton(true)
+                        self.dismissHud()
+                    }
                 }
-            }, onFailure: { (error) in
-                self.dismissHud()
-            })
+                
+            }) { (error) in
+                self.defaultError(error)
+            }
         }else{
-            let alertController = UIAlertController(title: "Error", message: "Please enter User Id", preferredStyle: .alert)
-            let destructionButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            alertController.addAction(destructionButton)
-            present(alertController, animated: true, completion: nil)
+            self.alert("Error", "Please enter Description for user")
         }
     }
     
-    func enableLocationTracking() {
-        createUserButton.isEnabled = false
-        startSessionButton.isEnabled = false
-        startMonitoringButton.isEnabled = true
+    @IBAction func getUser(_ sender: Any) {
+        if userIdField.text?.isEmpty == false{
+            showHud()
+            GeoSpark.getUser(userIdField.text!, { (user) in
+                if user.userId.isEmpty == false{
+                    DispatchQueue.main.async {
+                        UserDefaultsValue.setDefaultString(user.userId, "UserId")
+                        self.userIdField.text = user.userId
+                        self.resetDefaultButton(true)
+                        self.dismissHud()
+                    }
+                }
+            }) { (error) in
+                self.defaultError(error)
+            }
+        }else{
+            self.alert("Error", "Please provide user Id")
+        }
+    }
+    
+    @IBAction func requestLocation(_ sender: Any) {
+        if GeoSpark.isLocationEnabled() == false && CLLocationManager.locationServicesEnabled(){
+            GeoSpark.requestLocation()
+            requestLocationButton.isEnabled = false
+        }else{
+            self.alert("Check", "location is not enable")
+        }
+        
+    }
+    
+    @IBAction func requestMotion(_ sender: Any) {
+        if GeoSpark.isMotionEnabled() == false{
+            GeoSpark.requestMotion()
+        }
+        requestMotionButton.isEnabled = false
+    }
+    
+    @IBAction func StartTracking(_ sender: Any) {
+        if GeoSpark.isLocationEnabled() == false {
+            self.alert("Tracking", "locatiob is not enable")
+        } else if GeoSpark.isMotionEnabled() == false{
+            self.alert("Tracking", "Motion is not enable")
+        }else{
+            if UserDefaultsValue.getDefaultBoolean(kIsTracking) == false && CLLocationManager.locationServicesEnabled(){
+                GeoSpark.startTracking()
+                UserDefaultsValue.setDefaultBoolean(true, kIsTracking)
+                startTrackingButton.isEnabled = false
+                stopTrackingButton.isEnabled = true
+            }else{
+                self.alert("Checking", "location is not enable")
+            }
+        }
+    }
+    
+    @IBAction func stopTracking(_ sender: Any) {
+        GeoSpark.stopTracking()
+        UserDefaultsValue.setDefaultBoolean(false, kIsTracking)
+        startTrackingButton.isEnabled = true
+        stopTrackingButton.isEnabled = false
+    }
+    
+    @IBAction func trips(_ sender: Any) {
+        let vc = TripViewController.viewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func geofence(_ sender: Any) {
+        let vc = GeoFenceViewController.viewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func showLogs(_ sender: Any) {
+        let vc = LogViewController.viewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func currentLocation(_ sender: Any) {
+        let vc = GetCurrentLocationViewController.viewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func trackedLocation(_ sender: Any) {
+        let vc = MapViewController.viewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func updatedLocation(_ sender: Any) {
+        showHud()
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
+            GeoSpark.updateCurrentLocation(30)
+            self.dismissHud()
+        })
+    }
+
+    @IBAction func logout(_ sender: Any) {
+        showHud()
+        GeoSpark.logout({ (userId) in
+            if userId.isEmpty == false{
+                DispatchQueue.main.async {
+                    Utils.resetDefaults()
+                    self.resetDefaultButton(false)
+                    self.userDescField.text = ""
+                    self.userIdField.text = ""
+                    self.dismissHud()
+                }
+            }
+        }) { (error) in
+            self.dismissHud()
+            self.alert(error.errorCode, error.errorMessage)
+        }
+    }
+    
+    func resetDefaultButton(_ isValue:Bool){
+        self.createUserButton.isEnabled = !isValue
+        self.getUserButton.isEnabled = !isValue
+        
+        self.setDescriptionButton.isEnabled = isValue
+        self.requestLocationButton.isEnabled = isValue
+        self.requestMotionButton.isEnabled = isValue
+        self.startTrackingButton.isEnabled = isValue
+        self.stopTrackingButton.isEnabled = isValue
+        self.tripsButton.isEnabled = isValue
+        self.geofenceButton.isEnabled = isValue
+        self.showLogs.isEnabled = isValue
+        self.showCurrentLocationButton.isEnabled = isValue
+        self.trackedLocation.isEnabled = isValue
+        self.updatedLocation.isEnabled = isValue
+        self.logoutButton.isEnabled = isValue
+        
+        if isValue == true {
+            self.enableButton()
+        }
+    }
+    
+    func enableButton(){
         if GeoSpark.isLocationEnabled(){
             requestLocationButton.isEnabled = false
         }
-        if GeoSpark.isMotionEnabled() {
+        if GeoSpark.isMotionEnabled(){
             requestMotionButton.isEnabled = false
         }
-        if UserDefaults.standard.bool(forKey: "isGeoSparkTrackingEnabled") {
-            startLocationTracking()
+        if UserDefaultsValue.getDefaultBoolean(kIsTracking) == true {
+            self.startTrackingButton.isEnabled = false
+            self.stopTrackingButton.isEnabled = true
+        }else{
+            GeoSpark.startTracking()
+            self.startTrackingButton.isEnabled = true
+            self.stopTrackingButton.isEnabled = false
         }
+        
     }
     
-    func setupIntialStateForButtons() {
-        let buttonArray : [UIButton] = [startSessionButton, createUserButton, stopMonitoringButton, startMonitoringButton]
-        for button in buttonArray {
-            button.isEnabled = false
-        }
-        startSessionButton.isEnabled = true
-        createUserButton.isEnabled = true
+    func defaultError(_ error:GeoSparkError){
+        self.dismissHud()
+        self.alert(error.errorCode, error.errorMessage)
     }
     
+    func alert(_ title:String,_ message:String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        self.present(alert, animated: true)
+    }
+    
+}
+
+extension ViewController: UITextFieldDelegate{
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
-    
-    @IBAction func trackedLocation(){
-        let vc = MapViewController.viewController()
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @IBAction func startLocationTracking() {
-        GeoSpark.startTracking()
-        startMonitoringButton.isEnabled = false
-        stopMonitoringButton.isEnabled = true
-    }
-    
-    @IBAction func stopLocationTracking() {
-        GeoSpark.stopTracking()
-        startMonitoringButton.isEnabled = true
-        stopMonitoringButton.isEnabled = false
-    }
-    
-    @IBAction func trips() {
-        let vc = TripViewController.viewController()
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @IBAction func geofence() {
-        let vc = GeoFenceViewController.viewController()
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @IBAction func requestLocation() {
-        GeoSpark.requestLocation()
-        requestLocationButton.isEnabled = false
-    }
-    
-    @IBAction func requestMotion() {
-        GeoSpark.requestMotion()
-        requestMotionButton.isEnabled = false
-
-    }
-    
-    func logDetails() -> [[String : String]] {
-        if let dataArray = UserDefaults.standard.array(forKey: "GeoSparkKeyForLogsInfo"){
-            return dataArray as! [[String : String]]
-        }
-        return []
-    }
-    
-    @IBAction func setDesciption() {
-        
-        if (desctextField.text?.isEmpty)! {
-            let alertController = UIAlertController(title: "Error", message: "Please enter User Id", preferredStyle: .alert)
-            let destructionButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            alertController.addAction(destructionButton)
-            present(alertController, animated: true, completion: nil)
-
-        }else {
-            showHud()
-
-            GeoSpark.setDescription(desctextField.text!, { (user) in
-                
-                    DispatchQueue.main.async {
-                        self.dismissHud()
-                }
-            }, onFailure:  { (erorr) in
-                print(erorr)
-                DispatchQueue.main.async {
-                    self.dismissHud()
-                }
-
-            })
-
-        }
-    }
-
-    @IBAction func settingBtn(){
-        let vc = SettingViewController.viewController()
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @IBAction func showCurrent() {
-        let vc = GetCurrentLocationViewController.viewController()
-        navigationController?.pushViewController(vc, animated: true)
-    }
-
 }
-
 extension Notification.Name {
     static let locationUpdated = Notification.Name("locationUpdated")
 }
+

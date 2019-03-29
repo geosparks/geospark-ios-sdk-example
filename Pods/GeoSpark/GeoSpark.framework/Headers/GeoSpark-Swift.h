@@ -266,6 +266,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <GeoSparkDelegate> 
 + (void)setLocationAccuracy:(NSInteger)accuracy;
 + (void)enableLogger:(BOOL)value;
 + (void)getCurrentLocationWithLocation:(void (^ _Nonnull)(GSLocation * _Nonnull))location;
++ (void)updateCurrentLocation:(NSInteger)accuracy;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -340,6 +341,7 @@ SWIFT_CLASS("_TtC8GeoSpark17GeoSparkTripsData")
 @interface GeoSparkTripsData : NSObject
 @property (nonatomic, copy) NSString * _Null_unspecified tripId;
 @property (nonatomic, copy) NSString * _Null_unspecified tripStartedAt;
+@property (nonatomic, copy) NSString * _Null_unspecified tripDescription;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end

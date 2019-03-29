@@ -15,9 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     
     var window: UIWindow?
-    
-    var backgroundTaskIdentifier: UIBackgroundTaskIdentifier?
-    
+    fileprivate let reachability = Reachability()!
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
@@ -26,12 +25,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         GeoSpark.trackLocationInAppState([GSAppState.AlwaysOn])
         GeoSpark.trackLocationInMotion([GSMotion.All])
         GeoSpark.setLocationAccuracy(70)
-        
+        GeoSpark.enableLogger(true)
         registerForPushNotifications()
+
+        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(note:)), name: .reachabilityChanged, object: reachability)
+        do{
+            try reachability.startNotifier()
+        }catch{
+        }
 
         return true
     }
-    
     
     func getNotificationSettings() {
         UNUserNotificationCenter.current().getNotificationSettings { (settings) in
@@ -60,7 +64,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
     
     func didUpdateLocation(_ location: GSLocation) {
+        print(location.userId)
         Utils.saveLocationToLocal(location.latitude, longitude: location.longitude)
+    }
+    
+    @objc func  reachabilityChanged(note: Notification)
+    {
+        let reachability = note.object as! Reachability
+
+        if reachability.connection == .none {
+            
+        }else {
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "connectNetwork"), object: nil, userInfo: nil)
+        }
     }
 
 }

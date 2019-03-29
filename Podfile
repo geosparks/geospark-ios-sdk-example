@@ -6,6 +6,7 @@ target 'GeoSparkExample' do
   use_frameworks!
   pod 'GeoSpark'
   pod 'MultiSelectSegmentedControl'
+
   # Pods for GeoSparkExample
 
 end

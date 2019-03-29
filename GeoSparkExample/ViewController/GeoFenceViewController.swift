@@ -121,13 +121,18 @@ class GeoFenceViewController: UIViewController,MKMapViewDelegate {
             alert("Geofence", "select coordinate for creating geofence")
         }
         else {
+            showHud()
             GeoSpark.createGeofence(latitude: (selectedCoordinate?.latitude)!, longitude: (selectedCoordinate?.longitude)!, expiry: Int(expiry!.text!)!, radius: Int(radius!.text!)!, { (geofence) in
                 DispatchQueue.main.async{
+                    self.dismissHud()
                     self.radius.text = ""
                     self.expiry.text = ""
                 }
             }, onFailure: { (error) in
-                
+                DispatchQueue.main.async{
+                    self.dismissHud()
+    
+                }
             })
         }
     }

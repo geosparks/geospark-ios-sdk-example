@@ -18,6 +18,7 @@ class TripsTableViewCell: UITableViewCell {
 
     var cellDelegate:TripsTableViewCelldelegate?
 
+    @IBOutlet weak var userDescription: UILabel!
     @IBOutlet weak var userId: UILabel!
     @IBOutlet weak var timeLable: UILabel!
     @IBOutlet weak var endTripBtn: UIButton!
@@ -27,8 +28,7 @@ class TripsTableViewCell: UITableViewCell {
         // Initialization code
     }
     @IBAction func endTrip(_ sender: Any) {
-        print("Clicked trip")
-            cellDelegate?.didChangeSwitchState(self)
+        cellDelegate?.didChangeSwitchState(self)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

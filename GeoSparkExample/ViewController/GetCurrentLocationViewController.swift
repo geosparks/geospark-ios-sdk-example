@@ -49,6 +49,7 @@ class GetCurrentLocationViewController: UIViewController {
     }
 
     @IBAction func selectDate(){
+        showHud()
         GeoSpark.getCurrentLocation { (location) in
             let coord = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
             
@@ -58,6 +59,9 @@ class GetCurrentLocationViewController: UIViewController {
             self.label1.text = "\("Latitude     ")\(location.latitude)"
             print("longitude",location.longitude)
             print("latitude",location.latitude)
+            DispatchQueue.main.async {
+                self.dismissHud()
+            }
         }
     }
     
