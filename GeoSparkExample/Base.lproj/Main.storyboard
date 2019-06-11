@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8mL-Sw-e0g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8mL-Sw-e0g">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -520,90 +520,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Qpl-rJ-yac">
-                                <rect key="frame" x="10" y="70" width="355" height="33"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zed-XQ-SKh">
-                                        <rect key="frame" x="0.0" y="0.0" width="175" height="33"/>
-                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
-                                        <state key="normal" title=" Start Trip">
-                                            <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <state key="disabled">
-                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="startTrip" destination="MWC-Hc-HZb" eventType="touchUpInside" id="ccB-eZ-xC8"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sev-pA-DD7">
-                                        <rect key="frame" x="180" y="0.0" width="175" height="33"/>
-                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
-                                        <state key="normal" title="Active Trips">
-                                            <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <state key="disabled">
-                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="activeTrip" destination="MWC-Hc-HZb" eventType="touchUpInside" id="tA2-ZC-K5D"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="d4S-cS-T0i"/>
-                                </constraints>
-                            </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gs1-SB-Xrv">
-                                <rect key="frame" x="0.0" y="113" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="MWC-Hc-HZb" id="qLE-yl-At4"/>
                                     <outlet property="delegate" destination="MWC-Hc-HZb" id="cBr-pl-EF1"/>
                                 </connections>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Description for Start Trip" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SoB-7j-ShT">
-                                <rect key="frame" x="10" y="30" width="355" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="qoI-LA-McY"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="MWC-Hc-HZb" id="WDt-DK-jcV"/>
-                                </connections>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="SoB-7j-ShT" firstAttribute="leading" secondItem="LaY-GQ-Gss" secondAttribute="leading" constant="10" id="VQS-Nz-wAi"/>
+                            <constraint firstItem="gs1-SB-Xrv" firstAttribute="top" secondItem="LaY-GQ-Gss" secondAttribute="top" id="4br-Kz-Fxl"/>
+                            <constraint firstItem="gs1-SB-Xrv" firstAttribute="bottom" secondItem="LaY-GQ-Gss" secondAttribute="bottom" id="Ooa-hG-dgL"/>
                             <constraint firstAttribute="trailing" secondItem="gs1-SB-Xrv" secondAttribute="trailing" id="VTY-8B-heq"/>
-                            <constraint firstItem="Qpl-rJ-yac" firstAttribute="top" secondItem="SoB-7j-ShT" secondAttribute="bottom" constant="10" id="Xd7-sl-pm5"/>
                             <constraint firstAttribute="bottom" secondItem="gs1-SB-Xrv" secondAttribute="bottom" id="esE-Oe-sc8"/>
-                            <constraint firstItem="LaY-GQ-Gss" firstAttribute="trailing" secondItem="Qpl-rJ-yac" secondAttribute="trailing" constant="10" id="lgr-Ou-sGT"/>
-                            <constraint firstItem="LaY-GQ-Gss" firstAttribute="trailing" secondItem="SoB-7j-ShT" secondAttribute="trailing" constant="10" id="lpj-21-2WG"/>
-                            <constraint firstItem="SoB-7j-ShT" firstAttribute="top" secondItem="LaY-GQ-Gss" secondAttribute="top" constant="10" id="oOf-pj-OhJ"/>
-                            <constraint firstItem="Qpl-rJ-yac" firstAttribute="leading" secondItem="LaY-GQ-Gss" secondAttribute="leading" constant="10" id="orj-fO-2h7"/>
                             <constraint firstItem="gs1-SB-Xrv" firstAttribute="leading" secondItem="LaY-GQ-Gss" secondAttribute="leading" id="tBX-vQ-B2I"/>
-                            <constraint firstItem="gs1-SB-Xrv" firstAttribute="top" secondItem="Qpl-rJ-yac" secondAttribute="bottom" constant="10" id="xlo-4w-zaZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LaY-GQ-Gss"/>
                     </view>
                     <connections>
-                        <outlet property="seeTripDesc" destination="SoB-7j-ShT" id="lU3-kC-WVw"/>
                         <outlet property="tableview" destination="gs1-SB-Xrv" id="AuL-DO-vDV"/>
                     </connections>
                 </viewController>

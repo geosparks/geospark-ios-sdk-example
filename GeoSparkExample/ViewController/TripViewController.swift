@@ -12,116 +12,67 @@ import GeoSpark
 class TripViewController: UIViewController {
 
     @IBOutlet weak var tableview: UITableView!
-    @IBOutlet weak var seeTripDesc: UITextField!
-
-    var userIds:[GeoSparkTripsData] = []
-    var isTripBool:Bool = false
+    var activityIndicator:ActivityIndicator?
+    var trips:[ActiveTripsV2ResponseData] = []
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicator = ActivityIndicator(view: self.view)
         let nib = UINib(nibName: "TripsTableViewCell", bundle: nil)
         tableview.register(nib, forCellReuseIdentifier: "TripsTableViewCell")
+        
+        loadData()
     }
     
-
     static public func viewController() -> TripViewController {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let logsDisplayVC = storyBoard.instantiateViewController(withIdentifier: "TripViewController") as! TripViewController
         return logsDisplayVC
     }
     
-
-    @IBAction func startTrip(){
-        showHud()
-        isTripBool = false
-
-        var descStr:String = ""
-        if (seeTripDesc.text?.isEmpty)!{
-            descStr = ""
-        }else {
-            descStr = seeTripDesc.text!
+    func loadData(){
+        DispatchQueue.main.async{
+            self.activityIndicator?.showActivityIndicator()
         }
-        
-        GeoSpark.startTrip(descStr, { (trip) in
+        GeoSpark.activeTrip({ (trip) in
+            self.trips = trip.trips
             DispatchQueue.main.async{
-                self.dismissHud()
-                self.seeTripDesc.text = ""
-                self.alert("Trip Started for", trip.tripId)
-            }
-
-        }, onFailure: {(error) in
-            DispatchQueue.main.async{
-                self.dismissHud()
+                self.activityIndicator?.stopActivityIndicator()
                 self.tableview.reloadData()
             }
-        })
+        }) { (error) in
+            DispatchQueue.main.async{
+                self.activityIndicator?.stopActivityIndicator()
+                self.tableview.reloadData()
+                self.alert(error.errorCode, error.errorMessage)
+            }
+        }
     }
     
-    @IBAction func activeTrip(){
-        isTripBool = true
-        activeTripValue()
-    }
-
-    func activeTripValue(){
-        showHud()
-        GeoSpark.activeTrips({ (trips) in
-            self.userIds = trips.data.reversed()
-            DispatchQueue.main.async{
-                self.dismissHud()
-                self.tableview.reloadData()
-            }
-
-        }, onFailure: { (error) in
-            DispatchQueue.main.async{
-                self.dismissHud()
-                self.tableview.reloadData()
-            }
-        })
-    }
+    
 }
-
-extension TripViewController: UITableViewDelegate, UITableViewDataSource,TripsTableViewCelldelegate{
+extension TripViewController:UITableViewDelegate,UITableViewDataSource,TripsTableViewCelldelegate{
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return userIds.count
+        return trips.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TripsTableViewCell") as? TripsTableViewCell
-        if userIds[indexPath.row].tripDescription == nil{
-            cell?.userDescription.text = "No Description"
-        }else {
-            cell?.userDescription.text = userIds[indexPath.row].tripDescription
+        let trip = trips[indexPath.row]
+        if trip.isStarted == true {
+            cell?.endTripBtn.setTitle("END", for: .normal)
+        }else{
+            cell?.endTripBtn.setTitle("START", for: .normal)
         }
-        cell?.userId.text = userIds[indexPath.row].tripId
-        cell?.timeLable.text = userIds[indexPath.row].tripStartedAt
+        cell?.userId.text = trip.trip_id
+        cell?.timeLable.text = trip.updatedAt.UTCToLocal()
         cell?.cellDelegate = self
         return cell!
-    }
-    
-    func didChangeSwitchState(_ sender: TripsTableViewCell) {
-        print("didChangeSwitchState",sender)
-        let indexPath = self.tableview.indexPath(for: sender)
-        endTrip(userIds[indexPath!.row].tripId)
-    }
-    
-    func endTrip(_ tripId:String){
-        showHud()
-        GeoSpark.endTrip(tripId, { (tripInfo) in
-            self.activeTripValue()
-            DispatchQueue.main.async{
-                self.dismissHud()
-                self.tableview.reloadData()
-            }
-
-        }, onFailure: { (error) in
-            DispatchQueue.main.async{
-                self.dismissHud()
-                self.tableview.reloadData()
-            }
-        })
-
     }
     
     func alert(_ title:String,_ message:String){
@@ -129,12 +80,34 @@ extension TripViewController: UITableViewDelegate, UITableViewDataSource,TripsTa
         alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
         self.present(alert, animated: true)
     }
-
-}
-extension TripViewController : UITextFieldDelegate{
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
+    func didChangeSwitchState(_ sender: TripsTableViewCell) {
+        print("didChangeSwitchState",sender)
+        let indexPath = self.tableview.indexPath(for: sender)
+        let trip = self.trips[(indexPath?.row)!]
+        
+        if sender.endTripBtn.titleLabel?.text! == "END"{
+            GeoSpark.endTrip(trip.trip_id!, { (trip) in
+                if trip.msg == "Trip Ended."{
+                    self.loadData()
+                }
+            }) { (error) in
+                DispatchQueue.main.async{
+                    self.alert(error.errorCode, error.errorMessage)
+                }
+            }
+        }else{
+            GeoSpark.startTrip(trip.trip_id, "", { (trip) in
+                if trip.msg! == "Trip Started Successfully."{
+                    self.loadData()
+                }
+            }) { (error) in
+                DispatchQueue.main.async{
+                    self.alert(error.errorCode, error.errorMessage)
+                }
+            }
+        }
     }
+    
 }
+

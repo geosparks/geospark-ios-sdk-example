@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3B3ABC398225CDA9F7DCCF5F63B977C4"
+               BlueprintIdentifier = "C07B7AE734D89C24DB2D55FFF6D96DA3"
                BuildableName = "MultiSelectSegmentedControl.framework"
                BlueprintName = "MultiSelectSegmentedControl"
                ReferencedContainer = "container:Pods.xcodeproj">

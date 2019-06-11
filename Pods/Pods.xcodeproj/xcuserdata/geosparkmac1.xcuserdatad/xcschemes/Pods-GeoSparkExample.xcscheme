@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BFC3C7E7DC2B7FE765B41712045ED7A7"
+               BlueprintIdentifier = "58AA7C8603669EC37D132699A8953AE1"
                BuildableName = "Pods_GeoSparkExample.framework"
                BlueprintName = "Pods-GeoSparkExample"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BFC3C7E7DC2B7FE765B41712045ED7A7"
+            BlueprintIdentifier = "58AA7C8603669EC37D132699A8953AE1"
             BuildableName = "Pods_GeoSparkExample.framework"
             BlueprintName = "Pods-GeoSparkExample"
             ReferencedContainer = "container:Pods.xcodeproj">

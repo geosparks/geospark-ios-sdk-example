@@ -69,3 +69,17 @@ class Utils: NSObject {
     }
 
 }
+extension String {
+    
+    func UTCToLocal() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssz"
+        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+        
+        let dt = dateFormatter.date(from: self)
+        dateFormatter.timeZone = TimeZone.current
+        dateFormatter.dateFormat = "dd MMM yyyy, hh:mm"
+        
+        return dateFormatter.string(from: dt ?? Date())
+    }
+}
