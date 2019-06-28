@@ -8,13 +8,14 @@ import UIKit
 import GeoSpark
 import UserNotifications
 
-let PUBLISABLEKEY = ""
+let PUBLISABLEKEY = "bf1801d4940e700ed5b8c158dba5bac0dcc41cb0d2fb027a7fda6559857ef2bb"
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate,GeoSparkDelegate{
+class AppDelegate: UIResponder, UIApplicationDelegate,GeoSparkDelegate{
     
     
     var window: UIWindow?
+    
     fileprivate let reachability = Reachability()!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -79,4 +80,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
     }
 
+}
+
+extension AppDelegate:UNUserNotificationCenterDelegate{
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        return completionHandler([.alert,.sound,.badge])
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        GeoSpark.notificationOpenedHandler(response)
+        completionHandler()
+    }
 }

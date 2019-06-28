@@ -50,7 +50,7 @@ class GetCurrentLocationViewController: UIViewController {
 
     @IBAction func selectDate(){
         showHud()
-        GeoSpark.getCurrentLocation { (location) in
+        GeoSpark.getCurrentLocation(100) { (location) in
             let coord = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
             
             self.zoomToRegion(coord)

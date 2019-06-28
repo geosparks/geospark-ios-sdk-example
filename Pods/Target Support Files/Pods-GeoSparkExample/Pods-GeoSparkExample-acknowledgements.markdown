@@ -1,6 +1,10 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## GeoSpark
+
+Copyright (c) 2019 GeoSpark, Inc. All rights reserved.
+
 ## MultiSelectSegmentedControl
 
 The MIT License (MIT)

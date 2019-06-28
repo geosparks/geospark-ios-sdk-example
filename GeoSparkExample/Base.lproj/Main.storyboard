@@ -150,7 +150,7 @@
                                 <rect key="frame" x="20" y="356" width="335" height="33"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="70" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug2-Ww-eAD">
-                                        <rect key="frame" x="0.0" y="0.0" width="157.5" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="33"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                         <state key="normal" title="Trips">
@@ -168,25 +168,6 @@
                                             <action selector="trips:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V3I-V6-3Qw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IQ-vf-6Eo">
-                                        <rect key="frame" x="177.5" y="0.0" width="157.5" height="33"/>
-                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
-                                        <state key="normal" title="Geofence">
-                                            <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <state key="disabled">
-                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="geofence:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wvh-Tv-uiv"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bvQ-gs-cnu">
@@ -195,27 +176,8 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0Ih-2z-oNN">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="33"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBq-uD-8QV">
-                                                <rect key="frame" x="0.0" y="0.0" width="157.5" height="33"/>
-                                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
-                                                <state key="normal" title="Show Logs">
-                                                    <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <state key="disabled">
-                                                    <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="showLogs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Fa-eL-ggJ"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dns-Rt-gEB">
-                                                <rect key="frame" x="177.5" y="0.0" width="157.5" height="33"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="33"/>
                                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                                 <state key="normal" title="Current Location">
@@ -361,14 +323,12 @@
                     <navigationItem key="navigationItem" id="GZ3-7r-Apv"/>
                     <connections>
                         <outlet property="createUserButton" destination="cKO-PX-kWE" id="sB8-jF-4Et"/>
-                        <outlet property="geofenceButton" destination="5IQ-vf-6Eo" id="diF-qW-b8Q"/>
                         <outlet property="getUserButton" destination="Xcp-TR-MlL" id="xNB-T5-VPU"/>
                         <outlet property="logoutButton" destination="Zns-Sa-vKx" id="Z9X-ep-Dl9"/>
                         <outlet property="requestLocationButton" destination="Qxm-ft-SoT" id="XrN-ho-JIj"/>
                         <outlet property="requestMotionButton" destination="za6-6o-Vqw" id="Mp7-Kg-f7c"/>
                         <outlet property="setDescriptionButton" destination="Imj-Sv-aQV" id="Dcl-v8-qz8"/>
                         <outlet property="showCurrentLocationButton" destination="dns-Rt-gEB" id="vSg-8D-a0R"/>
-                        <outlet property="showLogs" destination="vBq-uD-8QV" id="aV9-Bj-AYk"/>
                         <outlet property="startTrackingButton" destination="647-bu-EP1" id="8Rk-0U-OVj"/>
                         <outlet property="stopTrackingButton" destination="CWT-fD-ygs" id="N1Q-7D-l8k"/>
                         <outlet property="trackedLocation" destination="cmB-kK-lcL" id="CiO-J5-j39"/>

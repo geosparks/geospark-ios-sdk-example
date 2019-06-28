@@ -13,7 +13,7 @@ class TripViewController: UIViewController {
 
     @IBOutlet weak var tableview: UITableView!
     var activityIndicator:ActivityIndicator?
-    var trips:[ActiveTripsV2ResponseData] = []
+    var trips:[ActiveTripsResponse] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,7 @@ class TripViewController: UIViewController {
         DispatchQueue.main.async{
             self.activityIndicator?.showActivityIndicator()
         }
-        GeoSpark.activeTrip({ (trip) in
+        GeoSpark.activeTrips({ (trip) in
             self.trips = trip.trips
             DispatchQueue.main.async{
                 self.activityIndicator?.stopActivityIndicator()

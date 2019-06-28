@@ -188,28 +188,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class ActiveTripsV2ResponseData;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC8GeoSpark21ActiveTripsV2Response")
-@interface ActiveTripsV2Response : NSObject <NSCoding>
-@property (nonatomic) NSInteger code;
-@property (nonatomic, copy) NSArray<ActiveTripsV2ResponseData *> * _Null_unspecified trips;
-@property (nonatomic, copy) NSString * _Null_unspecified msg;
-@property (nonatomic) BOOL status;
-/// NSCoding required initializer.
-/// Fills the data from the passed decoder
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-/// NSCoding required method.
-/// Encodes mode properties into the decoder
-- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC8GeoSpark25ActiveTripsV2ResponseData")
-@interface ActiveTripsV2ResponseData : NSObject <NSCoding>
+SWIFT_CLASS("_TtC8GeoSpark19ActiveTripsResponse")
+@interface ActiveTripsResponse : NSObject <NSCoding>
 @property (nonatomic, copy) NSString * _Null_unspecified createdAt;
 @property (nonatomic, copy) NSString * _Null_unspecified trip_id;
 @property (nonatomic) BOOL isDeleted;
@@ -273,9 +255,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @protocol GeoSparkDelegate;
 @class GeoSparkUser;
 @class GeoSparkError;
-@class GeoSparkGeofence;
-@class GeoSparkGeofenceList;
 @class GeoSparkTrip;
+@class GeoSparkActiveTrips;
+@class UNNotificationResponse;
 
 SWIFT_CLASS("_TtC8GeoSpark8GeoSpark")
 @interface GeoSpark : NSObject
@@ -283,20 +265,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <GeoSparkDelegate> 
 + (id <GeoSparkDelegate> _Nullable)delegate SWIFT_WARN_UNUSED_RESULT;
 + (void)setDelegate:(id <GeoSparkDelegate> _Null_unspecified)newValue;
 + (void)intialize:(NSString * _Nonnull)publishKey;
-+ (void)setDeviceToken:(NSData * _Nonnull)deviceToken;
 + (void)createUser:(NSString * _Nonnull)userDescription :(void (^ _Nonnull)(GeoSparkUser * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
 + (void)getUser:(NSString * _Nonnull)userID :(void (^ _Nonnull)(GeoSparkUser * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
 + (void)startSessionIfNeeded:(void (^ _Nonnull)(GeoSparkUser * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
 + (void)startTracking;
 + (void)stopTracking;
-+ (void)createGeofenceWithLatitude:(double)latitude longitude:(double)longitude expiry:(NSInteger)expireTime radius:(NSInteger)radius :(void (^ _Nonnull)(GeoSparkGeofence * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
-+ (void)geofenceList:(void (^ _Nonnull)(GeoSparkGeofenceList * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
 + (void)setDescription:(NSString * _Nonnull)descriptionString :(void (^ _Nonnull)(GeoSparkUser * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
 + (void)logout:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
-+ (void)deleteGeofence:(NSString * _Nonnull)geofence_id :(void (^ _Nonnull)(NSString * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
 + (void)startTrip:(NSString * _Nonnull)tripID :(NSString * _Nonnull)tripDesc :(void (^ _Nonnull)(GeoSparkTrip * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
 + (void)endTrip:(NSString * _Nonnull)tripID :(void (^ _Nonnull)(GeoSparkTrip * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
-+ (void)activeTrip:(void (^ _Nonnull)(ActiveTripsV2Response * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
++ (void)activeTrips:(void (^ _Nonnull)(GeoSparkActiveTrips * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
 + (NSString * _Nonnull)getUserId SWIFT_WARN_UNUSED_RESULT;
 + (void)requestLocation;
 + (void)requestMotion;
@@ -307,9 +285,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <GeoSparkDelegate> 
 + (void)trackLocationInMotion:(NSArray<NSString *> * _Nonnull)motions;
 + (void)setLocationAccuracy:(NSInteger)accuracy;
 + (void)enableLogger:(BOOL)value;
-+ (void)getCurrentLocationWithLocation:(void (^ _Nonnull)(GSLocation * _Nonnull))location;
++ (void)getCurrentLocation:(NSInteger)accuracy location:(void (^ _Nonnull)(GSLocation * _Nonnull))location;
 + (void)updateCurrentLocation:(NSInteger)accuracy;
++ (void)setDeviceToken:(NSData * _Nonnull)deviceToken;
++ (void)notificationOpenedHandler:(UNNotificationResponse * _Nonnull)resposne;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8GeoSpark19GeoSparkActiveTrips")
+@interface GeoSparkActiveTrips : NSObject <NSCoding>
+@property (nonatomic) NSInteger code;
+@property (nonatomic, copy) NSArray<ActiveTripsResponse *> * _Null_unspecified trips;
+@property (nonatomic, copy) NSString * _Null_unspecified msg;
+@property (nonatomic) BOOL status;
+/// NSCoding required initializer.
+/// Fills the data from the passed decoder
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+/// NSCoding required method.
+/// Encodes mode properties into the decoder
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -323,38 +320,6 @@ SWIFT_CLASS("_TtC8GeoSpark13GeoSparkError")
 @interface GeoSparkError : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull errorCode;
 @property (nonatomic, readonly, copy) NSString * _Nonnull errorMessage;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC8GeoSpark16GeoSparkGeofence")
-@interface GeoSparkGeofence : NSObject
-@property (nonatomic, copy) NSString * _Null_unspecified geofence_id;
-@property (nonatomic, copy) NSString * _Null_unspecified create_at;
-@property (nonatomic, copy) NSString * _Null_unspecified expire_at;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Null_unspecified coordinate;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class GeoSparkGeofenceListData;
-
-SWIFT_CLASS("_TtC8GeoSpark20GeoSparkGeofenceList")
-@interface GeoSparkGeofenceList : NSObject
-@property (nonatomic, copy) NSArray<GeoSparkGeofenceListData *> * _Null_unspecified data;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC8GeoSpark24GeoSparkGeofenceListData")
-@interface GeoSparkGeofenceListData : NSObject
-@property (nonatomic, copy) NSString * _Null_unspecified createdAt;
-@property (nonatomic, copy) NSString * _Null_unspecified expiresAt;
-@property (nonatomic) NSInteger geometryRadius;
-@property (nonatomic, copy) NSString * _Null_unspecified geofenceId;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Null_unspecified coordinates;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -571,28 +536,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class ActiveTripsV2ResponseData;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC8GeoSpark21ActiveTripsV2Response")
-@interface ActiveTripsV2Response : NSObject <NSCoding>
-@property (nonatomic) NSInteger code;
-@property (nonatomic, copy) NSArray<ActiveTripsV2ResponseData *> * _Null_unspecified trips;
-@property (nonatomic, copy) NSString * _Null_unspecified msg;
-@property (nonatomic) BOOL status;
-/// NSCoding required initializer.
-/// Fills the data from the passed decoder
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-/// NSCoding required method.
-/// Encodes mode properties into the decoder
-- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC8GeoSpark25ActiveTripsV2ResponseData")
-@interface ActiveTripsV2ResponseData : NSObject <NSCoding>
+SWIFT_CLASS("_TtC8GeoSpark19ActiveTripsResponse")
+@interface ActiveTripsResponse : NSObject <NSCoding>
 @property (nonatomic, copy) NSString * _Null_unspecified createdAt;
 @property (nonatomic, copy) NSString * _Null_unspecified trip_id;
 @property (nonatomic) BOOL isDeleted;
@@ -656,9 +603,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @protocol GeoSparkDelegate;
 @class GeoSparkUser;
 @class GeoSparkError;
-@class GeoSparkGeofence;
-@class GeoSparkGeofenceList;
 @class GeoSparkTrip;
+@class GeoSparkActiveTrips;
+@class UNNotificationResponse;
 
 SWIFT_CLASS("_TtC8GeoSpark8GeoSpark")
 @interface GeoSpark : NSObject
@@ -666,20 +613,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <GeoSparkDelegate> 
 + (id <GeoSparkDelegate> _Nullable)delegate SWIFT_WARN_UNUSED_RESULT;
 + (void)setDelegate:(id <GeoSparkDelegate> _Null_unspecified)newValue;
 + (void)intialize:(NSString * _Nonnull)publishKey;
-+ (void)setDeviceToken:(NSData * _Nonnull)deviceToken;
 + (void)createUser:(NSString * _Nonnull)userDescription :(void (^ _Nonnull)(GeoSparkUser * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
 + (void)getUser:(NSString * _Nonnull)userID :(void (^ _Nonnull)(GeoSparkUser * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
 + (void)startSessionIfNeeded:(void (^ _Nonnull)(GeoSparkUser * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
 + (void)startTracking;
 + (void)stopTracking;
-+ (void)createGeofenceWithLatitude:(double)latitude longitude:(double)longitude expiry:(NSInteger)expireTime radius:(NSInteger)radius :(void (^ _Nonnull)(GeoSparkGeofence * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
-+ (void)geofenceList:(void (^ _Nonnull)(GeoSparkGeofenceList * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
 + (void)setDescription:(NSString * _Nonnull)descriptionString :(void (^ _Nonnull)(GeoSparkUser * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
 + (void)logout:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
-+ (void)deleteGeofence:(NSString * _Nonnull)geofence_id :(void (^ _Nonnull)(NSString * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
 + (void)startTrip:(NSString * _Nonnull)tripID :(NSString * _Nonnull)tripDesc :(void (^ _Nonnull)(GeoSparkTrip * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
 + (void)endTrip:(NSString * _Nonnull)tripID :(void (^ _Nonnull)(GeoSparkTrip * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
-+ (void)activeTrip:(void (^ _Nonnull)(ActiveTripsV2Response * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
++ (void)activeTrips:(void (^ _Nonnull)(GeoSparkActiveTrips * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(GeoSparkError * _Nonnull))onFailure;
 + (NSString * _Nonnull)getUserId SWIFT_WARN_UNUSED_RESULT;
 + (void)requestLocation;
 + (void)requestMotion;
@@ -690,9 +633,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <GeoSparkDelegate> 
 + (void)trackLocationInMotion:(NSArray<NSString *> * _Nonnull)motions;
 + (void)setLocationAccuracy:(NSInteger)accuracy;
 + (void)enableLogger:(BOOL)value;
-+ (void)getCurrentLocationWithLocation:(void (^ _Nonnull)(GSLocation * _Nonnull))location;
++ (void)getCurrentLocation:(NSInteger)accuracy location:(void (^ _Nonnull)(GSLocation * _Nonnull))location;
 + (void)updateCurrentLocation:(NSInteger)accuracy;
++ (void)setDeviceToken:(NSData * _Nonnull)deviceToken;
++ (void)notificationOpenedHandler:(UNNotificationResponse * _Nonnull)resposne;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8GeoSpark19GeoSparkActiveTrips")
+@interface GeoSparkActiveTrips : NSObject <NSCoding>
+@property (nonatomic) NSInteger code;
+@property (nonatomic, copy) NSArray<ActiveTripsResponse *> * _Null_unspecified trips;
+@property (nonatomic, copy) NSString * _Null_unspecified msg;
+@property (nonatomic) BOOL status;
+/// NSCoding required initializer.
+/// Fills the data from the passed decoder
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+/// NSCoding required method.
+/// Encodes mode properties into the decoder
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -706,38 +668,6 @@ SWIFT_CLASS("_TtC8GeoSpark13GeoSparkError")
 @interface GeoSparkError : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull errorCode;
 @property (nonatomic, readonly, copy) NSString * _Nonnull errorMessage;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC8GeoSpark16GeoSparkGeofence")
-@interface GeoSparkGeofence : NSObject
-@property (nonatomic, copy) NSString * _Null_unspecified geofence_id;
-@property (nonatomic, copy) NSString * _Null_unspecified create_at;
-@property (nonatomic, copy) NSString * _Null_unspecified expire_at;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Null_unspecified coordinate;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class GeoSparkGeofenceListData;
-
-SWIFT_CLASS("_TtC8GeoSpark20GeoSparkGeofenceList")
-@interface GeoSparkGeofenceList : NSObject
-@property (nonatomic, copy) NSArray<GeoSparkGeofenceListData *> * _Null_unspecified data;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC8GeoSpark24GeoSparkGeofenceListData")
-@interface GeoSparkGeofenceListData : NSObject
-@property (nonatomic, copy) NSString * _Null_unspecified createdAt;
-@property (nonatomic, copy) NSString * _Null_unspecified expiresAt;
-@property (nonatomic) NSInteger geometryRadius;
-@property (nonatomic, copy) NSString * _Null_unspecified geofenceId;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Null_unspecified coordinates;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

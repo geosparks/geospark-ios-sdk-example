@@ -20,9 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var stopTrackingButton: UIButton!
     @IBOutlet weak var startTrackingButton: UIButton!
     @IBOutlet weak var tripsButton: UIButton!
-    @IBOutlet weak var geofenceButton: UIButton!
     @IBOutlet weak var showCurrentLocationButton: UIButton!
-    @IBOutlet weak var showLogs: UIButton!
     @IBOutlet weak var trackedLocation: UIButton!
     @IBOutlet weak var updatedLocation: UIButton!
     @IBOutlet weak var logoutButton: UIButton!
@@ -181,17 +179,7 @@ class ViewController: UIViewController {
         let vc = TripViewController.viewController()
         navigationController?.pushViewController(vc, animated: true)
     }
-    
-    @IBAction func geofence(_ sender: Any) {
-        let vc = GeoFenceViewController.viewController()
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @IBAction func showLogs(_ sender: Any) {
-        let vc = LogViewController.viewController()
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
+        
     @IBAction func currentLocation(_ sender: Any) {
         let vc = GetCurrentLocationViewController.viewController()
         navigationController?.pushViewController(vc, animated: true)
@@ -238,8 +226,6 @@ class ViewController: UIViewController {
         self.startTrackingButton.isEnabled = isValue
         self.stopTrackingButton.isEnabled = isValue
         self.tripsButton.isEnabled = isValue
-        self.geofenceButton.isEnabled = isValue
-        self.showLogs.isEnabled = isValue
         self.showCurrentLocationButton.isEnabled = isValue
         self.trackedLocation.isEnabled = isValue
         self.updatedLocation.isEnabled = isValue

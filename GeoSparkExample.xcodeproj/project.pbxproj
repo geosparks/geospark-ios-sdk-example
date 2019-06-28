@@ -31,8 +31,6 @@
 		DAD358B721B836B3004804B8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358AD21B836B3004804B8 /* SettingViewController.swift */; };
 		DAD358B821B836B3004804B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358AE21B836B3004804B8 /* ViewController.swift */; };
 		DAD358B921B836B3004804B8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358AF21B836B3004804B8 /* MapViewController.swift */; };
-		DAD358BA21B836B3004804B8 /* GeofenceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358B021B836B3004804B8 /* GeofenceListViewController.swift */; };
-		DAD358BB21B836B3004804B8 /* GeoFenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358B121B836B3004804B8 /* GeoFenceViewController.swift */; };
 		DAD358BC21B836B3004804B8 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358B221B836B3004804B8 /* TripViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,8 +64,6 @@
 		DAD358AD21B836B3004804B8 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		DAD358AE21B836B3004804B8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DAD358AF21B836B3004804B8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		DAD358B021B836B3004804B8 /* GeofenceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceListViewController.swift; sourceTree = "<group>"; };
-		DAD358B121B836B3004804B8 /* GeoFenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoFenceViewController.swift; sourceTree = "<group>"; };
 		DAD358B221B836B3004804B8 /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,8 +199,6 @@
 				DAD358AD21B836B3004804B8 /* SettingViewController.swift */,
 				DAD358AE21B836B3004804B8 /* ViewController.swift */,
 				DAD358AF21B836B3004804B8 /* MapViewController.swift */,
-				DAD358B021B836B3004804B8 /* GeofenceListViewController.swift */,
-				DAD358B121B836B3004804B8 /* GeoFenceViewController.swift */,
 				DAD358B221B836B3004804B8 /* TripViewController.swift */,
 			);
 			path = ViewController;
@@ -315,7 +309,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample-frameworks.sh",
-				"${PODS_ROOT}/GeoSpark/GeoSpark.framework",
+				"${PODS_ROOT}/GeoSpark/GeoSparkSDK/GeoSpark.framework",
 				"${BUILT_PRODUCTS_DIR}/MultiSelectSegmentedControl/MultiSelectSegmentedControl.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -336,7 +330,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D3034A220170D620043753D /* AppDelegate.swift in Sources */,
-				DAD358BA21B836B3004804B8 /* GeofenceListViewController.swift in Sources */,
 				3D3034B820170DD60043753D /* UIViewController+Hud.swift in Sources */,
 				3D3034B720170DD60043753D /* HudView.swift in Sources */,
 				DAA754A2220311B500F2A327 /* GetCurrentLocationViewController.swift in Sources */,
@@ -348,7 +341,6 @@
 				DA5AE7522228FC3300315C38 /* RechabilityCheck.swift in Sources */,
 				DAD358B821B836B3004804B8 /* ViewController.swift in Sources */,
 				DAD358BC21B836B3004804B8 /* TripViewController.swift in Sources */,
-				DAD358BB21B836B3004804B8 /* GeoFenceViewController.swift in Sources */,
 				DAC07ED622434D2F00153BE6 /* AppConstant.swift in Sources */,
 				DAD358B721B836B3004804B8 /* SettingViewController.swift in Sources */,
 				DAD358B421B836B3004804B8 /* GeofenceListTableViewCell.swift in Sources */,
@@ -499,7 +491,7 @@
 				CODE_SIGN_ENTITLEMENTS = GeoSparkExample/GeoSparkExample.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = QH6UW9Q7Y4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -510,6 +502,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = com.storyboard.notify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -525,7 +518,7 @@
 				CODE_SIGN_ENTITLEMENTS = GeoSparkExample/GeoSparkExample.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = QH6UW9Q7Y4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -536,6 +529,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = com.storyboard.notify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
