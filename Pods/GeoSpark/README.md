@@ -12,7 +12,7 @@ See the full documentation [here](https://docs.geospark.co/ios).
 
 See a Swift example app in `Examples/`.
 
-To run the example app, clone this repository, add your publishable "YOUR-SDK-KEY" & "YOUR-SECRET" key in `AppDelegate.swift`, and build the app.
+To run the example app, clone this repository, add your publishable "YOUR-PUBLISABLE-KEY" key in `AppDelegate.swift`, and build the app.
 
 ## Support
 

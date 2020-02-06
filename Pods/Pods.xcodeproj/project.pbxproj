@@ -19,25 +19,57 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		1F93397C5E760B24A530903037A2041D /* Pods-GeoSparkExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CE8777DC40DF502C220C62A066BFC6 /* Pods-GeoSparkExample-dummy.m */; };
-		47FEE6FC4D74C34BD730428F09813366 /* MultiSelectSegmentedControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7206872F6B56F1B344048BFAF159F9E /* MultiSelectSegmentedControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E2EAE3959FE46732CB8C73F89E8B00A /* MultiSelectSegmentedControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E612FFD639C62836E46B434EE68332 /* MultiSelectSegmentedControl-dummy.m */; };
-		AE9FC32A3DE26C1C5A7596BB88300E32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		E64D2DEFE4714442DCF7A84371894EE1 /* MultiSelectSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E3AAB51ECB402E6DCEBBD9F02C87F4 /* MultiSelectSegmentedControl.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E7AFC284BD4A1CC9696AAE77962F1B6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		F996CB54605280D92192009A87B8552E /* Pods-GeoSparkExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F7F2E04B663F13601E9980AF0677F34 /* Pods-GeoSparkExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE0B8175D2BCD29DB1107884241DA775 /* MultiSelectSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BE7B99E2A59737A96B0D5887B9ACE85 /* MultiSelectSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AEF27AC3489E1272A33D69659F8296C /* UIView+Sweeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D214415AFB2E75C9A141F2675BEFEA /* UIView+Sweeter.swift */; };
+		4038863CD4813D55B69E94303B14DBF0 /* Codable+Sweeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C14D496D4305F43627F4CB9C0B64C7 /* Codable+Sweeter.swift */; };
+		460EA54D97EE82F7F61E1F2688B07964 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3461C63A635534B5863746CF9DCBC09 /* Foundation.framework */; };
+		4D086CDB8FA9590A6AFA8C115A2A0A1E /* Pods-GeoSparkExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F7F2E04B663F13601E9980AF0677F34 /* Pods-GeoSparkExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		520E45FB2C347FC665140DB3CB40ABEA /* Swift+Sweeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD95327818ACC75E1003824468F0913A /* Swift+Sweeter.swift */; };
+		59B625B2D90C71B32B0E0704D761CDD7 /* UIStackView+Sweeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8202680D4D8EAE70634C497EFC02851 /* UIStackView+Sweeter.swift */; };
+		60A0A8F2A384C7A5767FD4E9ADDCD22D /* TimeInterval+Sweeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C834C6EC715DC3799B806A99D02954 /* TimeInterval+Sweeter.swift */; };
+		62DE58663711708F734A06EF117247F6 /* String+Sweeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A382B93CC5A93326F60C64A4727F939F /* String+Sweeter.swift */; };
+		6E04C807A917AA4D257FC81216A9D796 /* SweeterSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36862DDE5D2B733B8CAECFCA249E32D4 /* SweeterSwift-dummy.m */; };
+		7AC33252136F5ED0A2700739A6B82B97 /* UITextView+Sweeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327C3CC4DC6C288C05A8F948BDE2FA9 /* UITextView+Sweeter.swift */; };
+		80ED74498A93C0B2AE76DE7D3F1747A2 /* Pods-GeoSparkExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CE8777DC40DF502C220C62A066BFC6 /* Pods-GeoSparkExample-dummy.m */; };
+		83AA375AE436D0CED99B6B759E257702 /* MultiSelectSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DB4887CA74EBF53CAF37A587EE1A00 /* MultiSelectSegmentedControl.swift */; };
+		87A142ECC0747858303621E495784C5E /* Bundle+Sweeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556531228A475A1622AF046A41FE56E6 /* Bundle+Sweeter.swift */; };
+		94680F01F1F24CC38332E5043C12E4F0 /* UIApplication+Sweeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC05960E82A3366F8235E381C51A8C21 /* UIApplication+Sweeter.swift */; };
+		9B437188D6E78FAB3BF91D41ADA40D15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3461C63A635534B5863746CF9DCBC09 /* Foundation.framework */; };
+		A04B59627D363282D0F9DC90F3536A91 /* SweeterSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CED59972CDA23EC23293B0DE7F4EB716 /* SweeterSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A152D2781E0413045E8BCC5D4FCABDDF /* MultiSelectSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573BCC8272D05C508BA2FDC8E2876EE4 /* MultiSelectSegment.swift */; };
+		AD9389DEA12145A36BA9B766A29CF2B3 /* UIViewController+Sweeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5514A689829F9B13A29F573F2E9B11E1 /* UIViewController+Sweeter.swift */; };
+		C04E3E69EDEC84A78201C3A4EDECA4BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3461C63A635534B5863746CF9DCBC09 /* Foundation.framework */; };
+		C9270CE30177CC4B3D978D6049C5E410 /* NSObject+Sweeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB215154A1BD95A8ADCC07140D591C6 /* NSObject+Sweeter.swift */; };
+		DEFFE827B27BEBAB4E002A113ECAE792 /* NSAttributedString+Sweeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B199401E8C7D9FA6726B6CCE425EAA83 /* NSAttributedString+Sweeter.swift */; };
+		E414035CBA2D9172A4DDB8AA15A252BF /* MultiSelectSegmentedControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1348AAB778058BB737355F9184B2C62 /* MultiSelectSegmentedControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBABA2301185D72E9F6307972A991564 /* DateFormatter+Sweeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C873A309FD94126EC650F04B57E8743 /* DateFormatter+Sweeter.swift */; };
+		EF66886C0608730B46C2F1C23ADD0058 /* NSManagedObjectContext+Sweeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45AE53F235E33A430B883CEBD4BE54 /* NSManagedObjectContext+Sweeter.swift */; };
+		F4A8DBE2B5E39A6BBDE5980E9388D13D /* MultiSelectSegmentedControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DC1C04C418ADA3E4949B47C2032BB8 /* MultiSelectSegmentedControl-dummy.m */; };
+		F99137DC33C671562634165FE8B643CC /* SweeterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C0A5590195FEA5C460F2CB16D3DED3 /* SweeterSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8021BA7EB78995291186F5C4FAFD76BF /* PBXContainerItemProxy */ = {
+		38233792F4CE122439127B4A9DF67F6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6819F499159C87193DDD7D51504DD6C1;
+			remoteInfo = SweeterSwift;
+		};
+		4F57F0778F54ED8E03CD75BD13CAFDF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6819F499159C87193DDD7D51504DD6C1;
+			remoteInfo = SweeterSwift;
+		};
+		EF1665F75A0C34B12E5CB4FC4743224D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C07B7AE734D89C24DB2D55FFF6D96DA3;
 			remoteInfo = MultiSelectSegmentedControl;
 		};
-		DAD68BA31E7F6634E6A5DD4C4D589D19 /* PBXContainerItemProxy */ = {
+		EF715AEC733DE0FC3D498F339DAF4D84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -47,60 +79,105 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09C14D496D4305F43627F4CB9C0B64C7 /* Codable+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Codable+Sweeter.swift"; path = "Source/Codable+Sweeter.swift"; sourceTree = "<group>"; };
+		111E565B905C343F3BA8BE5BCE72213B /* GeoSpark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GeoSpark.framework; path = GeoSparkSDK/GeoSpark.framework; sourceTree = "<group>"; };
+		16D214415AFB2E75C9A141F2675BEFEA /* UIView+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Sweeter.swift"; path = "Source/UIView+Sweeter.swift"; sourceTree = "<group>"; };
 		1FA24544FE5E35465B24B9E111950816 /* Pods-GeoSparkExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoSparkExample.release.xcconfig"; sourceTree = "<group>"; };
+		24DC1C04C418ADA3E4949B47C2032BB8 /* MultiSelectSegmentedControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MultiSelectSegmentedControl-dummy.m"; sourceTree = "<group>"; };
 		257C8F9AE6A980FB8AE6F7F3D683FD79 /* Pods-GeoSparkExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GeoSparkExample.modulemap"; sourceTree = "<group>"; };
-		27D706BF1F12CD9D9382B876CCB35F83 /* MultiSelectSegmentedControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MultiSelectSegmentedControl-Info.plist"; sourceTree = "<group>"; };
 		2F7F2E04B663F13601E9980AF0677F34 /* Pods-GeoSparkExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GeoSparkExample-umbrella.h"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		355E86E0FE99BB344799C9E54651DE9A /* MultiSelectSegmentedControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MultiSelectSegmentedControl.modulemap; sourceTree = "<group>"; };
+		36862DDE5D2B733B8CAECFCA249E32D4 /* SweeterSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SweeterSwift-dummy.m"; sourceTree = "<group>"; };
 		383DDD467E184B3DB6AA9F850C39BF78 /* Pods-GeoSparkExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoSparkExample.debug.xcconfig"; sourceTree = "<group>"; };
-		48CFC7B69014C7EC739CD4B2B8FDCF7C /* GeoSpark.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoSpark.h; path = GeoSparkSDK/GeoSpark.framework/Headers/GeoSpark.h; sourceTree = "<group>"; };
+		3E45AE53F235E33A430B883CEBD4BE54 /* NSManagedObjectContext+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+Sweeter.swift"; path = "Source/NSManagedObjectContext+Sweeter.swift"; sourceTree = "<group>"; };
+		4EC364B41AAB8371A627828209E39100 /* MultiSelectSegmentedControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiSelectSegmentedControl.xcconfig; sourceTree = "<group>"; };
 		50D5B6E3545430A865D324D32C5CBFED /* Pods-GeoSparkExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeoSparkExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		5F87BA0E2827EB503C7F18A607C1175F /* GeoSpark-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GeoSpark-Swift.h"; path = "GeoSparkSDK/GeoSpark.framework/Headers/GeoSpark-Swift.h"; sourceTree = "<group>"; };
-		63C71ED9851C31855AFEE8780E97EC1B /* MultiSelectSegmentedControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MultiSelectSegmentedControl.modulemap; sourceTree = "<group>"; };
-		722FA53EE11B0234B845C2F7D66C49A6 /* GeoSpark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GeoSpark.framework; path = GeoSparkSDK/GeoSpark.framework; sourceTree = "<group>"; };
-		7BE7B99E2A59737A96B0D5887B9ACE85 /* MultiSelectSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MultiSelectSegmentedControl.h; sourceTree = "<group>"; };
-		8926F838C0BA718D67EB036FD0871EE1 /* MultiSelectSegmentedControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiSelectSegmentedControl.xcconfig; sourceTree = "<group>"; };
+		51C0A5590195FEA5C460F2CB16D3DED3 /* SweeterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweeterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5514A689829F9B13A29F573F2E9B11E1 /* UIViewController+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Sweeter.swift"; path = "Source/UIViewController+Sweeter.swift"; sourceTree = "<group>"; };
+		556531228A475A1622AF046A41FE56E6 /* Bundle+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Sweeter.swift"; path = "Source/Bundle+Sweeter.swift"; sourceTree = "<group>"; };
+		573BCC8272D05C508BA2FDC8E2876EE4 /* MultiSelectSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiSelectSegment.swift; path = Sources/MultiSelectSegment.swift; sourceTree = "<group>"; };
+		6327C3CC4DC6C288C05A8F948BDE2FA9 /* UITextView+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+Sweeter.swift"; path = "Source/UITextView+Sweeter.swift"; sourceTree = "<group>"; };
+		635A7BEA1D0588765ED51AC9CA0C5F32 /* GeoSpark-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GeoSpark-Swift.h"; path = "GeoSparkSDK/GeoSpark.framework/Headers/GeoSpark-Swift.h"; sourceTree = "<group>"; };
+		712ACE21EF1F1E8838FFF28DD89661F1 /* SweeterSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SweeterSwift-prefix.pch"; sourceTree = "<group>"; };
+		78DB4887CA74EBF53CAF37A587EE1A00 /* MultiSelectSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiSelectSegmentedControl.swift; path = Sources/MultiSelectSegmentedControl.swift; sourceTree = "<group>"; };
+		7E2746A20E987A81FEDA1862FD26A0A8 /* SweeterSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SweeterSwift.modulemap; sourceTree = "<group>"; };
+		8B3072ECAF354211140FE9181B71DA41 /* SweeterSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SweeterSwift-Info.plist"; sourceTree = "<group>"; };
+		8C873A309FD94126EC650F04B57E8743 /* DateFormatter+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateFormatter+Sweeter.swift"; path = "Source/DateFormatter+Sweeter.swift"; sourceTree = "<group>"; };
+		8E21929761CC92B600F92424BF52D0E1 /* SweeterSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SweeterSwift.xcconfig; sourceTree = "<group>"; };
+		8FD52B7A76E39C14840D57018B907BFA /* GeoSpark.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GeoSpark.xcconfig; sourceTree = "<group>"; };
+		9291D11B8C1CECE339455D5F3CCF263E /* MultiSelectSegmentedControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiSelectSegmentedControl-prefix.pch"; sourceTree = "<group>"; };
 		92CE8777DC40DF502C220C62A066BFC6 /* Pods-GeoSparkExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GeoSparkExample-dummy.m"; sourceTree = "<group>"; };
 		9A6AE0F0C421C4CA71567B2441689E63 /* Pods-GeoSparkExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeoSparkExample-frameworks.sh"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A057007D899134FF7DDE7E6117C78EAA /* Pods_GeoSparkExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GeoSparkExample.framework; path = "Pods-GeoSparkExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0E612FFD639C62836E46B434EE68332 /* MultiSelectSegmentedControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MultiSelectSegmentedControl-dummy.m"; sourceTree = "<group>"; };
-		A2092823DA2C573E86AB781022A4A1E6 /* GeoSpark.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GeoSpark.xcconfig; sourceTree = "<group>"; };
-		C7E52CE19F2DD1E7EDEF3BF9C38AE84F /* MultiSelectSegmentedControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiSelectSegmentedControl-prefix.pch"; sourceTree = "<group>"; };
-		E3E3AAB51ECB402E6DCEBBD9F02C87F4 /* MultiSelectSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MultiSelectSegmentedControl.m; sourceTree = "<group>"; };
+		A3461C63A635534B5863746CF9DCBC09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A382B93CC5A93326F60C64A4727F939F /* String+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Sweeter.swift"; path = "Source/String+Sweeter.swift"; sourceTree = "<group>"; };
+		B187387B2705AD96EB78A1687632018A /* MultiSelectSegmentedControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MultiSelectSegmentedControl-Info.plist"; sourceTree = "<group>"; };
+		B199401E8C7D9FA6726B6CCE425EAA83 /* NSAttributedString+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSAttributedString+Sweeter.swift"; path = "Source/NSAttributedString+Sweeter.swift"; sourceTree = "<group>"; };
+		B76CD9F952582A6A4387D799501B3950 /* SweeterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SweeterSwift.framework; path = SweeterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C834C6EC715DC3799B806A99D02954 /* TimeInterval+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TimeInterval+Sweeter.swift"; path = "Source/TimeInterval+Sweeter.swift"; sourceTree = "<group>"; };
+		C1348AAB778058BB737355F9184B2C62 /* MultiSelectSegmentedControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiSelectSegmentedControl-umbrella.h"; sourceTree = "<group>"; };
+		CC05960E82A3366F8235E381C51A8C21 /* UIApplication+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+Sweeter.swift"; path = "Source/UIApplication+Sweeter.swift"; sourceTree = "<group>"; };
+		CED59972CDA23EC23293B0DE7F4EB716 /* SweeterSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SweeterSwift-umbrella.h"; sourceTree = "<group>"; };
+		D8202680D4D8EAE70634C497EFC02851 /* UIStackView+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStackView+Sweeter.swift"; path = "Source/UIStackView+Sweeter.swift"; sourceTree = "<group>"; };
+		DCB215154A1BD95A8ADCC07140D591C6 /* NSObject+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Sweeter.swift"; path = "Source/NSObject+Sweeter.swift"; sourceTree = "<group>"; };
+		DCF8022DD871BBFFFF7F7960FC1C5951 /* GeoSpark.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoSpark.h; path = GeoSparkSDK/GeoSpark.framework/Headers/GeoSpark.h; sourceTree = "<group>"; };
 		ED505554A861178FAA35175C3E0B6910 /* Pods-GeoSparkExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GeoSparkExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F7206872F6B56F1B344048BFAF159F9E /* MultiSelectSegmentedControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiSelectSegmentedControl-umbrella.h"; sourceTree = "<group>"; };
 		F75AA00BE79A85F485A628B9C0D5263F /* MultiSelectSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MultiSelectSegmentedControl.framework; path = MultiSelectSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9111F607C0D53EABAB0015DA95A3065 /* Pods-GeoSparkExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeoSparkExample-Info.plist"; sourceTree = "<group>"; };
+		FD95327818ACC75E1003824468F0913A /* Swift+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Swift+Sweeter.swift"; path = "Source/Swift+Sweeter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4F474EA35E45A25F89733E7CB5F29293 /* Frameworks */ = {
+		5BDEBF6EF37ABD6E99AB24E7031F4504 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7AFC284BD4A1CC9696AAE77962F1B6B /* Foundation.framework in Frameworks */,
+				9B437188D6E78FAB3BF91D41ADA40D15 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED231734F57F05F59F7784E9A8C0A574 /* Frameworks */ = {
+		BA7BB117331DB7E1E8AB410A2E97A5BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE9FC32A3DE26C1C5A7596BB88300E32 /* Foundation.framework in Frameworks */,
+				C04E3E69EDEC84A78201C3A4EDECA4BB /* Foundation.framework in Frameworks */,
+				F99137DC33C671562634165FE8B643CC /* SweeterSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4556884EF7B4E0B1941E494BB036C86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460EA54D97EE82F7F61E1F2688B07964 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15B43B867B62EA3E34AF95DC549EEF47 /* Products */ = {
+		09C261EAE2B5E1C0564AA867FE720461 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F75AA00BE79A85F485A628B9C0D5263F /* MultiSelectSegmentedControl.framework */,
-				A057007D899134FF7DDE7E6117C78EAA /* Pods_GeoSparkExample.framework */,
+				8FD52B7A76E39C14840D57018B907BFA /* GeoSpark.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/GeoSpark";
+			sourceTree = "<group>";
+		};
+		184B7B30222DFE0EEF3DE8B009B1F2D1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				355E86E0FE99BB344799C9E54651DE9A /* MultiSelectSegmentedControl.modulemap */,
+				4EC364B41AAB8371A627828209E39100 /* MultiSelectSegmentedControl.xcconfig */,
+				24DC1C04C418ADA3E4949B47C2032BB8 /* MultiSelectSegmentedControl-dummy.m */,
+				B187387B2705AD96EB78A1687632018A /* MultiSelectSegmentedControl-Info.plist */,
+				9291D11B8C1CECE339455D5F3CCF263E /* MultiSelectSegmentedControl-prefix.pch */,
+				C1348AAB778058BB737355F9184B2C62 /* MultiSelectSegmentedControl-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MultiSelectSegmentedControl";
 			sourceTree = "<group>";
 		};
 		1F1AE239695CB1215918381596A722E1 /* Targets Support Files */ = {
@@ -111,15 +188,52 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		487CE7387D1079269492473EA011DD4E /* MultiSelectSegmentedControl */ = {
+		341E83D6AEAC7081E4AB039AA2BC0FAA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7BE7B99E2A59737A96B0D5887B9ACE85 /* MultiSelectSegmentedControl.h */,
-				E3E3AAB51ECB402E6DCEBBD9F02C87F4 /* MultiSelectSegmentedControl.m */,
-				BDED1359E89C94848A195EEAF8C2DB9B /* Support Files */,
+				A3461C63A635534B5863746CF9DCBC09 /* Foundation.framework */,
 			);
-			name = MultiSelectSegmentedControl;
-			path = MultiSelectSegmentedControl;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		600F6284BCE6659C6CD9837C77DDDD25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				640FE79CD15509FE5CBAC1DEDF58E6BD /* GeoSpark */,
+				82D6ED1BD4A1AF51C6C2B1BC6B0E276A /* MultiSelectSegmentedControl */,
+				7D4493C5B5664211A2A4364C676ADAC5 /* SweeterSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		632B3D109DC763E480BCC559A43EA08A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F75AA00BE79A85F485A628B9C0D5263F /* MultiSelectSegmentedControl.framework */,
+				A057007D899134FF7DDE7E6117C78EAA /* Pods_GeoSparkExample.framework */,
+				B76CD9F952582A6A4387D799501B3950 /* SweeterSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		640FE79CD15509FE5CBAC1DEDF58E6BD /* GeoSpark */ = {
+			isa = PBXGroup;
+			children = (
+				DCF8022DD871BBFFFF7F7960FC1C5951 /* GeoSpark.h */,
+				635A7BEA1D0588765ED51AC9CA0C5F32 /* GeoSpark-Swift.h */,
+				70DA2BC105D01B2B486E8A0BEC9EFC80 /* Frameworks */,
+				09C261EAE2B5E1C0564AA867FE720461 /* Support Files */,
+			);
+			name = GeoSpark;
+			path = GeoSpark;
+			sourceTree = "<group>";
+		};
+		70DA2BC105D01B2B486E8A0BEC9EFC80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				111E565B905C343F3BA8BE5BCE72213B /* GeoSpark.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		734605A1592482CE168A81392CA1A465 /* Pods-GeoSparkExample */ = {
@@ -139,102 +253,98 @@
 			path = "Target Support Files/Pods-GeoSparkExample";
 			sourceTree = "<group>";
 		};
-		BDED1359E89C94848A195EEAF8C2DB9B /* Support Files */ = {
+		7D4493C5B5664211A2A4364C676ADAC5 /* SweeterSwift */ = {
 			isa = PBXGroup;
 			children = (
-				63C71ED9851C31855AFEE8780E97EC1B /* MultiSelectSegmentedControl.modulemap */,
-				8926F838C0BA718D67EB036FD0871EE1 /* MultiSelectSegmentedControl.xcconfig */,
-				A0E612FFD639C62836E46B434EE68332 /* MultiSelectSegmentedControl-dummy.m */,
-				27D706BF1F12CD9D9382B876CCB35F83 /* MultiSelectSegmentedControl-Info.plist */,
-				C7E52CE19F2DD1E7EDEF3BF9C38AE84F /* MultiSelectSegmentedControl-prefix.pch */,
-				F7206872F6B56F1B344048BFAF159F9E /* MultiSelectSegmentedControl-umbrella.h */,
+				556531228A475A1622AF046A41FE56E6 /* Bundle+Sweeter.swift */,
+				09C14D496D4305F43627F4CB9C0B64C7 /* Codable+Sweeter.swift */,
+				8C873A309FD94126EC650F04B57E8743 /* DateFormatter+Sweeter.swift */,
+				B199401E8C7D9FA6726B6CCE425EAA83 /* NSAttributedString+Sweeter.swift */,
+				3E45AE53F235E33A430B883CEBD4BE54 /* NSManagedObjectContext+Sweeter.swift */,
+				DCB215154A1BD95A8ADCC07140D591C6 /* NSObject+Sweeter.swift */,
+				A382B93CC5A93326F60C64A4727F939F /* String+Sweeter.swift */,
+				FD95327818ACC75E1003824468F0913A /* Swift+Sweeter.swift */,
+				C0C834C6EC715DC3799B806A99D02954 /* TimeInterval+Sweeter.swift */,
+				CC05960E82A3366F8235E381C51A8C21 /* UIApplication+Sweeter.swift */,
+				D8202680D4D8EAE70634C497EFC02851 /* UIStackView+Sweeter.swift */,
+				6327C3CC4DC6C288C05A8F948BDE2FA9 /* UITextView+Sweeter.swift */,
+				16D214415AFB2E75C9A141F2675BEFEA /* UIView+Sweeter.swift */,
+				5514A689829F9B13A29F573F2E9B11E1 /* UIViewController+Sweeter.swift */,
+				FF07EFA3F19DF1E3681B5F0A17938D81 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MultiSelectSegmentedControl";
+			name = SweeterSwift;
+			path = SweeterSwift;
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		82D6ED1BD4A1AF51C6C2B1BC6B0E276A /* MultiSelectSegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				573BCC8272D05C508BA2FDC8E2876EE4 /* MultiSelectSegment.swift */,
+				78DB4887CA74EBF53CAF37A587EE1A00 /* MultiSelectSegmentedControl.swift */,
+				184B7B30222DFE0EEF3DE8B009B1F2D1 /* Support Files */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		C832A0DAEE21A7F0A884FB4AA2C97F19 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				722FA53EE11B0234B845C2F7D66C49A6 /* GeoSpark.framework */,
-			);
-			name = Frameworks;
+			name = MultiSelectSegmentedControl;
+			path = MultiSelectSegmentedControl;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				F5DD3D609811148FE25755E766F00C52 /* Pods */,
-				15B43B867B62EA3E34AF95DC549EEF47 /* Products */,
+				D2A4E4C2B9AB233C330C04365A549B28 /* Frameworks */,
+				600F6284BCE6659C6CD9837C77DDDD25 /* Pods */,
+				632B3D109DC763E480BCC559A43EA08A /* Products */,
 				1F1AE239695CB1215918381596A722E1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D2A4E4C2B9AB233C330C04365A549B28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				51C0A5590195FEA5C460F2CB16D3DED3 /* SweeterSwift.framework */,
+				341E83D6AEAC7081E4AB039AA2BC0FAA /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DCBCBD1E137F6CED9AB5D0598488E3E3 /* Support Files */ = {
+		FF07EFA3F19DF1E3681B5F0A17938D81 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A2092823DA2C573E86AB781022A4A1E6 /* GeoSpark.xcconfig */,
+				7E2746A20E987A81FEDA1862FD26A0A8 /* SweeterSwift.modulemap */,
+				8E21929761CC92B600F92424BF52D0E1 /* SweeterSwift.xcconfig */,
+				36862DDE5D2B733B8CAECFCA249E32D4 /* SweeterSwift-dummy.m */,
+				8B3072ECAF354211140FE9181B71DA41 /* SweeterSwift-Info.plist */,
+				712ACE21EF1F1E8838FFF28DD89661F1 /* SweeterSwift-prefix.pch */,
+				CED59972CDA23EC23293B0DE7F4EB716 /* SweeterSwift-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/GeoSpark";
-			sourceTree = "<group>";
-		};
-		F5DD3D609811148FE25755E766F00C52 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FAF8AAC57B264DBDD8BFF57AF9D310CE /* GeoSpark */,
-				487CE7387D1079269492473EA011DD4E /* MultiSelectSegmentedControl */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FAF8AAC57B264DBDD8BFF57AF9D310CE /* GeoSpark */ = {
-			isa = PBXGroup;
-			children = (
-				48CFC7B69014C7EC739CD4B2B8FDCF7C /* GeoSpark.h */,
-				5F87BA0E2827EB503C7F18A607C1175F /* GeoSpark-Swift.h */,
-				C832A0DAEE21A7F0A884FB4AA2C97F19 /* Frameworks */,
-				DCBCBD1E137F6CED9AB5D0598488E3E3 /* Support Files */,
-			);
-			name = GeoSpark;
-			path = GeoSpark;
+			path = "../Target Support Files/SweeterSwift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D8943A196FB197FCAC6A953A96C23BD6 /* Headers */ = {
+		0A6C493EBFC0C37C77F29011B59EA67E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F996CB54605280D92192009A87B8552E /* Pods-GeoSparkExample-umbrella.h in Headers */,
+				E414035CBA2D9172A4DDB8AA15A252BF /* MultiSelectSegmentedControl-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F64C2E2D66EFD66E786DB03895F768EA /* Headers */ = {
+		9C5B0A44B132BE2D668824D156A935BB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47FEE6FC4D74C34BD730428F09813366 /* MultiSelectSegmentedControl-umbrella.h in Headers */,
-				FE0B8175D2BCD29DB1107884241DA775 /* MultiSelectSegmentedControl.h in Headers */,
+				4D086CDB8FA9590A6AFA8C115A2A0A1E /* Pods-GeoSparkExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7FBED072CC0BC3D96B7A06D3EAFAF48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04B59627D363282D0F9DC90F3536A91 /* SweeterSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,36 +353,56 @@
 /* Begin PBXNativeTarget section */
 		58AA7C8603669EC37D132699A8953AE1 /* Pods-GeoSparkExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 793657091FA1B7E799D71DA6C4624888 /* Build configuration list for PBXNativeTarget "Pods-GeoSparkExample" */;
+			buildConfigurationList = 56CCF25F4F1110C0EEBE460E5D1A327F /* Build configuration list for PBXNativeTarget "Pods-GeoSparkExample" */;
 			buildPhases = (
-				D8943A196FB197FCAC6A953A96C23BD6 /* Headers */,
-				14493C5DC4B98BBA4C310A693B45FEDA /* Sources */,
-				ED231734F57F05F59F7784E9A8C0A574 /* Frameworks */,
-				0F5A30CCCF14035B51ECBC502B32CC13 /* Resources */,
+				9C5B0A44B132BE2D668824D156A935BB /* Headers */,
+				27B16AADF56373FD07498E22B902EB5E /* Sources */,
+				5BDEBF6EF37ABD6E99AB24E7031F4504 /* Frameworks */,
+				FD681A80612F3B687C9DC176F2F5A19D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6E1D2B5A583F4C19F5F61C0A3BAB08E7 /* PBXTargetDependency */,
-				0DF6FAAA45951C647F6BDDE1F813AF31 /* PBXTargetDependency */,
+				BD6373E79B06C90B97A9AB1E3FE716F0 /* PBXTargetDependency */,
+				7F427EEA26CDAFA92410FF5E22A88859 /* PBXTargetDependency */,
+				69AB1BCA90E1E84249698F7AEB51C22B /* PBXTargetDependency */,
 			);
 			name = "Pods-GeoSparkExample";
 			productName = "Pods-GeoSparkExample";
 			productReference = A057007D899134FF7DDE7E6117C78EAA /* Pods_GeoSparkExample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C07B7AE734D89C24DB2D55FFF6D96DA3 /* MultiSelectSegmentedControl */ = {
+		6819F499159C87193DDD7D51504DD6C1 /* SweeterSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EAFF43B3F71F43EC56A9170CAB1822B5 /* Build configuration list for PBXNativeTarget "MultiSelectSegmentedControl" */;
+			buildConfigurationList = 5CEBF07F485CE95D99F6A234684B3E4F /* Build configuration list for PBXNativeTarget "SweeterSwift" */;
 			buildPhases = (
-				F64C2E2D66EFD66E786DB03895F768EA /* Headers */,
-				E73C7237E872427D70829D9A38267957 /* Sources */,
-				4F474EA35E45A25F89733E7CB5F29293 /* Frameworks */,
-				7EA31E05E7439870369EF88F0C8CD741 /* Resources */,
+				F7FBED072CC0BC3D96B7A06D3EAFAF48 /* Headers */,
+				8E6F786948D6577A3052DAEEAAE00DBC /* Sources */,
+				E4556884EF7B4E0B1941E494BB036C86 /* Frameworks */,
+				D23A74C72E54FF9FFE7D85DD5E056E45 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = SweeterSwift;
+			productName = SweeterSwift;
+			productReference = B76CD9F952582A6A4387D799501B3950 /* SweeterSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C07B7AE734D89C24DB2D55FFF6D96DA3 /* MultiSelectSegmentedControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D8F50C350AD0DEA6CC7F09507287605 /* Build configuration list for PBXNativeTarget "MultiSelectSegmentedControl" */;
+			buildPhases = (
+				0A6C493EBFC0C37C77F29011B59EA67E /* Headers */,
+				A62ED8CBD1BDC84478A93CD31BA48CBE /* Sources */,
+				BA7BB117331DB7E1E8AB410A2E97A5BF /* Frameworks */,
+				4A6DF91834495A1B75E407D58D580130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C43BF3E32446F8A188F47597F01633C9 /* PBXTargetDependency */,
 			);
 			name = MultiSelectSegmentedControl;
 			productName = MultiSelectSegmentedControl;
@@ -285,8 +415,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 8.0";
@@ -294,28 +424,37 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 15B43B867B62EA3E34AF95DC549EEF47 /* Products */;
+			productRefGroup = 632B3D109DC763E480BCC559A43EA08A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				01BB469B02288D8F56DF6AB33C0C120F /* GeoSpark */,
 				C07B7AE734D89C24DB2D55FFF6D96DA3 /* MultiSelectSegmentedControl */,
 				58AA7C8603669EC37D132699A8953AE1 /* Pods-GeoSparkExample */,
+				6819F499159C87193DDD7D51504DD6C1 /* SweeterSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0F5A30CCCF14035B51ECBC502B32CC13 /* Resources */ = {
+		4A6DF91834495A1B75E407D58D580130 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EA31E05E7439870369EF88F0C8CD741 /* Resources */ = {
+		D23A74C72E54FF9FFE7D85DD5E056E45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD681A80612F3B687C9DC176F2F5A19D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,76 +464,76 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		14493C5DC4B98BBA4C310A693B45FEDA /* Sources */ = {
+		27B16AADF56373FD07498E22B902EB5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F93397C5E760B24A530903037A2041D /* Pods-GeoSparkExample-dummy.m in Sources */,
+				80ED74498A93C0B2AE76DE7D3F1747A2 /* Pods-GeoSparkExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E73C7237E872427D70829D9A38267957 /* Sources */ = {
+		8E6F786948D6577A3052DAEEAAE00DBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E2EAE3959FE46732CB8C73F89E8B00A /* MultiSelectSegmentedControl-dummy.m in Sources */,
-				E64D2DEFE4714442DCF7A84371894EE1 /* MultiSelectSegmentedControl.m in Sources */,
+				87A142ECC0747858303621E495784C5E /* Bundle+Sweeter.swift in Sources */,
+				4038863CD4813D55B69E94303B14DBF0 /* Codable+Sweeter.swift in Sources */,
+				EBABA2301185D72E9F6307972A991564 /* DateFormatter+Sweeter.swift in Sources */,
+				DEFFE827B27BEBAB4E002A113ECAE792 /* NSAttributedString+Sweeter.swift in Sources */,
+				EF66886C0608730B46C2F1C23ADD0058 /* NSManagedObjectContext+Sweeter.swift in Sources */,
+				C9270CE30177CC4B3D978D6049C5E410 /* NSObject+Sweeter.swift in Sources */,
+				62DE58663711708F734A06EF117247F6 /* String+Sweeter.swift in Sources */,
+				6E04C807A917AA4D257FC81216A9D796 /* SweeterSwift-dummy.m in Sources */,
+				520E45FB2C347FC665140DB3CB40ABEA /* Swift+Sweeter.swift in Sources */,
+				60A0A8F2A384C7A5767FD4E9ADDCD22D /* TimeInterval+Sweeter.swift in Sources */,
+				94680F01F1F24CC38332E5043C12E4F0 /* UIApplication+Sweeter.swift in Sources */,
+				59B625B2D90C71B32B0E0704D761CDD7 /* UIStackView+Sweeter.swift in Sources */,
+				7AC33252136F5ED0A2700739A6B82B97 /* UITextView+Sweeter.swift in Sources */,
+				2AEF27AC3489E1272A33D69659F8296C /* UIView+Sweeter.swift in Sources */,
+				AD9389DEA12145A36BA9B766A29CF2B3 /* UIViewController+Sweeter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62ED8CBD1BDC84478A93CD31BA48CBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A152D2781E0413045E8BCC5D4FCABDDF /* MultiSelectSegment.swift in Sources */,
+				F4A8DBE2B5E39A6BBDE5980E9388D13D /* MultiSelectSegmentedControl-dummy.m in Sources */,
+				83AA375AE436D0CED99B6B759E257702 /* MultiSelectSegmentedControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0DF6FAAA45951C647F6BDDE1F813AF31 /* PBXTargetDependency */ = {
+		69AB1BCA90E1E84249698F7AEB51C22B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SweeterSwift;
+			target = 6819F499159C87193DDD7D51504DD6C1 /* SweeterSwift */;
+			targetProxy = 4F57F0778F54ED8E03CD75BD13CAFDF5 /* PBXContainerItemProxy */;
+		};
+		7F427EEA26CDAFA92410FF5E22A88859 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MultiSelectSegmentedControl;
 			target = C07B7AE734D89C24DB2D55FFF6D96DA3 /* MultiSelectSegmentedControl */;
-			targetProxy = 8021BA7EB78995291186F5C4FAFD76BF /* PBXContainerItemProxy */;
+			targetProxy = EF1665F75A0C34B12E5CB4FC4743224D /* PBXContainerItemProxy */;
 		};
-		6E1D2B5A583F4C19F5F61C0A3BAB08E7 /* PBXTargetDependency */ = {
+		BD6373E79B06C90B97A9AB1E3FE716F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GeoSpark;
 			target = 01BB469B02288D8F56DF6AB33C0C120F /* GeoSpark */;
-			targetProxy = DAD68BA31E7F6634E6A5DD4C4D589D19 /* PBXContainerItemProxy */;
+			targetProxy = EF715AEC733DE0FC3D498F339DAF4D84 /* PBXContainerItemProxy */;
+		};
+		C43BF3E32446F8A188F47597F01633C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SweeterSwift;
+			target = 6819F499159C87193DDD7D51504DD6C1 /* SweeterSwift */;
+			targetProxy = 38233792F4CE122439127B4A9DF67F6D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		10A86E33A88BC144155892F7EFD2FA21 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FA24544FE5E35465B24B9E111950816 /* Pods-GeoSparkExample.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -459,7 +598,100 @@
 			};
 			name = Debug;
 		};
-		592D8567856D519A3F66269154BA83D2 /* Debug */ = {
+		1ABB09862CB70096F1CF2172F84DCC90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EC364B41AAB8371A627828209E39100 /* MultiSelectSegmentedControl.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl.modulemap";
+				PRODUCT_MODULE_NAME = MultiSelectSegmentedControl;
+				PRODUCT_NAME = MultiSelectSegmentedControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		26D309AA2CFAB42BE4E008EA97ED6AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E21929761CC92B600F92424BF52D0E1 /* SweeterSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SweeterSwift/SweeterSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SweeterSwift/SweeterSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SweeterSwift/SweeterSwift.modulemap";
+				PRODUCT_MODULE_NAME = SweeterSwift;
+				PRODUCT_NAME = SweeterSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		45C282308FB398BE6BCD291880A5E916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E21929761CC92B600F92424BF52D0E1 /* SweeterSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SweeterSwift/SweeterSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SweeterSwift/SweeterSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SweeterSwift/SweeterSwift.modulemap";
+				PRODUCT_MODULE_NAME = SweeterSwift;
+				PRODUCT_NAME = SweeterSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4D8A1574B887103E4824CDE6E9EF0F53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 383DDD467E184B3DB6AA9F850C39BF78 /* Pods-GeoSparkExample.debug.xcconfig */;
 			buildSettings = {
@@ -495,7 +727,7 @@
 		};
 		7236676179EF22479A187151AB14124B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2092823DA2C573E86AB781022A4A1E6 /* GeoSpark.xcconfig */;
+			baseConfigurationReference = 8FD52B7A76E39C14840D57018B907BFA /* GeoSpark.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -509,7 +741,7 @@
 		};
 		7C310684509572D7588F3BD26FDD29CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2092823DA2C573E86AB781022A4A1E6 /* GeoSpark.xcconfig */;
+			baseConfigurationReference = 8FD52B7A76E39C14840D57018B907BFA /* GeoSpark.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -582,10 +814,12 @@
 			};
 			name = Release;
 		};
-		C9577A9D71AE4DB2BFF36A0B22A53C95 /* Release */ = {
+		BA453261167E56BE58DCCF8D48EE1406 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8926F838C0BA718D67EB036FD0871EE1 /* MultiSelectSegmentedControl.xcconfig */;
+			baseConfigurationReference = 1FA24544FE5E35465B24B9E111950816 /* Pods-GeoSparkExample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -595,18 +829,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl.modulemap";
-				PRODUCT_MODULE_NAME = MultiSelectSegmentedControl;
-				PRODUCT_NAME = MultiSelectSegmentedControl;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -614,9 +849,9 @@
 			};
 			name = Release;
 		};
-		DD1FCE962CE750F2FF8365BEDCC2D28C /* Debug */ = {
+		BF26A51DEEA5F936A5728B48D2632438 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8926F838C0BA718D67EB036FD0871EE1 /* MultiSelectSegmentedControl.xcconfig */;
+			baseConfigurationReference = 4EC364B41AAB8371A627828209E39100 /* MultiSelectSegmentedControl.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -630,20 +865,20 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULEMAP_FILE = "Target Support Files/MultiSelectSegmentedControl/MultiSelectSegmentedControl.modulemap";
 				PRODUCT_MODULE_NAME = MultiSelectSegmentedControl;
 				PRODUCT_NAME = MultiSelectSegmentedControl;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -666,20 +901,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		793657091FA1B7E799D71DA6C4624888 /* Build configuration list for PBXNativeTarget "Pods-GeoSparkExample" */ = {
+		56CCF25F4F1110C0EEBE460E5D1A327F /* Build configuration list for PBXNativeTarget "Pods-GeoSparkExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				592D8567856D519A3F66269154BA83D2 /* Debug */,
-				10A86E33A88BC144155892F7EFD2FA21 /* Release */,
+				4D8A1574B887103E4824CDE6E9EF0F53 /* Debug */,
+				BA453261167E56BE58DCCF8D48EE1406 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EAFF43B3F71F43EC56A9170CAB1822B5 /* Build configuration list for PBXNativeTarget "MultiSelectSegmentedControl" */ = {
+		5CEBF07F485CE95D99F6A234684B3E4F /* Build configuration list for PBXNativeTarget "SweeterSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD1FCE962CE750F2FF8365BEDCC2D28C /* Debug */,
-				C9577A9D71AE4DB2BFF36A0B22A53C95 /* Release */,
+				26D309AA2CFAB42BE4E008EA97ED6AC1 /* Debug */,
+				45C282308FB398BE6BCD291880A5E916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D8F50C350AD0DEA6CC7F09507287605 /* Build configuration list for PBXNativeTarget "MultiSelectSegmentedControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ABB09862CB70096F1CF2172F84DCC90 /* Debug */,
+				BF26A51DEEA5F936A5728B48D2632438 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

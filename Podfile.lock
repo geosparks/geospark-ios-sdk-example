@@ -1,20 +1,24 @@
 PODS:
-  - GeoSpark (2.0.0)
-  - MultiSelectSegmentedControl (1.2.1)
+  - GeoSpark (2.2.1)
+  - MultiSelectSegmentedControl (2.2.0):
+    - SweeterSwift
+  - SweeterSwift (1.1.1)
 
 DEPENDENCIES:
   - GeoSpark
   - MultiSelectSegmentedControl
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - GeoSpark
     - MultiSelectSegmentedControl
+    - SweeterSwift
 
 SPEC CHECKSUMS:
-  GeoSpark: 849fa4801a63bdd1660a4121157104e604051c17
-  MultiSelectSegmentedControl: 495230a5a5fbb6edb03d541f173433922ef0c592
+  GeoSpark: 61c5b08d3b95d19b82a61fc666691f014914d013
+  MultiSelectSegmentedControl: e34388e5d8de55a43ba0191662246c655f5b9d5a
+  SweeterSwift: 880b600f079e627dbcc6611121fbaaebd1e6b9d2
 
 PODFILE CHECKSUM: ba6ccbde4d8d0002bee85a956bc0ff8b44222904
 
-COCOAPODS: 1.7.1
+COCOAPODS: 1.8.4

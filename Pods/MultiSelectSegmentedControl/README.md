@@ -1,103 +1,148 @@
+<img src="Screenshots/MultiSelectSegmentedControl.png">
+
 # MultiSelectSegmentedControl
 
-Multiple selection segmented control.
-
+[![Swift Version][swift-image]][swift-url]
 [![Build Status][travis-image]][travis-url]
 [![License][license-image]][license-url]
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/MultiSelectSegmentedControl.svg)](https://img.shields.io/cocoapods/v/MultiSelectSegmentedControl.svg)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/MultiSelectSegmentedControl.svg)](https://img.shields.io/cocoapods/v/MultiSelectSegmentedControl.svg)  
 [![Platform](https://img.shields.io/cocoapods/p/MultiSelectSegmentedControl.svg?style=flat)](http://cocoapods.org/pods/MultiSelectSegmentedControl)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-<img src="screenshot.png" style="float:right;">
-
-A subclass of `UISegmentedControl` that supports selecting multiple segments.
-
-No need for images - works with the builtin styles of UISegmentedControl.
+UISegmentedControl remake that supports selecting multiple segments, vertical stacking, combining text and images.
 
 ## Features
 
-- [x] Standard iOS look and feel.
+- [x] Single or multiple selection.
+- [x] Horizontal or vertical stacking.
+- [x] Can show text and images together.
 - [x] Use from either storyboard or code.
-
-## Requirements
-
-- iOS 8.0+
-- Xcode 7.3
-
-## Installation
-
-#### CocoaPods
-You can use [CocoaPods](http://cocoapods.org/) to install `YourLibrary` by adding it to your `Podfile`:
-
-```ruby
-platform :ios, '8.0'
-use_frameworks!
-pod 'MultiSelectSegmentedControl'
-```
-
-To get the full benefits import `YourLibrary` wherever you import UIKit
-
-``` swift
-import UIKit
-import MultiSelectSegmentedControl
-```
+- [x] UIAppearance support.
 
 ## Usage
 
-### Creating a MultiSelectSegmentedControl
+Very similar to `UISegmentedControl`, can be used as a drop-in replacement in most cases.
 
-In Interface Builder:
-1. Drag a `UISegmentedControl` into your storyboard.
-2. Set its class to `MultiSelectSegmentedControl`.
-3. Set an outlet for it, e.g., `myMultiSeg`.
+If you use Interface Builder, add a regular `UIView` and then set its class to `MultiSelectSegmentedControl`.
 
-In code:
-``` objc
-self.myMultiSeg = [[MultiSelectSegmentedControl alloc] init];
+### Creating Segments
+
+Each segment can contain an image, a text, or both:
+
+```swift
+let multiSelect = MultiSelectSegmentedControl()
+multiSelect.items = ["One", "Two", image, [image2, "Text"], "Last"]
 ```
 
-### Setting selected segments
+Images are shown in full color (unlike `UISegmentedControl`). To make them render in the same `tintColor` as the control, use template mode:
 
-``` objc
-myMultiSeg.selectedSegmentIndexes = [NSIndexSet indexSetWithIndex:1];
+```swift
+multiSelect.items = [image1, image2, image3].map { $0.withRenderingMode(.alwaysTemplate) }
 ```
 
-### Getting selected segments
+### Selecting Segments
 
-``` objc
-NSIndexSet *selectedIndices = myMultiSeg.selectedSegmentIndexes;
+```swift
+multiSelect.selectedSegmentIndexes = [1, 2, 4]
+```
+
+Or just single selection:
+
+```swift
+multiSelect.allowsMultipleSelection = false
+multiSelect.selectedSegmentIndex = 3
+```
+
+### Getting Selected Segments
+
+```swift
+let selectedIndices: IndexSet = multiSelect.selectedSegmentIndexes
 ```
 
 Or to get the titles:
 
-``` objc
-NSArray *titles = myMultiSeg.selectedSegmentTitles;
+```swift
+let titles: [String] = multiSelect.selectedSegmentTitles
 ```
 
-### Handling user selection changes
+### Handling User Selection Changes
 
-To be notified of changes to the control's value, make sure your ViewController conforms to the delegate protocol:
+You can use standard target-action:
 
-``` objc
-@interface MyViewController : UIViewController <MultiSelectSegmentedControlDelegate>
+```swift
+multiSelect.addTarget(self, action: #selector(selectionChanged), for: .valueChanged)
 ```
 
-...and set the delegate, perhaps in your `viewDidLoad` method:
+Or conform to the delegate protocol:
 
-``` objc
-myMultiSeg.delegate = self;
-```
-Then override the delegate protocol method:
-
-``` objc
--(void)multiSelect:(MultiSelectSegmentedControl *)multiSelectSegmentedControl didChangeValue:(BOOL)selected atIndex:(NSUInteger)index {
-	if (selected) {
-		NSLog(@"Selected segment %u", index);
-	} else {
-		NSLog(@"Deselected segment %u", index);
-	}
+```swift
+extension MyViewController: MultiSelectSegmentedControlDelegate {
+    func multiSelect(_ multiSelectSegmentedControl: MultiSelectSegmentedControl, didChange value: Bool, at index: Int) {
+        print("selected \(value) at \(index)")
+    }
 }
 ```
+
+... and set the delegate:
+
+```swift
+multiSelect.delegate = self
+```
+
+### Changing Appearance
+
+Color:
+
+```swift
+multiSelect.tintColor = .green
+```
+
+Background Color (optional - use if background color should be different from tint color):
+
+```swift
+multiSelect.selectedBackgroundColor = .blue
+```
+
+Shape:
+
+```swift
+multiSelect.borderWidth = 3 // Width of the dividers between segments and the border around the view.
+multiSelect.borderRadius = 32 // Corner radius of the view.
+```
+
+Stack the segments vertically:
+
+```swift
+multiSelect.isVertical = true
+```
+
+Stack each segment contents vertically when it contains both image and text:
+
+```swift
+multiSelect.isVerticalSegmentContents = true
+```
+
+## Installation
+
+### CocoaPods:
+
+```ruby
+pod 'MultiSelectSegmentedControl'
+```
+
+### Swift Package Manager:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/yonat/MultiSelectSegmentedControl", from: "2.2.0")
+]
+```
+
+## TODO
+
+- [ ] foreground color of selected segment should be/appear transparent
+- [ ] configure segment `layoutMargins`, `stackView.spacing`
+
 
 ## Meta
 
@@ -105,11 +150,9 @@ Then override the delegate protocol method:
 
 [https://github.com/yonat/MultiSelectSegmentedControl](https://github.com/yonat/MultiSelectSegmentedControl)
 
-[swift-image]:https://img.shields.io/badge/swift-3.0-orange.svg
+[swift-image]:https://img.shields.io/badge/swift-5.0-orange.svg
 [swift-url]: https://swift.org/
 [license-image]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: LICENSE.txt
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[codebeat-image]: https://codebeat.co/badges/c19b47ea-2f9d-45df-8458-b2d952fe9dad
-[codebeat-url]: https://codebeat.co/projects/github-com-vsouza-awesomeios-com
