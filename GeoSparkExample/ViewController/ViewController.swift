@@ -255,8 +255,10 @@ class ViewController: UIViewController {
     }
     
     func defaultError(_ error:GeoSparkError){
-        self.dismissHud()
-        self.alert(error.errorCode, error.errorMessage)
+        DispatchQueue.main.async {
+            self.dismissHud()
+            self.alert(error.errorCode, error.errorMessage)
+        }
     }
     
     func alert(_ title:String,_ message:String){
