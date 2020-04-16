@@ -28,7 +28,6 @@
 		DAD358B421B836B3004804B8 /* GeofenceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358A821B836B3004804B8 /* GeofenceListTableViewCell.swift */; };
 		DAD358B521B836B3004804B8 /* TripsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD358AA21B836B3004804B8 /* TripsTableViewCell.xib */; };
 		DAD358B621B836B3004804B8 /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358AB21B836B3004804B8 /* TripsTableViewCell.swift */; };
-		DAD358B721B836B3004804B8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358AD21B836B3004804B8 /* SettingViewController.swift */; };
 		DAD358B821B836B3004804B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358AE21B836B3004804B8 /* ViewController.swift */; };
 		DAD358B921B836B3004804B8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358AF21B836B3004804B8 /* MapViewController.swift */; };
 		DAD358BC21B836B3004804B8 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358B221B836B3004804B8 /* TripViewController.swift */; };
@@ -61,7 +60,6 @@
 		DAD358A821B836B3004804B8 /* GeofenceListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceListTableViewCell.swift; sourceTree = "<group>"; };
 		DAD358AA21B836B3004804B8 /* TripsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripsTableViewCell.xib; sourceTree = "<group>"; };
 		DAD358AB21B836B3004804B8 /* TripsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
-		DAD358AD21B836B3004804B8 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		DAD358AE21B836B3004804B8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DAD358AF21B836B3004804B8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DAD358B221B836B3004804B8 /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
@@ -196,7 +194,6 @@
 			children = (
 				DA5AE7492228FA8700315C38 /* LogViewController.swift */,
 				DAA754A1220311B500F2A327 /* GetCurrentLocationViewController.swift */,
-				DAD358AD21B836B3004804B8 /* SettingViewController.swift */,
 				DAD358AE21B836B3004804B8 /* ViewController.swift */,
 				DAD358AF21B836B3004804B8 /* MapViewController.swift */,
 				DAD358B221B836B3004804B8 /* TripViewController.swift */,
@@ -362,7 +359,6 @@
 				DAD358B821B836B3004804B8 /* ViewController.swift in Sources */,
 				DAD358BC21B836B3004804B8 /* TripViewController.swift in Sources */,
 				DAC07ED622434D2F00153BE6 /* AppConstant.swift in Sources */,
-				DAD358B721B836B3004804B8 /* SettingViewController.swift in Sources */,
 				DAD358B421B836B3004804B8 /* GeofenceListTableViewCell.swift in Sources */,
 				DA9DC9D621870AF7001667D6 /* Spinner.swift in Sources */,
 				DAD358B621B836B3004804B8 /* TripsTableViewCell.swift in Sources */,
@@ -511,7 +507,7 @@
 				CODE_SIGN_ENTITLEMENTS = GeoSparkExample/GeoSparkExample.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QH6UW9Q7Y4;
+				DEVELOPMENT_TEAM = B92BAJFGJP;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -522,6 +518,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cordova.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -535,9 +532,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GeoSparkExample/GeoSparkExample.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QH6UW9Q7Y4;
+				DEVELOPMENT_TEAM = B92BAJFGJP;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -548,6 +545,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cordova.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
