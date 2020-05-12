@@ -13,6 +13,8 @@
 		3D3034AC20170D620043753D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3034AA20170D620043753D /* LaunchScreen.storyboard */; };
 		3D3034B720170DD60043753D /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3034B520170DD60043753D /* HudView.swift */; };
 		3D3034B820170DD60043753D /* UIViewController+Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3034B620170DD60043753D /* UIViewController+Hud.swift */; };
+		7B2BFCC324485CA1003026A2 /* GeoSpark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2BFCC124485C9B003026A2 /* GeoSpark.framework */; };
+		7B2BFCC424485CA1003026A2 /* GeoSpark.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2BFCC124485C9B003026A2 /* GeoSpark.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA38AE4B21A5636700318560 /* MultiSelectSegmentedControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA38AE4821A5618A00318560 /* MultiSelectSegmentedControl.framework */; };
 		DA38AE4E21A5636A00318560 /* Pods_GeoSparkExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */; };
 		DA5AE74A2228FA8700315C38 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AE7492228FA8700315C38 /* LogViewController.swift */; };
@@ -33,6 +35,20 @@
 		DAD358BC21B836B3004804B8 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD358B221B836B3004804B8 /* TripViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7B2BFCC524485CA1003026A2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7B2BFCC424485CA1003026A2 /* GeoSpark.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3A58D532152EBA304D8C2832 /* Pods-GeoSparkExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSparkExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample.debug.xcconfig"; sourceTree = "<group>"; };
 		3D30349E20170D620043753D /* GeoSparkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoSparkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +61,7 @@
 		3D3034B520170DD60043753D /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 		3D3034B620170DD60043753D /* UIViewController+Hud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Hud.swift"; sourceTree = "<group>"; };
 		458F4D5832D79894C1D15499 /* Pods-GeoSparkExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSparkExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample.release.xcconfig"; sourceTree = "<group>"; };
+		7B2BFCC124485C9B003026A2 /* GeoSpark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoSpark.framework; sourceTree = "<group>"; };
 		C0B7EB07D13A380C0D318859 /* Pods_GeoSparkExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSparkExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA38AE4821A5618A00318560 /* MultiSelectSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MultiSelectSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5AE7492228FA8700315C38 /* LogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +89,7 @@
 			files = (
 				DA38AE4B21A5636700318560 /* MultiSelectSegmentedControl.framework in Frameworks */,
 				DA38AE4E21A5636A00318560 /* Pods_GeoSparkExample.framework in Frameworks */,
+				7B2BFCC324485CA1003026A2 /* GeoSpark.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +117,7 @@
 		3D3034A020170D620043753D /* GeoSparkExample */ = {
 			isa = PBXGroup;
 			children = (
+				7B2BFCC124485C9B003026A2 /* GeoSpark.framework */,
 				3D3034B320170D8C0043753D /* GeoSparkExample.entitlements */,
 				3D3034AD20170D620043753D /* Info.plist */,
 				3D3034A120170D620043753D /* AppDelegate.swift */,
@@ -214,6 +233,7 @@
 				3D30349C20170D620043753D /* Resources */,
 				DBF3444CDB976AAC35E26292 /* [CP] Embed Pods Frameworks */,
 				7B9374E5242A1644005D8B73 /* ShellScript */,
+				7B2BFCC524485CA1003026A2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -324,13 +344,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GeoSparkExample/Pods-GeoSparkExample-frameworks.sh",
-				"${PODS_ROOT}/GeoSpark/GeoSparkSDK/GeoSpark.framework",
 				"${BUILT_PRODUCTS_DIR}/MultiSelectSegmentedControl/MultiSelectSegmentedControl.framework",
 				"${BUILT_PRODUCTS_DIR}/SweeterSwift/SweeterSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GeoSpark.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiSelectSegmentedControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SweeterSwift.framework",
 			);

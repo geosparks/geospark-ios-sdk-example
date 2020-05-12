@@ -158,7 +158,7 @@ class ViewController: UIViewController {
             self.alert("Tracking", "Motion is not enable")
         }else{
             if UserDefaultsValue.getDefaultBoolean(kIsTracking) == false && CLLocationManager.locationServicesEnabled(){
-                GeoSpark.startTracking()
+                GeoSpark.startTracking(.highPerformance)
                 UserDefaultsValue.setDefaultBoolean(true, kIsTracking)
                 startTrackingButton.isEnabled = false
                 stopTrackingButton.isEnabled = true
@@ -247,7 +247,7 @@ class ViewController: UIViewController {
             self.startTrackingButton.isEnabled = false
             self.stopTrackingButton.isEnabled = true
         }else{
-            GeoSpark.startTracking()
+            GeoSpark.startTracking(.highPerformance)
             self.startTrackingButton.isEnabled = true
             self.stopTrackingButton.isEnabled = false
         }

@@ -14,16 +14,6 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright (c) 2020 GeoSpark, Inc. All rights reserved.</string>
-			<key>License</key>
-			<string>Copyright</string>
-			<key>Title</key>
-			<string>GeoSpark</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
 			<string>The MIT License (MIT)
 
 Copyright (c) 2019 Yonat Sharon

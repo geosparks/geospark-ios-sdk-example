@@ -8,7 +8,7 @@ import UIKit
 import GeoSpark
 import UserNotifications
 
-let PUBLISABLEKEY = ""
+let PUBLISABLEKEY = "424b5858893400356c36da885ac7bf7dc8f85d699285787b5506150c3a3dd7bf"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,GeoSparkDelegate{
@@ -23,8 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GeoSparkDelegate{
 
         GeoSpark.intialize(PUBLISABLEKEY)
         GeoSpark.delegate = self
-        GeoSpark.trackLocationInAppState([GSAppState.AlwaysOn])
-        GeoSpark.trackLocationInMotion([GSMotion.All])
         GeoSpark.setLocationAccuracy(70)
         GeoSpark.enableLogger(true)
         registerForPushNotifications()

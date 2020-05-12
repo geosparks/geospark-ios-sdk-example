@@ -1,24 +1,20 @@
 PODS:
-  - GeoSpark (2.2.3)
   - MultiSelectSegmentedControl (2.2.0):
     - SweeterSwift
   - SweeterSwift (1.1.3)
 
 DEPENDENCIES:
-  - GeoSpark
   - MultiSelectSegmentedControl
 
 SPEC REPOS:
   trunk:
-    - GeoSpark
     - MultiSelectSegmentedControl
     - SweeterSwift
 
 SPEC CHECKSUMS:
-  GeoSpark: 7dece9ef8b960335c3416341be52263514ffd89b
   MultiSelectSegmentedControl: e34388e5d8de55a43ba0191662246c655f5b9d5a
   SweeterSwift: d909211f6833405628c8c7c6bf9f8f2e8a0e9df9
 
-PODFILE CHECKSUM: ba6ccbde4d8d0002bee85a956bc0ff8b44222904
+PODFILE CHECKSUM: 1d8cb593ecd1ec04b1ca19e416ddd1d491b4ab5d
 
 COCOAPODS: 1.8.4
